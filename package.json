@@ -1,7 +1,6 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "eslint": "^8.15.0",
+    "@types/eslint": "^6.1.1",
+    "archiver": "^5.3.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.2.0",
     "parcel": "^2.5.0",
     "postcss": "^8.4.14",
     "react": "^18.1.0",
@@ -21,6 +24,20 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "grunt": "^1.5.3",
     "postcss-import": "^14.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jren2/personal-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jren2/personal-website/issues"
+  },
+  "homepage": "https://github.com/jren2/personal-website#readme",
+  "description": ""
 }
