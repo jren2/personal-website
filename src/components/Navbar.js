@@ -1,3 +1,5 @@
+/* eslint-disable react/no-this-in-sfc */
+/* eslint-disable func-names */
 /* eslint-disable prefer-destructuring */
 /* eslint-disable global-require */
 /* eslint-disable jsx-a11y/anchor-is-valid */
@@ -20,10 +22,10 @@ const Navbar = () => {
     })
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', e => {
+      anchor.addEventListener('click', function (e) {
         e.preventDefault()
 
-        document.querySelector(document.getAttribute('href')).scrollIntoView({
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth',
         })
       })

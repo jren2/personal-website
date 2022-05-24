@@ -3,8 +3,8 @@ import React from 'react'
 
 const About = () => (
   <>
-    <div className="bg-zinc-800">
-      <div id="about" className="h-fit px-56 py-24 grid grid-cols-5 gap-8 text-teal-400">
+    <div id="about" className="bg-zinc-800">
+      <div className="h-fit px-56 py-24 grid grid-cols-5 gap-8 text-teal-400">
         <div className=" col-span-3 h-fit">
           <div className=" text-slate-200 text-3xl px-4 pb-6 font-medium tracking-wide">
             About Me
