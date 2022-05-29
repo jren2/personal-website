@@ -22,7 +22,7 @@ const Portfolio = () => (
             <div className="my-2 text-teal-400 font-light text-sm tracking-wide">
               React &nbsp; JavaScript &nbsp; MongoDB &nbsp; Express JS &nbsp; Bootstrap
             </div>
-            <a href="https://github.com/jren2/Stock-Trader" target="_blank" className="hover:text-teal-400 duration-300 hover:mr-1 text-base font-normal" rel="noreferrer">
+            <a href="https://github.com/jren2/stock-trader" target="_blank" className="hover:text-teal-400 duration-300 hover:mr-1 text-base font-normal" rel="noreferrer">
               View on GitHub →
             </a>
           </div>
