@@ -2,7 +2,7 @@ import React from 'react'
 
 const Overlay = () => (
   <>
-    <div className="fixed left-4 top-3/4 text-slate-300 text-3xl">
+    <div className="fixed left-4 top-3/4 text-slate-300 text-3xl z-40">
       <div className="center-overlay hover:-translate-y-1 hover:text-teal-400 duration-300 w-6 h-6">
         <a href="https://github.com/jren2" aria-label="GitHub" target="_blank" rel="noreferrer" cursorshover="true">
           <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-github" cursorshover="true">

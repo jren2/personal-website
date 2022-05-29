@@ -30,7 +30,7 @@ const About = () => (
           </p>
         </div>
         <div className="rotate-6 h-fit hover:rotate-0 duration-300  col-span-2 ">
-          <img alt="cat image" className="rounded-3xl" src={require('./images/option.png')} />
+          <img alt="philly image" className="rounded-3xl" src={require('./images/option.png')} />
         </div>
       </div>
     </div>
