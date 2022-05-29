@@ -13,12 +13,16 @@ const Navbar = () => {
     let lastScrollY = scrollY
 
     window.addEventListener('scroll', () => {
-      if (lastScrollY < window.scrollY) {
-        nav.classList.add('nav-hide')
+      if (lastScrollY >= 0) {
+        if (lastScrollY < window.scrollY) {
+          nav.classList.add('nav-hide')
+        } else {
+          nav.classList.remove('nav-hide')
+        }
+        lastScrollY = window.scrollY
       } else {
-        nav.classList.remove('nav-hide')
+        lastScrollY = 0
       }
-      lastScrollY = window.scrollY
     })
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

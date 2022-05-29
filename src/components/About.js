@@ -14,7 +14,7 @@ const About = () => (
           </div>
           <p className="text-slate-300">
             Hi! I&#39;m Jason Ren, an undergraduate studying CIS at the University of Pennsylvania!
-            My interest in computer science was born from multiple summer camps - mainly about game dev -
+            My interest in computer science was born from multiple summer camps more than a decade ago - mainly about game dev -
             which opened my mind to the world of coding!
           </p>
           <br />
