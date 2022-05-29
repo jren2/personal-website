@@ -1,25 +1,26 @@
+/* eslint-disable global-require */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Home = () => (
   <>
-    <div className="bg-zinc-900">
+    <div className="relative">
       <div className="h-screen px-36 py-16 grid grid-cols-2 gap-4">
-        <div className="mt-40">
-          <div className="text-teal-400">
-            Hi, my name is
+        <div className="mt-16 z-10">
+          <div className="text-slate-300 tracking-wide">
+            Hello! My name is,
           </div>
-          <div className="text-slate-100 text-8xl font-bold my-6">
+          <div className="text-slate-100 text-8xl font-bold my-6 tracking-wide hover:text-teal-400 duration-300">
             Jason Ren
           </div>
-          <div className="text-slate-200 w-96 text-lg tracking-wide">
-            I&apos;m a CS student with interests in software engineering and web development
+          <div className="text-slate-400 w-96 text-base tracking-wide">
+            I&apos;m a CS student with interests and experience in software engineering, web development and  &nbsp; data analysis!
           </div>
         </div>
-        <div className="text-slate-100 text-center items-center">
-          <img alt="cat picture" className="hover:rotate-180 duration-300 rounded-full mx-auto" width="400" height="1000" src="https://styles.redditmedia.com/t5_2r5i1/styles/communityIcon_x4lqmqzu1hi81.jpg" />
-          <div className="mt-14">
-            <a href="#" className=" m-10 p-4 rounded-lg hover:bg-teal-400/25 duration-300 text-teal-400 border-teal-400 border-2">
+        <div className="text-slate-100 text-center items-center z-10">
+          <img alt="cat picture" className="hover:rotate-180 duration-300 rounded-full mx-auto" width="500" height="400" src={require('./images/philly.png')} />
+          <div className="mt-14 items-center text-center mr-3">
+            <a href="#" target="_blank" className=" m-10 p-4 rounded-lg hover:bg-teal-400/25 duration-300 text-teal-400 border-teal-400 border-2">
               Resume
             </a>
 
@@ -33,8 +34,14 @@ const Home = () => (
           </div>
         </div>
       </div>
+      <div className="lines">
+        <div className="line" />
+        <div className="line" />
+        <div className="line" />
+        <div className="line" />
+        <div className="line" />
+      </div>
       <div />
-
     </div>
   </>
 )

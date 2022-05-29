@@ -118,8 +118,10 @@ const Skills = () => {
       <div className="bg-zinc-800" id="skills">
         <div className="text-teal-50 h-screen px-20 py-16 grid grid-cols-9 gap-4">
           <div className="col-span-5 text-center text-slate-200 text-3xl font-medium tracking-wide">
-            <div className="my-6">
+            <div className="relative my-6">
               Skills
+              <div className="absolute bottom-4 left-56 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
+              <div className="absolute bottom-4 right-56 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
             </div>
             <div className="grid grid-rows-2 grid-cols-4 gap-4">
               <div className="group hover:-translate-y-3 duration-300 card text-teal-300 text-left border-b-teal-400 border-b-8">
@@ -195,8 +197,10 @@ const Skills = () => {
             </div>
           </div>
           <div className="col-span-4 text-center text-slate-200 text-3xl font-medium tracking-wide">
-            <div className="my-6">
+            <div className="relative my-6">
               Coursework
+              <div className="absolute bottom-4 left-24 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
+              <div className="absolute bottom-4 right-24 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
             </div>
             <div className="grid grid-cols-3 text-slate-400">
               <div className="ml-8 mr-8  border-solid border-l-2 border-zinc-600">

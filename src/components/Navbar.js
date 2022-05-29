@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav id="nav" className="nav backdrop-blur bg-zinc-900/80 sticky top-0 items-center z-10">
+      <nav id="nav" className="nav backdrop-blur bg-zinc-900/80 sticky top-0 items-center z-50">
         <div className="grid grid-cols-2 shadow-zinc-900 shadow-md">
           <a href="#home" className="items-center ml-6 mt-6 h-8 w-8 hover:rotate-0 duration-300">
             <img alt="logo" lassName="rounded-3xl" src={require('./images/j.png')} />
@@ -46,9 +46,9 @@ const Navbar = () => {
 
             <a href="#experience" className="text-slate-200 hover:duration-200 active:text-cyan-400 hover:border-b-cyan-300 hover:text-cyan-300 hover:border-b-4 mx-4 px-1 py-1 text-base font-normal">Experience</a>
 
-            <a href="#" className="text-slate-200 hover:duration-200 active:text-cyan-400 hover:border-b-cyan-300 hover:text-cyan-300 hover:border-b-4 mx-4 px-1 py-1 text-base font-normal">Portfolio</a>
+            <a href="#portfolio" className="text-slate-200 hover:duration-200 active:text-cyan-400 hover:border-b-cyan-300 hover:text-cyan-300 hover:border-b-4 mx-4 px-1 py-1 text-base font-normal">Portfolio</a>
 
-            <a href="#" className="text-slate-200 hover:duration-200 active:text-cyan-400 hover:border-b-cyan-300 hover:text-cyan-300 hover:border-b-4 mx-4 px-1 py-1 text-base font-normal">Contact Me</a>
+            <a href="#contact" className="text-slate-200 hover:duration-200 active:text-cyan-400 hover:border-b-cyan-300 hover:text-cyan-300 hover:border-b-4 mx-4 px-1 py-1 text-base font-normal">Contact Me</a>
 
             <a href="#" className="mx-4 py-3 px-7 border-teal-400 border-2 rounded-full text-right text-teal-400 duration-300 hover:text-slate-800 active:bg-teal-500 active:border-teal-500 font-normal text-base hover:bg-teal-400">
               Download CV
