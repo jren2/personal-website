@@ -116,33 +116,55 @@ const Skills = () => {
   return (
     <>
       <div className="bg-zinc-800" id="skills">
-        <div className="text-teal-50 h-screen px-20 py-16 grid grid-cols-9 gap-4">
-          <div className="col-span-5 text-center text-slate-200 text-3xl font-medium tracking-wide">
-            <div className="relative my-6">
+        <div className="flex xs:flex-col lg:flex-row text-teal-50 h-fit xs:px-16 lg:px-20 py-16 ">
+          <div className="xs:w-full lg:w-7/12 h-fit items-center text-center text-slate-200 text-3xl font-medium tracking-wide">
+            <div className="relative my-6 text-center">
               Skills
               <div className="absolute bottom-4 left-56 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
               <div className="absolute bottom-4 right-56 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
             </div>
-            <div className="grid grid-rows-2 grid-cols-4 gap-4">
-              <div className="group hover:-translate-y-3 duration-300 card text-teal-300 text-left border-b-teal-400 border-b-8">
-                <div>
-                  <img alt="sde" className="object-cover" width="70px" height="70px" src={require('./images/sde.png')} />
+            <div className="flex flex-col gap-8">
+              <div className="w-full flex flex-row justify-center">
+                <div className="h-fit w-1/2 group hover:-translate-y-3 mr-2 duration-300 card text-teal-300 text-left border-b-teal-400 border-b-8">
+                  <div>
+                    <img alt="sde" className="object-cover" width="70px" height="70px" src={require('./images/sde.png')} />
+                  </div>
+                  <div className="group-hover:text-teal-300 duration-300 my-2 text-slate-200 text-xl">
+                    Software Development
+                  </div>
+                  <div className="text-slate-400 text-lg">
+                    <ul className="text-slate-400">
+                      <li className="list-element tracking-wide font-normal text-sm"> Java</li>
+                      <li className="list-element tracking-wide font-normal text-sm"> Python</li>
+                      <li className="list-element tracking-wide font-normal text-sm"> C</li>
+                      <li className="list-element tracking-wide font-normal text-sm"> OCaml</li>
+                      <li className="list-element tracking-wide font-normal text-sm"> Git</li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="group-hover:text-teal-300 duration-300 my-2 text-slate-200 text-xl">
-                  Software Development
+
+                <div className="h-fit w-1/2 mx-auto group hover:-translate-y-3 duration-300 card text-teal-300 text-left border-b-teal-400 border-b-8">
+                  <div>
+                    <img alt="ds" width="70px" height="70px" src={require('./images/ds.png')} />
+                  </div>
+                  <div className="group-hover:text-teal-300 duration-300 my-2 text-slate-200 text-xl">
+                    Data Science
+                  </div>
+                  <div className="text-slate-400 text-lg">
+                    <ul className="text-slate-400">
+                      <li className="list-element tracking-wide font-normal text-sm"> Python</li>
+                      <li className="ml-4 list-element tracking-wide font-normal text-xs"> Pandas</li>
+                      <li className="ml-4 list-element tracking-wide font-normal text-xs"> Matplotlib</li>
+                      <li className="ml-4 list-element tracking-wide font-normal text-xs"> NumPy</li>
+                      <li className="list-element tracking-wide font-normal text-sm"> R</li>
+                      <li className="list-element tracking-wide font-normal text-sm"> MATLAB</li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="text-slate-400 text-lg">
-                  <ul className="text-slate-400">
-                    <li className="list-element tracking-wide font-normal text-sm"> Java</li>
-                    <li className="list-element tracking-wide font-normal text-sm"> Python</li>
-                    <li className="list-element tracking-wide font-normal text-sm"> C</li>
-                    <li className="list-element tracking-wide font-normal text-sm"> OCaml</li>
-                    <li className="list-element tracking-wide font-normal text-sm"> Git</li>
-                  </ul>
-                </div>
+                <div />
               </div>
 
-              <div className="group card text-teal-300 text-left border-b-teal-400 border-b-8 hover:-translate-y-3 duration-300">
+              <div className="h-fit w-1/2 group card text-teal-300 text-left m-auto  border-b-teal-400 border-b-8 hover:-translate-y-3 duration-300">
                 <div className="object-fill">
                   <img alt="wde" className="ml-1" width="50px" height="50px" src={require('./images/wde.png')} />
                 </div>
@@ -153,57 +175,37 @@ const Skills = () => {
                   <div>
                     Frontend
                     <ul className="text-slate-400">
-                      <li className="list-element tracking-wide font-normal text-sm"> JavaScript</li>
-                      <li className="list-element tracking-wide font-normal text-sm"> React</li>
-                      <li className="list-element tracking-wide font-normal text-sm"> HTML/CSS</li>
-                      <li className="list-element tracking-wide font-normal text-sm"> Bootstrap</li>
-                      <li className="list-element tracking-wide font-normal text-sm"> Tailwind</li>
-                      <li className="list-element tracking-wide font-normal text-sm"> jQuery</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> JavaScript</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> React</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> HTML/CSS</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> Bootstrap</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> Tailwind</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> jQuery</li>
                     </ul>
                   </div>
                   <div>
                     Backend
                     <ul className="text-slate-400">
-                      <li className="list-element tracking-wide font-normal text-sm"> Node JS</li>
-                      <li className="list-element tracking-wide font-normal text-sm"> MongoDB</li>
-                      <li className="list-element tracking-wide font-normal text-sm"> Python</li>
-                      <li className="list-element tracking-wide font-normal text-sm"> Express JS</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> Node JS</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> MongoDB</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> Python</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> Express JS</li>
                     </ul>
                   </div>
                 </div>
               </div>
               <div />
-
-              <div className="mt-2 group hover:-translate-y-3 duration-300 card text-teal-300 text-left border-b-teal-400 border-b-8">
-                <div>
-                  <img alt="ds" width="70px" height="70px" src={require('./images/ds.png')} />
-                </div>
-                <div className="group-hover:text-teal-300 duration-300 my-2 text-slate-200 text-xl">
-                  Data Science
-                </div>
-                <div className="text-slate-400 text-lg">
-                  <ul className="text-slate-400">
-                    <li className="list-element tracking-wide font-normal text-sm"> Python</li>
-                    <li className="ml-4 list-element tracking-wide font-normal text-xs"> Pandas</li>
-                    <li className="ml-4 list-element tracking-wide font-normal text-xs"> Matplotlib</li>
-                    <li className="ml-4 list-element tracking-wide font-normal text-xs"> NumPy</li>
-                    <li className="list-element tracking-wide font-normal text-sm"> R</li>
-                    <li className="list-element tracking-wide font-normal text-sm"> MATLAB</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div />
             </div>
           </div>
-          <div className="col-span-4 text-center text-slate-200 text-3xl font-medium tracking-wide">
-            <div className="relative my-6">
+
+          <div className="xs:w-full lg:w-5/12 h-fit text-center text-slate-200 text-3xl font-medium tracking-wide">
+            <div className="w-full flex flex-col relative text-center my-6">
               Coursework
               <div className="absolute bottom-4 left-24 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
               <div className="absolute bottom-4 right-24 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
             </div>
-            <div className="grid grid-cols-3 text-slate-400">
-              <div className="ml-8 mr-8  border-solid border-l-2 border-zinc-600">
+            <div className="w-full m-auto flex flex-row text-slate-400 ">
+              <div className="m-auto w-32 lg:ml-8 mr-8  border-solid border-l-2 border-zinc-600">
                 <button type="button" className="fa20s w-32 active-sem hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showFA20()}>
                   Fall 2020
                 </button>
@@ -229,9 +231,10 @@ const Skills = () => {
                   Spring 2024
                 </button>
               </div>
-              <div className="col-span-2 my-2 text-left">
+
+              <div className="w-fit m-auto my-2 text-left">
                 <div className="text-base semester fa20 duration-300">
-                  <div className="ml-10 mr-10">Fall 2020:</div>
+                  <div className="text-center">Fall 2020:</div>
                   <br />
                   <div className="mb-2">
                     CIS 120: Programming Languages & Techniques I
@@ -253,9 +256,10 @@ const Skills = () => {
                     ECON 001: Introduction to Microeconomics
                     <br />
                   </div>
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                 </div>
                 <div className="text-base hidden semester sp21 duration-300">
-                  <div className="ml-10 mr-10">Spring 2021:</div>
+                  <div className="text-center">Spring 2021:</div>
                   <br />
                   <div className="mb-2">
                     CIS 160: Mathematical Foundations of Computer Science
@@ -277,9 +281,10 @@ const Skills = () => {
                     WRIT 031: Writing Seminar in Cognitive Science
                     <br />
                   </div>
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                 </div>
                 <div className="text-base hidden semester fa21">
-                  <div className="ml-10 mr-10">Fall 2021:</div>
+                  <div className="text-center">Fall 2021:</div>
                   <br />
                   <div className="mb-2">
                     CIS 121: Data Structures and Algorithms
@@ -297,9 +302,10 @@ const Skills = () => {
                     ESE 215: Electrical Circuits and Systems
                     <br />
                   </div>
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                 </div>
                 <div className="text-base hidden semester sp22">
-                  <div className="ml-10 mr-10">Spring 2022:</div>
+                  <div className="text-center ">Spring 2022:</div>
                   <br />
                   <div className="mb-2">
                     CIS 320: Introduction to Algorithms
@@ -321,9 +327,10 @@ const Skills = () => {
                     STAT 431: Statistical Inference
                     <br />
                   </div>
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                 </div>
                 <div className="text-base hidden semester fa22">
-                  <div className="ml-10 mr-10">Fall 2022:</div>
+                  <div className="text-center">Fall 2022:</div>
                   <br />
                   <div className="mb-2">
                     CIS 421: Artificial Intelligence
@@ -345,15 +352,19 @@ const Skills = () => {
                     PSYC 001: Introduction to Experimental Psychology
                     <br />
                   </div>
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                 </div>
-                <div className="text-base hidden semester sp23">
+                <div className="text-center text-base hidden semester sp23">
                   TBD
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                 </div>
-                <div className="text-base hidden semester fa23">
+                <div className="text-center text-base hidden semester fa23">
                   TBD
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                 </div>
-                <div className="text-base hidden semester sp24">
+                <div className="text-center text-base hidden semester sp24">
                   TBD
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                 </div>
               </div>
             </div>

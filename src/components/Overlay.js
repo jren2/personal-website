@@ -35,7 +35,7 @@ const Overlay = () => (
       <div className="overlay-bar fixed mt-10 left-10 w-2 h-28" />
     </div>
 
-    <div className="fixed right-8 top-3/4 text-slate-300 text-sm tracking-widest">
+    <div className="z-40 fixed right-8 top-3/4 text-slate-300 text-sm tracking-widest">
       <div className="overlay-text rotate-90 fixed mt-10 w-8 h-28">
         jren2@seas.upenn.edu
       </div>

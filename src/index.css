@@ -13,8 +13,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
     height: 100vh;
+    right: 0;
+    height: auto;
     margin: auto;
     width: 90vw; 
   }
@@ -160,4 +161,64 @@
     html {
       font-family: "Calibre","Inter","San Francisco","SF Pro Text",system-ui,sans-serif
     }
+}
+
+@media (min-width: 1px) {
+  .line {
+    height: 895px;
+  }
+}
+
+@media (min-width: 512px) {
+  .line {
+    height: 908px;
+  }
+}
+
+@media (min-width: 635px) {
+  .line {
+    height: 884px;
+  }
+}
+
+@media (min-width: 668px) {
+  .line {
+    height: 788px;
+  }
+}
+
+@media (min-width: 768px) {
+  .line {
+    height: 812px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .line {
+    height: 540px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .line {
+    height: 669px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .line {
+    height: 686px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .line {
+    height: 700px;
+  }
+}
+
+@media (min-width: 1264px) {
+  .line {
+    height: 719px;
+  }
 }
