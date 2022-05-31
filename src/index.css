@@ -7,6 +7,7 @@
     --nav-height: 50px;
     --tw-bg-opacity: 1;
     background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+    overflow-x: hidden;
   }
   
   .lines {
@@ -101,8 +102,12 @@
     margin-left: 14px;
   }
 
+  .overlay-bottom {
+    bottom: 13%;
+  }
+
   .overlay-text {
-    top: 58%;
+    bottom: calc(17vh + 47px);
     right: 67px;
   }
 
