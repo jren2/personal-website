@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav id="nav" className="nav backdrop-blur bg-zinc-900/80 sticky top-0 items-center z-50">
+      <nav id="nav" className="w-full nav backdrop-blur bg-zinc-900/80 sticky top-0 items-center z-50">
         <div className="flex flex-nowrap flex-row shadow-zinc-900 shadow-md">
           <a href="#home" className="flex flex-row ml-6 mt-6 h-8 w-8">
             <img alt="logo" lassName="rounded-3xl" src={require('./images/j.png')} />

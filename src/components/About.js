@@ -8,9 +8,9 @@ const About = () => (
       <div className="flex xs:flex-col lg:flex-row h-fit xs:px-24 lg:px-40 xl:px-56 py-24 gap-8 text-teal-400">
         <div className="h-fit w-11/12 xs:text-center lg:text-left xs:m-auto lg:-mt-2">
           <div className="relative  text-slate-200 text-3xl px-4 ml-8 pb-6 font-medium tracking-wide">
-            About Me
-            <div className="absolute bottom-10 -left-8 border-b-zinc-700 border-b-2 h-2 w-8 font-light" />
-            <div className="absolute bottom-10 right-64 border-b-zinc-700 border-b-2 h-2 w-32 font-light" />
+            1. About Me
+            {/* <div className="absolute bottom-10 -left-8 border-b-zinc-700 border-b-2 h-2 w-8 font-light" />
+            <div className="absolute bottom-10 right-64 border-b-zinc-700 border-b-2 h-2 w-32 font-light" /> */}
           </div>
           <p className="text-slate-300">
             Hi! I&#39;m Jason Ren, an undergraduate studying CIS at the University of Pennsylvania!

@@ -119,9 +119,9 @@ const Skills = () => {
         <div className="flex xs:flex-col lg:flex-row text-teal-50 h-fit xs:px-16 lg:px-20 py-16 ">
           <div className="xs:w-full lg:w-7/12 h-fit items-center text-center text-slate-200 text-3xl font-medium tracking-wide">
             <div className="relative my-6 text-center">
-              Skills
-              <div className="absolute bottom-4 left-56 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
-              <div className="absolute bottom-4 right-56 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
+              2. Skills
+              {/* <div className="absolute bottom-4 left-56 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
+              <div className="absolute bottom-4 right-56 border-b-zinc-700 border-b-2 h-2 w-20 font-light" /> */}
             </div>
             <div className="flex flex-col gap-8">
               <div className="w-full flex flex-row justify-center">
@@ -200,9 +200,9 @@ const Skills = () => {
 
           <div className="xs:w-full lg:w-5/12 h-fit text-center text-slate-200 text-3xl font-medium tracking-wide">
             <div className="w-full flex flex-col relative text-center my-6">
-              Coursework
-              <div className="absolute bottom-4 left-24 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
-              <div className="absolute bottom-4 right-24 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
+              3. Coursework
+              {/* <div className="absolute bottom-4 left-24 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
+              <div className="absolute bottom-4 right-24 border-b-zinc-700 border-b-2 h-2 w-20 font-light" /> */}
             </div>
             <div className="w-full m-auto flex flex-row text-slate-400 ">
               <div className="m-auto w-32 lg:ml-8 mr-8  border-solid border-l-2 border-zinc-600">

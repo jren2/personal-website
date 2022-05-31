@@ -167,6 +167,14 @@
   .line {
     height: 895px;
   }
+  .experience-padding {
+    padding-left: 15vw/* 320px */;
+    padding-right: 15vw/* 320px */;
+  }
+  .portfolio-padding {
+    padding-left: 8vw/* 320px */;
+    padding-right: 8vw/* 320px */;
+  }
 }
 
 @media (min-width: 512px) {
@@ -209,6 +217,14 @@
   .line {
     height: 686px;
   }
+  .experience-padding {
+    padding-left: 25vw/* 320px */;
+    padding-right: 25vw/* 320px */;
+  }
+  .portfolio-padding {
+    padding-left: 10vw/* 320px */;
+    padding-right: 10vw/* 320px */;
+  }
 }
 
 @media (min-width: 1240px) {
@@ -220,5 +236,9 @@
 @media (min-width: 1264px) {
   .line {
     height: 719px;
+  }
+  .portfolio-padding {
+    padding-left: 15vw/* 320px */;
+    padding-right: 15vw/* 320px */;
   }
 }
