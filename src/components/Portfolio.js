@@ -13,7 +13,7 @@ const Portfolio = () => (
         </div>
 
         <div className="relative my-8 flex xs:flex-col md:flex-row items-center ">
-          <img alt="paper trader" src={require('./images/stock.png')} className="object-cover xs:m-auto md:mt-6 w-1/2 h-fit xs:left-0 md:left-10 relative mt-6 rounded-sm" />
+          <img alt="paper trader" src={require('./images/stock.png')} className="xs:m-auto md:mt-6 w-1/2 h-1/6 xs:left-0 md:left-10 relative mt-6 rounded-sm" />
           <div className="relative xs:text-center xs:mt-4 xs:m-auto xs:right-0 md:right-10 z-10 md:mt-10 text-xl md:text-right font-medium tracking-normal text-slate-200">
             Stock Trading Simulator &nbsp;
             <div className="shadow-md my-2 xs:ml-2 md:ml-10 pl-4 pr-4 py-4 text-slate-400 rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">
@@ -41,11 +41,11 @@ const Portfolio = () => (
               View on GitHub →
             </a>
           </div>
-          <img alt="stock predictor" src={require('./images/stockPredictor.png')} className="xs:m-auto md:mt-6 w-1/2 object-cover h-fit xs:right-0 md:right-10 relative mt-6 rounded-sm" />
+          <img alt="stock predictor" src={require('./images/stockPredictor.png')} className="xs:m-auto md:mt-6 w-1/2  h-1/6 xs:right-0 md:right-10 relative mt-6 rounded-sm" />
         </div>
 
         <div className="relative my-8 flex xs:flex-col md:flex-row items-center ">
-          <img alt="paper trader" src={require('./images/sortingVisualizer.png')} className="object-cover xs:m-auto md:mt-6 w-1/2 h-fit xs:left-0 md:left-10 relative mt-6 rounded-sm" />
+          <img alt="paper trader" src={require('./images/sortingVisualizer.png')} className=" xs:m-auto md:mt-6 w-1/2 h-1/6 xs:left-0 md:left-10 relative mt-6 rounded-sm" />
           <div className="relative xs:text-center xs:mt-4 xs:m-auto xs:right-0 md:right-10 z-10 md:mt-10 text-xl md:text-right font-medium tracking-normal text-slate-200">
             Sorting Visualizer
             <div className="shadow-md my-2 xs:ml-2 md:ml-10 pl-4 pr-4 py-4 text-slate-400 rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">
@@ -73,7 +73,7 @@ const Portfolio = () => (
               View on GitHub →
             </a>
           </div>
-          <img alt="stock predictor" src={require('./images/website.png')} className="object-cover xs:m-auto md:mt-6 w-1/2 h-fit xs:right-0 md:right-10 relative mt-6 rounded-sm" />
+          <img alt="stock predictor" src={require('./images/website.png')} className=" xs:m-auto md:mt-6 w-1/2 h-1/6 xs:right-0 md:right-10 relative mt-6 rounded-sm" />
         </div>
 
       </div>
