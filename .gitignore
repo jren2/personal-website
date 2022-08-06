@@ -6,3 +6,4 @@ dist
 public
 .firebaserc
 firebase.json
+config.js
