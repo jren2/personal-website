@@ -4,6 +4,26 @@ module.exports = {
     './src/**/*.{html,js,ts,jsx,tsx}', './node_modules/tw-elements/dist/js/**/*.js',
   ],
   theme: {
+    extend: {
+      grayscale: {
+        20: '20%',
+        50: '50%',
+        80: '80%',
+      },
+      invert: {
+        50: '50%',
+      },
+      animation: {
+        gradient: 'gradient 11s ease-in-out infinite',
+      },
+    },
+    keyframes: {
+      gradient: {
+        '0%': { 'background-position': '0 0' },
+        '50%': { 'background-position': '1000 0' },
+        '100%': { 'background-position': '0 0' },
+      },
+    },
     screens: {
       'xs': '1px',
       'sm': '640px',

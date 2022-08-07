@@ -54,6 +54,7 @@
 
   .line:nth-child(2) {
     margin-left: -25%; 
+    transform: translate(0, -1.5vh)
   }
   
   .line:nth-child(2)::after {
@@ -61,8 +62,13 @@
     animation-duration: 5s;
   }
 
+  .line:nth-child(3) {
+    transform: translate(0, 1vh)
+  }
+
   .line:nth-child(4) {
     margin-left: 25%; 
+    transform: translate(0, 2vh)
   }
 
   .line:nth-child(4)::after {
@@ -72,6 +78,7 @@
 
   .line:nth-child(5) {
     margin-left: 47%; 
+    transform: translate(0, -1vh)
   }
 
   .line:nth-child(5)::after {
