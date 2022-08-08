@@ -7,10 +7,8 @@ const Experience = () => (
     <div id="experience" className="bg-zinc-800">
       &nbsp;
       <div className="experience-padding h-fit py-16">
-        <div className="relative mb-10 text-center text-3xl font-medium tracking-wider text-slate-200">
-          4. Experience
-          {/* <div className="absolute bottom-4 left-56 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
-          <div className="absolute bottom-4 right-56 border-b-zinc-700 border-b-2 h-2 w-20 font-light" /> */}
+        <div className="experienceSubtitle mb-10 text-center w-fit mx-auto text-3xl font-medium tracking-wider text-slate-200">
+          Experience
         </div>
 
         <div className="flex xs:flex-col xs:items-center md:flex-row mt-16 mb-6 gap-4">

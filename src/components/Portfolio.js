@@ -6,14 +6,12 @@ const Portfolio = () => (
     <div id="portfolio" className="bg-zinc-800">
       &nbsp;
       <div className="portfolio-padding h-fit px-60 py-16">
-        <div className="relative left-24 text-left text-3xl font-medium tracking-wider text-slate-200">
-          5. Portfolio
-          {/* <div className="absolute bottom-4 -left-14 border-b-zinc-700 border-b-2 h-2 w-10 font-light" />
-          <div className="absolute bottom-4 left-36 border-b-zinc-700 border-b-2 h-2 w-48 font-light" /> */}
+        <div className="offsetSubtitle w-fit xs:mx-auto lg:ml-28 text-3xl font-medium tracking-wider text-slate-200">
+          Portfolio
         </div>
 
         <div className="relative my-8 flex xs:flex-col md:flex-row items-center ">
-          <img alt="paper trader" src={require('./images/stock.png')} className="contrast-75 saturate-50 duration-300 hover:saturate-100 hover:scale-105 hover:contrast-100 xs:m-auto md:mt-6 w-1/2 h-1/6 xs:left-0 md:left-10 relative mt-6 rounded-sm" />
+          <img alt="paper trader" src={require('./images/stock.png')} className="duration-300 hover:scale-105 xs:m-auto md:mt-6 w-1/2 h-1/6 xs:left-0 md:left-10 relative mt-6 rounded-sm" />
           <div className="relative xs:text-center xs:mt-4 xs:m-auto xs:right-0 md:right-10 z-10 md:mt-10 text-xl md:text-right font-medium tracking-normal text-slate-200">
             Stock Trading Simulator &nbsp;
             <div className="shadow-md my-2 xs:ml-2 md:ml-10 pl-4 pr-4 py-4 text-slate-400 rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">
@@ -41,11 +39,11 @@ const Portfolio = () => (
               View on GitHub →
             </a>
           </div>
-          <img alt="stock predictor" src={require('./images/stockPredictor.png')} className="contrast-75 saturate-50 duration-300 hover:saturate-100 hover:scale-105 hover:contrast-100 xs:m-auto md:mt-6 w-1/2  h-1/6 xs:right-0 md:right-10 relative mt-6 rounded-sm" />
+          <img alt="stock predictor" src={require('./images/stockPredictor.png')} className="duration-300 hover:scale-105 xs:m-auto md:mt-6 w-1/2  h-1/6 xs:right-0 md:right-10 relative mt-6 rounded-sm" />
         </div>
 
         <div className="relative my-8 flex xs:flex-col md:flex-row items-center ">
-          <img alt="paper trader" src={require('./images/sortingVisualizer.png')} className="contrast-75 saturate-50 duration-300 hover:saturate-100 hover:scale-105 hover:contrast-100 xs:m-auto md:mt-6 w-1/2 h-1/6 xs:left-0 md:left-10 relative mt-6 rounded-sm" />
+          <img alt="paper trader" src={require('./images/sortingVisualizer.png')} className="duration-300 hover:scale-105 xs:m-auto md:mt-6 w-1/2 h-1/6 xs:left-0 md:left-10 relative mt-6 rounded-sm" />
           <div className="relative xs:text-center xs:mt-4 xs:m-auto xs:right-0 md:right-10 z-10 md:mt-10 text-xl md:text-right font-medium tracking-normal text-slate-200">
             Sorting Visualizer
             <div className="shadow-md my-2 xs:ml-2 md:ml-10 pl-4 pr-4 py-4 text-slate-400 rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">
@@ -73,7 +71,7 @@ const Portfolio = () => (
               View on GitHub →
             </a>
           </div>
-          <img alt="stock predictor" src={require('./images/website.png')} className="contrast-75 saturate-50 duration-300 hover:saturate-100 hover:scale-105 hover:contrast-100 xs:m-auto md:mt-6 w-1/2 h-1/6 xs:right-0 md:right-10 relative mt-6 rounded-sm" />
+          <img alt="stock predictor" src={require('./images/website.png')} className="duration-300 hover:scale-105 xs:m-auto md:mt-6 w-1/2 h-1/6 xs:right-0 md:right-10 relative mt-6 rounded-sm" />
         </div>
 
       </div>

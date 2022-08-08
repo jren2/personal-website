@@ -117,11 +117,178 @@ const Skills = () => {
     <>
       <div className="bg-zinc-800" id="skills">
         <div className="flex xs:flex-col lg:flex-row text-teal-50 h-fit xs:px-16 lg:px-20 py-16 ">
-          <div className="xs:w-full lg:w-7/12 h-fit items-center text-center text-slate-200 text-3xl font-medium tracking-wide">
-            <div className="relative my-6 text-center">
-              2. Skills
-              {/* <div className="absolute bottom-4 left-56 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
-              <div className="absolute bottom-4 right-56 border-b-zinc-700 border-b-2 h-2 w-20 font-light" /> */}
+          <div className="xs:w-full lg:w-6/12 h-fit text-center text-slate-200 text-3xl font-medium tracking-wide">
+            <div className="courseSubtitle w-fit mx-auto flex flex-col text-center my-6">
+              Coursework
+            </div>
+            <div className="w-full m-auto flex flex-row text-slate-400 ">
+              <div className="m-auto w-32 lg:ml-8 mr-8  border-solid border-l-2 border-zinc-600">
+                <button type="button" className="fa20s w-32 active-sem hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showFA20()}>
+                  Fall 2020
+                </button>
+                <button type="button" className="sp21s w-32 hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3 " onClick={() => showSP21()}>
+                  Spring 2021
+                </button>
+                <button type="button" className="fa21s w-32 hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showFA21()}>
+                  Fall 2021
+                </button>
+                <button type="button" className="sp22s w-32 hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showSP22()}>
+                  Spring 2022
+                </button>
+                <button type="button" className="fa22s w-32 hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showFA22()}>
+                  Fall 2022
+                </button>
+                <button type="button" className="sp23s w-32 hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showSP23()}>
+                  Spring 2023
+                </button>
+                <button type="button" className="fa23s w-32 hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showFA23()}>
+                  Fall 2023
+                </button>
+                <button type="button" className="sp24s w-32 hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showSP24()}>
+                  Spring 2024
+                </button>
+              </div>
+
+              <div className="w-fit m-auto my-2 text-left">
+                <div className="text-base semester fa20 duration-300">
+                  <div className="text-left">Fall 2020:</div>
+                  <br />
+                  <div className="mb-2">
+                    CIS 120: Programming Languages & Techniques I
+                    <br />
+                  </div>
+                  <div className="mb-2">
+                    MATH 114: Calculus II
+                    <br />
+                  </div>
+                  <div className="mb-2">
+                    PHYS 150: Principles I
+                    <br />
+                  </div>
+                  <div className="mb-2">
+                    CHEM 101: General Chemistry I
+                    <br />
+                  </div>
+                  <div className="mb-2">
+                    ECON 001: Introduction to Microeconomics
+                    <br />
+                  </div>
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
+                </div>
+                <div className="text-base hidden semester sp21 duration-300">
+                  <div className="text-left">Spring 2021:</div>
+                  <br />
+                  <div className="mb-2">
+                    CIS 160: Mathematical Foundations of Computer Science
+                    <br />
+                  </div>
+                  <div className="mb-2">
+                    ESE 150: Digital Audio Basics
+                    <br />
+                  </div>
+                  <div className="mb-2">
+                    MATH 240: Calculus III
+                    <br />
+                  </div>
+                  <div className="mb-2">
+                    PHYS 151: Principles II
+                    <br />
+                  </div>
+                  <div className="mb-2">
+                    WRIT 031: Writing Seminar in Cognitive Science
+                    <br />
+                  </div>
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
+                </div>
+                <div className="text-base hidden semester fa21">
+                  <div className="text-left">Fall 2021:</div>
+                  <br />
+                  <div className="mb-2">
+                    CIS 121: Data Structures and Algorithms
+                    <br />
+                  </div>
+                  <div className="my-2">
+                    CIS 262: Automata, Computability and Complexity
+                    <br />
+                  </div>
+                  <div className="my-2">
+                    CIS 261: Discrete Probability and Statistical Inference
+                    <br />
+                  </div>
+                  <div className="my-2">
+                    ESE 215: Electrical Circuits and Systems
+                    <br />
+                  </div>
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
+                </div>
+                <div className="text-base hidden semester sp22">
+                  <div className="text-left ">Spring 2022:</div>
+                  <br />
+                  <div className="mb-2">
+                    CIS 320: Introduction to Algorithms
+                    <br />
+                  </div>
+                  <div className="my-2">
+                    CIS 423: Ethical Algorithm Design
+                    <br />
+                  </div>
+                  <div className="my-2">
+                    CIS 240: Introduction to Computer Systems
+                    <br />
+                  </div>
+                  <div className="my-2">
+                    CIS 197: JavaScript
+                    <br />
+                  </div>
+                  <div className="my-2">
+                    STAT 431: Statistical Inference
+                    <br />
+                  </div>
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
+                </div>
+                <div className="text-base hidden semester fa22">
+                  <div className="text-left">Fall 2022:</div>
+                  <br />
+                  <div className="mb-2">
+                    CIS 421: Artificial Intelligence
+                    <br />
+                  </div>
+                  <div className="my-2">
+                    CIS 545: Big Data Analytics
+                    <br />
+                  </div>
+                  <div className="my-2">
+                    CIS 380: Computer Operating Systems
+                    <br />
+                  </div>
+                  <div className="my-2">
+                    NETS 212: Scalable and Cloud Computing
+                    <br />
+                  </div>
+                  <div className="my-2">
+                    PSYC 001: Introduction to Experimental Psychology
+                    <br />
+                  </div>
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
+                </div>
+                <div className="text-left text-base hidden semester sp23">
+                  TBD
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
+                </div>
+                <div className="text-left text-base hidden semester fa23">
+                  TBD
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
+                </div>
+                <div className="text-left text-base hidden semester sp24">
+                  TBD
+                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="xs:w-full lg:w-6/12 h-fit items-center text-center text-slate-200 text-3xl font-medium tracking-wide">
+            <div className="skillSubtitle w-fit mx-auto my-6 text-center">
+              Skills
             </div>
             <div className="flex flex-col gap-8">
               <div className="w-full flex flex-row justify-center">
@@ -195,178 +362,6 @@ const Skills = () => {
                 </div>
               </div>
               <div />
-            </div>
-          </div>
-
-          <div className="xs:w-full lg:w-5/12 h-fit text-center text-slate-200 text-3xl font-medium tracking-wide">
-            <div className="w-full flex flex-col relative text-center my-6">
-              3. Coursework
-              {/* <div className="absolute bottom-4 left-24 border-b-zinc-700 border-b-2 h-2 w-20 font-light" />
-              <div className="absolute bottom-4 right-24 border-b-zinc-700 border-b-2 h-2 w-20 font-light" /> */}
-            </div>
-            <div className="w-full m-auto flex flex-row text-slate-400 ">
-              <div className="m-auto w-32 lg:ml-8 mr-8  border-solid border-l-2 border-zinc-600">
-                <button type="button" className="fa20s w-32 active-sem hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showFA20()}>
-                  Fall 2020
-                </button>
-                <button type="button" className="sp21s w-32 hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3 " onClick={() => showSP21()}>
-                  Spring 2021
-                </button>
-                <button type="button" className="fa21s w-32 hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showFA21()}>
-                  Fall 2021
-                </button>
-                <button type="button" className="sp22s w-32 hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showSP22()}>
-                  Spring 2022
-                </button>
-                <button type="button" className="fa22s w-32 hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showFA22()}>
-                  Fall 2022
-                </button>
-                <button type="button" className="sp23s w-32 hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showSP23()}>
-                  Spring 2023
-                </button>
-                <button type="button" className="fa23s w-32 hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showFA23()}>
-                  Fall 2023
-                </button>
-                <button type="button" className="sp24s w-32 hover:border-l-teal-400 hover:text-teal-400 hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showSP24()}>
-                  Spring 2024
-                </button>
-              </div>
-
-              <div className="w-fit m-auto my-2 text-left">
-                <div className="text-base semester fa20 duration-300">
-                  <div className="text-center">Fall 2020:</div>
-                  <br />
-                  <div className="mb-2">
-                    CIS 120: Programming Languages & Techniques I
-                    <br />
-                  </div>
-                  <div className="mb-2">
-                    MATH 114: Calculus II
-                    <br />
-                  </div>
-                  <div className="mb-2">
-                    PHYS 150: Principles I
-                    <br />
-                  </div>
-                  <div className="mb-2">
-                    CHEM 101: General Chemistry I
-                    <br />
-                  </div>
-                  <div className="mb-2">
-                    ECON 001: Introduction to Microeconomics
-                    <br />
-                  </div>
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-                <div className="text-base hidden semester sp21 duration-300">
-                  <div className="text-center">Spring 2021:</div>
-                  <br />
-                  <div className="mb-2">
-                    CIS 160: Mathematical Foundations of Computer Science
-                    <br />
-                  </div>
-                  <div className="mb-2">
-                    ESE 150: Digital Audio Basics
-                    <br />
-                  </div>
-                  <div className="mb-2">
-                    MATH 240: Calculus III
-                    <br />
-                  </div>
-                  <div className="mb-2">
-                    PHYS 151: Principles II
-                    <br />
-                  </div>
-                  <div className="mb-2">
-                    WRIT 031: Writing Seminar in Cognitive Science
-                    <br />
-                  </div>
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-                <div className="text-base hidden semester fa21">
-                  <div className="text-center">Fall 2021:</div>
-                  <br />
-                  <div className="mb-2">
-                    CIS 121: Data Structures and Algorithms
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 262: Automata, Computability and Complexity
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 261: Discrete Probability and Statistical Inference
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    ESE 215: Electrical Circuits and Systems
-                    <br />
-                  </div>
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-                <div className="text-base hidden semester sp22">
-                  <div className="text-center ">Spring 2022:</div>
-                  <br />
-                  <div className="mb-2">
-                    CIS 320: Introduction to Algorithms
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 423: Ethical Algorithm Design
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 240: Introduction to Computer Systems
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 197: JavaScript
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    STAT 431: Statistical Inference
-                    <br />
-                  </div>
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-                <div className="text-base hidden semester fa22">
-                  <div className="text-center">Fall 2022:</div>
-                  <br />
-                  <div className="mb-2">
-                    CIS 421: Artificial Intelligence
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 545: Big Data Analytics
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 380: Computer Operating Systems
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    NETS 212: Scalable and Cloud Computing
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    PSYC 001: Introduction to Experimental Psychology
-                    <br />
-                  </div>
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-                <div className="text-center text-base hidden semester sp23">
-                  TBD
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-                <div className="text-center text-base hidden semester fa23">
-                  TBD
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-                <div className="text-center text-base hidden semester sp24">
-                  TBD
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

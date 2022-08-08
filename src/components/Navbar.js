@@ -54,8 +54,11 @@ const Navbar = () => {
 
             <a href="#contact" className="xs:invisible xs:absolute sm:static sm:visible truncate text-slate-200 hover:duration-200 active:text-cyan-400 hover:border-b-cyan-300 hover:text-cyan-300 hover:border-b-4 mx-4 px-1 py-1 text-base font-normal">Contact Me</a>
 
-            <a href="https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/JasonRenResume.pdf?alt=media&token=f7698dfe-0626-466e-85e7-de50350ce0bd" target="_blank" className="truncate mx-4 py-3 px-7 border-teal-400 border-2 rounded-full text-right text-teal-400 duration-300 hover:text-slate-800 active:bg-teal-500 active:border-teal-500 font-normal text-base hover:bg-teal-400" rel="noreferrer">
-              Download CV
+            <a href="https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/JasonRenResume.pdf?alt=media&token=f7698dfe-0626-466e-85e7-de50350ce0bd" target="_blank" className="relative inline-flex items-center justify-start truncate px-7 py-3 mx-4 overflow-hidden text-base font-normal rounded-full group" rel="noreferrer">
+              <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 opacity-[3%]" />
+              <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-teal-400 opacity-100 group-hover:-translate-x-8" />
+              <span className="relative w-full text-left text-teal-400 transition-colors duration-200 ease-in-out group-hover:text-gray-900">Download CV</span>
+              <span className="absolute inset-0 border-2 border-teal-400 rounded-full" />
             </a>
           </div>
         </div>

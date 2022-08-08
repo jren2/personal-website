@@ -15,6 +15,7 @@ module.exports = {
       },
       animation: {
         gradient: 'gradient 11s ease-in-out infinite',
+        buttonHover: 'buttonHover 9s linear 1',
       },
     },
     keyframes: {
@@ -22,6 +23,10 @@ module.exports = {
         '0%': { 'background-position': '0 0' },
         '50%': { 'background-position': '1000 0' },
         '100%': { 'background-position': '0 0' },
+      },
+      buttonHover: {
+        '0%': { 'background-position': '0 0' },
+        '100%': { 'background-position': '100 0' },
       },
     },
     screens: {

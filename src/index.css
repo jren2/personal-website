@@ -14,9 +14,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
     right: 0;
-    height: auto;
     margin: auto;
     width: 90vw; 
   }
@@ -24,7 +22,6 @@
   .line {
     position: absolute;
     width: 1px;
-    height: 100vh;
     top: 0;
     left: 50%;
     background-color: rgb(24 24 27 / var(--tw-bg-opacity));
@@ -45,6 +42,7 @@
   }
   .line:nth-child(1) {
     margin-left: -47%; 
+    transform: translate(0, -1vh)
   }
 
   .line:nth-child(1)::after {
@@ -68,7 +66,7 @@
 
   .line:nth-child(4) {
     margin-left: 25%; 
-    transform: translate(0, 2vh)
+    transform: translate(0, 1.5vh)
   }
 
   .line:nth-child(4)::after {
@@ -78,7 +76,7 @@
 
   .line:nth-child(5) {
     margin-left: 47%; 
-    transform: translate(0, -1vh)
+    transform: translate(0, -1.5vh)
   }
 
   .line:nth-child(5)::after {
@@ -153,19 +151,13 @@
 
   }
 
-  .subtitle::before {
-    content:"";
-    display:block;
-    position:relative;
-    /* top:-5px; */
-    /* left:100px; */
-    width:300px;
-    height:2px;
-    background-color: red;
-  }
-
   .nav-hide {
     transform: translateY(-86px);
+  }
+
+  .buttonBackground {
+    background: linear-gradient(to left, green 50%, blue 50%);
+    background-position: 100% 0%;
   }
 }
 
@@ -177,7 +169,7 @@
 
 @media (min-width: 1px) {
   .line {
-    height: 895px;
+    height: 950px;
   }
   .experience-padding {
     padding-left: 15vw/* 320px */;
@@ -187,11 +179,96 @@
     padding-left: 8vw/* 320px */;
     padding-right: 8vw/* 320px */;
   }
+  .offsetSubtitle::before {
+    content:"";
+    display:block;
+    position:relative;
+    top:20px;
+    left:-64px;
+    width:50px;
+    direction: rtl;
+    height:2px;
+    background-color:#3f3f46;
+  }
+  .offsetSubtitle::after {
+    content:"";
+    display:block;
+    position:relative;
+    top:-18px;
+    right:-150px;
+    width:50px;
+    height:2px;
+    background-color: #3f3f46;
+  }
+  .skillSubtitle::before {
+    content:"";
+    display:block;
+    position:relative;
+    top:20px;
+    left:-100px;
+    width:100px;
+    direction: rtl;
+    height:2px;
+    background-color:#3f3f46;
+  }
+  .skillSubtitle::after {
+    content:"";
+    display:block;
+    position:relative;
+    top:-18px;
+    right:-100px;
+    width:100px;
+    height:2px;
+    background-color: #3f3f46;
+  }
+  .courseSubtitle::before {
+    content:"";
+    display:block;
+    position:relative;
+    top:20px;
+    left:-86px;
+    width:70px;
+    direction: rtl;
+    height:2px;
+    background-color:#3f3f46;
+  }
+  .courseSubtitle::after {
+    content:"";
+    display:block;
+    position:relative;
+    top:-18px;
+    right:-180px;
+    width:70px;
+    height:2px;
+    background-color: #3f3f46;
+  }
+  .experienceSubtitle::before {
+    content:"";
+    display:block;
+    position:relative;
+    top:20px;
+    left:-76px;
+    width:60px;
+    direction: rtl;
+    height:2px;
+    background-color:#3f3f46;
+  }
+  .experienceSubtitle::after {
+    content:"";
+    display:block;
+    position:relative;
+    top:-18px;
+    right:-180px;
+    width:60px;
+    height:2px;
+    background-color: #3f3f46;
+  }
+
 }
 
 @media (min-width: 512px) {
   .line {
-    height: 908px;
+    height: 970px;
   }
 }
 
@@ -201,15 +278,64 @@
   }
 }
 
+@media (min-width: 640px) {
+  .offsetSubtitle::before {
+    content:"";
+    display:block;
+    position:relative;
+    top:20px;
+    left:-114px;
+    width:100px;
+    direction: rtl;
+    height:2px;
+    background-color:#3f3f46;
+  }
+
+  .offsetSubtitle::after {
+    content:"";
+    display:block;
+    position:relative;
+    top:-18px;
+    right:-150px;
+    width:100px;
+    height:2px;
+    background-color: #3f3f46;
+  }
+}
+
 @media (min-width: 668px) {
   .line {
-    height: 788px;
+    height: 805px;
+  }
+}
+
+@media (min-width: 758px) {
+  .line {
+    height: 835px;
   }
 }
 
 @media (min-width: 768px) {
-  .line {
-    height: 812px;
+  .experienceSubtitle::before {
+    content:"";
+    display:block;
+    position:relative;
+    top:20px;
+    left:-166px;
+    width:150px;
+    direction: rtl;
+    height:2px;
+    background-color:#3f3f46;
+  }
+  .experienceSubtitle::after {
+    content:"";
+    display:block;
+    position:relative;
+    top:-18px;
+    right:-180px;
+    width:150px;
+    height:2px;
+    background-color: #3f3f46;
   }
 }
 
@@ -217,17 +343,38 @@
   .line {
     height: 540px;
   }
+  .offsetSubtitle::before {
+    content:"";
+    display:block;
+    position:relative;
+    top:20px;
+    left:-60px;
+    width:6vh;
+    height:2px;
+    background-color:#3f3f46;
+  }
+
+  .offsetSubtitle::after {
+    content:"";
+    display:block;
+    position:relative;
+    top:-18px;
+    right:-150px;
+    width:15vh;
+    height:2px;
+    background-color: #3f3f46;
+  }
 }
 
 @media (min-width: 1025px) {
   .line {
-    height: 669px;
+    height: 706px;
   }
 }
 
 @media (min-width: 1200px) {
   .line {
-    height: 686px;
+    height: 708px;
   }
   .experience-padding {
     padding-left: 25vw/* 320px */;
@@ -241,13 +388,13 @@
 
 @media (min-width: 1240px) {
   .line {
-    height: 700px;
+    height: 610px;
   }
 }
 
 @media (min-width: 1264px) {
   .line {
-    height: 719px;
+    height: 630px;
   }
   .portfolio-padding {
     padding-left: 15vw/* 320px */;
