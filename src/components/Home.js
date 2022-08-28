@@ -71,7 +71,7 @@ const Home = () => (
           </div>
         </div>
         <div className="bg-zinc-800">
-          <svg className="-translate-y-2" width="1514" height="41" viewBox="0 0 1514 41" fill="#1f2937" xmlns="http://www.w3.org/2000/svg">
+          <svg className="-translate-y-2" width="full" height="41" viewBox="0 0 1514 41" fill="#1f2937" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 40.5V0.5H753H1513.5V40.5C1242.5 -36.5003 1122.96 40.5 937 40.5C772 40.5 217.5 -34 0 40.5Z" fill="#18181B" />
           </svg>
         </div>
