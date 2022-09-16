@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable global-require */
 import React from 'react'
 
@@ -8,6 +9,29 @@ const Portfolio = () => (
       <div className="portfolio-padding h-fit px-60 py-16">
         <div className="offsetSubtitle w-fit xs:mx-auto lg:ml-28 text-3xl font-medium tracking-wider text-slate-200">
           Portfolio
+        </div>
+
+        <div className="relative my-8 flex xs:flex-col md:flex-row items-center ">
+          <div className="relative xs:text-center xs:mt-4 xs:m-auto xs:left-0 md:left-10 z-10 md:mt-10 text-xl md:text-left font-medium tracking-normal text-slate-200">
+            Plantr &nbsp;
+            <p className="shadow-md my-2 xs:ml-2 md:ml-0 md:mr-10 pl-4 pr-4 py-4 text-slate-400 w-full rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">
+              Winner of <a href="https://pennapps.com/" className="text-slate-300" target="_blank" rel="noreferrer">
+                PennApps XXIII
+              </a> Best use of Web Automation/non-REST API Data Sources!
+              <br />
+              We built Plantr to use Pl@nt Net's image recognition to identify any picture of a plant you give it along with similar plants!
+              <br />
+              We then web scrape each plant's Wiki and run a sentiment analysis with Google's Natural Language API to help you decide if this plant is best for you!
+
+            </p>
+            <div className="my-2 text-teal-400 font-light text-sm tracking-wide ">
+              JavaScript &nbsp; React &nbsp; Google Natural Language API &nbsp; Pl@ntNet API &nbsp; WikiJS
+            </div>
+            <a href="https://github.com/jren2/Stock-Predictor" target="_blank" className="hover:text-teal-400 duration-300 hover:mr-1 text-base font-normal" rel="noreferrer">
+              View on GitHub →
+            </a>
+          </div>
+          <img alt="plantr" src={require('./images/plantr.png')} className="duration-300 hover:scale-105 xs:m-auto md:mt-6 w-1/2  h-1/6 xs:right-0 md:right-10 relative mt-6 rounded-sm" />
         </div>
 
         <div className="relative my-8 flex xs:flex-col md:flex-row items-center ">

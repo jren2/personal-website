@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import { firebaseLink } from '../config'
 
 const Contact = () => (
   <>
@@ -11,7 +12,7 @@ const Contact = () => (
         <div className="mb-10 text-center text-base font-medium tracking-wider text-slate-400"> Feel free to reach out to me through any of the resources below!</div>
         <div className="text-center mt-14 flex xs:flex-col md:flex-row">
           <div className="flex xs:flex-col m-auto sm:flex-row">
-            <a href="https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/JasonRenFullResume.pdf?alt=media&token=0bd437be-e524-4253-911f-671ebb2ba1aa" target="_blank" className="relative xs:mx-4 xs:my-4 xl:my-0 sm:mx-8 border-teal-400 border-2 inline-flex items-center justify-start px-9 p-3 overflow-hidden transition-all rounded-xl group" rel="noreferrer">
+            <a href={firebaseLink} target="_blank" className="relative xs:mx-4 xs:my-4 xl:my-0 sm:mx-8 border-teal-400 border-2 inline-flex items-center justify-start px-9 p-3 overflow-hidden transition-all rounded-xl group" rel="noreferrer">
               <span className="w-48 h-48 rounded rotate-[-40deg] bg-gradient-to-r from-blue-400 via-teal-500 to-teal-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0" />
               <span className="absolute -left-10 flex items-center justify-start w-6 h-6 duration-300 transform  group-hover:translate-x-12 ease">
                 <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="25px" height="25px">

@@ -19,7 +19,7 @@ const Experience = () => (
               August 2022 - Present
             </div>
             <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
-              &emsp; Build production level features with Angular based tech stack
+              &emsp; Learned Angular and TypeScript to develop production level user facing components with frameworks such as mapbox
             </div>
           </div>
         </div>

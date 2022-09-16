@@ -266,7 +266,7 @@ const Skills = () => {
                     <br />
                   </div>
                   <div className="my-2">
-                    PSYC 001: Introduction to Experimental Psychology
+                    MKTG 101: Introduction to Marketing
                     <br />
                   </div>
                   <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
