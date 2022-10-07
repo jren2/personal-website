@@ -10,9 +10,9 @@ import LinkedinButton from "./LinkedinButton"
 const Home = () => {
   useEffect(() => {
     const logo = document.querySelectorAll("#new-logo path")
-    for (let i = 0; i < logo.length; i++) {
-      console.log("Letter is " + logo[i].getTotalLength())
-    }
+    // for (let i = 0; i < logo.length; i++) {
+    //   console.log("Letter is " + logo[i].getTotalLength())
+    // }
   })
 
   return (
