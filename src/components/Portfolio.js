@@ -7,7 +7,10 @@ const Portfolio = () => (
     <div id="portfolio" className="bg-zinc-800">
       &nbsp;
       <div className="portfolio-padding h-fit px-60 py-16">
-        <div className="offsetSubtitle w-fit xs:mx-auto lg:ml-28 text-3xl font-medium tracking-wider text-slate-200">Portfolio</div>
+        <div className="offsetSubtitle relative w-fit xs:mx-auto lg:ml-28 text-3xl font-medium tracking-wider text-slate-200">
+          <div style={{ "--shift": "250px", "--duration": "0.4s", "--delay": "0.1s" }} className="typeDisappear absolute w-full h-full bg-zinc-800" />
+          Portfolio
+        </div>
 
         <div className="relative my-8 flex xs:flex-col md:flex-row items-center ">
           <div className="relative xs:text-center xs:mt-4 xs:m-auto xs:left-0 md:left-10 z-10 md:mt-10 text-xl md:text-left font-medium tracking-normal text-slate-200">

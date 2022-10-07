@@ -7,7 +7,10 @@ const Experience = () => (
     <div id="experience" className="bg-zinc-800">
       &nbsp;
       <div className="experience-padding h-fit py-16">
-        <div className="experienceSubtitle mb-10 text-center w-fit mx-auto text-3xl font-medium tracking-wider text-slate-200">Experience</div>
+        <div className="relative experienceSubtitle mb-10 text-center w-fit mx-auto text-3xl font-medium tracking-wider text-slate-200">
+          <div style={{ "--shift": "250px", "--duration": "0.4s", "--delay": "0.1s" }} className="typeDisappear absolute w-full h-full bg-zinc-800" />
+          Experience
+        </div>
         <div className="flex xs:flex-col xs:items-center md:flex-row mt-16 mb-6 gap-4">
           <img alt="css logo" className="h-1/2 rounded-3xl" width="180" src={require("./images/csslogo.png")} />
           <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
