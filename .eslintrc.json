@@ -1,70 +1,45 @@
 {
-    "env": {
-        "browser": true,
-        "node": true,
-        "es6": true
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["standard", "prettier", "plugin:@typescript-eslint/recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
     },
-    "extends": "airbnb",
-    "parser": "babel-eslint",
-    "rules": {
-        "brace-style": [
-            2,
-            "1tbs"
-        ],
-        "camelcase": 0,
-        "no-bitwise": 2,
-        "no-empty": 2,
-        "no-ex-assign": 2,
-        "no-lonely-if": 2,
-        "no-mixed-spaces-and-tabs": 2,
-        "no-tabs": 2,
-        "no-underscore-dangle": 0,
-        "no-unused-vars": 0,
-        "quote-props": [
-            2,
-            "as-needed"
-        ],
-        "quotes": [
-            2,
-            "single",
-            {
-                "avoidEscape": true,
-                "allowTemplateLiterals": true
-            }
-        ],
-        "strict": 0,
-        "semi": [
-            "error",
-            "never"
-        ], // require or disallow use of semicolons instead of ASI,
-        "arrow-parens": [
-            "error",
-            "as-needed"
-        ], // require the use of parenthesis when needed
-        "prefer-destructuring": [
-            "error",
-            {
-                "array": true,
-                "object": true
-            },
-            {
-                "enforceForRenamedProperties": true
-            }
-        ],
-        "eqeqeq": [
-            "error",
-            "smart"
-        ],
-        "prefer-template": "error",
-        "react/jsx-filename-extension": 0,
-        "react/prop-types": 0,
-        "no-plusplus": 0,
-        "max-len": 0,
-        "react/jsx-props-no-spreading": 0,
-        "jsx-a11y/label-has-associated-control": 0,
-        "jsx-a11y/img-redundant-alt": 0
-    },
-    "parserOptions": {
-        "ecmaVersion": 2017
-    }
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "simple-import-sort", "prettier", "unused-imports"],
+  "rules": {
+    "no-use-before-define": "off",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-uses-react": "error",
+    "comma-dangle": ["error", "always-multiline"],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "ignore",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "unused-imports/no-unused-imports-ts": "error",
+    "camelcase": ["warn", { "ignoreDestructuring": true }],
+    "no-console": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "prettier/prettier": ["error"],
+    "linebreak-style": ["error", "unix"]
+  }
 }

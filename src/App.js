@@ -1,22 +1,26 @@
 /* eslint-disable import/prefer-default-export */
-import React from 'react'
+import React from "react"
 
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import About from './components/About'
-import Skills from './components/Skills'
-import Overlay from './components/Overlay'
-import Experience from './components/Experience'
-import Contact from './components/Contact'
-import Portfolio from './components/Portfolio'
+import Navbar from "./components/Navbar"
+import Home from "./components/Home"
+import About from "./components/About"
+import Skills from "./components/Skills"
+import Overlay from "./components/Overlay"
+import Experience from "./components/Experience"
+import Contact from "./components/Contact"
+import Portfolio from "./components/Portfolio"
 
-import './index.css'
+import "./index.css"
 
 export function App() {
   return (
     <>
       <div id="home" />
       <div className="bg-zinc-900">
+        {/* <div className="intro-overlay fixed w-full h-full bg-black z-50"></div>
+        <div className="intro-overlay text-center mx-[32vw] my-[20vh] w-full fixed z-50">
+          <Name open className="mx-auto z-50" />
+        </div> */}
         <Overlay />
         <Navbar />
         <Home />
