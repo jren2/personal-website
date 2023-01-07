@@ -47,36 +47,37 @@ const Navbar = () => {
           <div className="flex justify-end flex-row items-center h-20 ml-auto tracking-wide">
             <a
               href="#about"
-              className="xs:invisible xs:absolute md:static md:visible text-slate-200 mx-4 hover:duration-200 hover:border-b-main-teal hover:text-main-teal hover:border-b-4 px-1 py-1 text-base font-normal"
+              className="xs:invisible xs:absolute md:static md:visible text-slate-200 mx-4 hover:duration-100 hover:border-main-teal hover:border-b-[3px] hover:text-main-teal px-1 py-[0.75] text-base font-normal"
               aria-current="page"
             >
               About
+
             </a>
 
             <a
               href="#skills"
-              className="text-slate-200 hover:duration-200 active:text-cyan-400 hover:border-b-main-teal hover:text-main-teal hover:border-b-4 xs:mx-1 sm:mx-4 px-1 py-1 text-base font-normal"
+              className="md:static md:visible text-slate-200 mx-4 hover:duration-100 hover:border-main-teal hover:border-b-[3px] hover:text-main-teal px-1 py-[0.75] text-base font-normal"
             >
               Skills
             </a>
 
             <a
               href="#experience"
-              className="text-slate-200 hover:duration-200 active:text-cyan-400 hover:border-b-main-teal hover:text-main-teal hover:border-b-4 xs:mx-1 sm:mx-4 px-1 py-1 text-base font-normal"
+              className="md:static md:visible text-slate-200 mx-4 hover:duration-100 hover:border-main-teal hover:border-b-[3px] hover:text-main-teal px-1 py-[0.75] text-base font-normal"
             >
               Experience
             </a>
 
             <a
               href="#portfolio"
-              className="text-slate-200 hover:duration-200 active:text-cyan-400 hover:border-b-main-teal hover:text-main-teal hover:border-b-4 xs:mx-1 sm:mx-4 px-1 py-1 text-base font-normal"
+              className="md:static md:visible text-slate-200 mx-4 hover:duration-100 hover:border-main-teal hover:border-b-[3px] hover:text-main-teal px-1 py-[0.75] text-base font-normal"
             >
               Portfolio
             </a>
 
             <a
               href="#contact"
-              className="xs:invisible xs:absolute sm:static sm:visible truncate text-slate-200 hover:duration-200 active:text-cyan-400 hover:border-b-main-teal hover:text-main-teal hover:border-b-4 mx-4 px-1 py-1 text-base font-normal"
+              className="md:static md:visible text-slate-200 mx-4 hover:duration-100 hover:border-main-teal hover:border-b-[3px] hover:text-main-teal px-1 py-[0.75] text-base font-normal"
             >
               Contact Me
             </a>

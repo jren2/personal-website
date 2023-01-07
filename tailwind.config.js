@@ -3,6 +3,9 @@ const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}", "./node_modules/tw-elements/dist/js/**/*.js"],
+  variants: {
+    width: ["responsive", "hover", "focus"]
+},
   theme: {
     extend: {
       colors: {

@@ -138,12 +138,12 @@ const Skills = () => {
                 </button>
                 <button
                   type="button"
-                  className="fa22s w-32 active-sem hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3"
+                  className="fa22s w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3"
                   onClick={() => showFA22()}
                 >
                   Fall 2022
                 </button>
-                <button type="button" className="sp23s w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showSP23()}>
+                <button type="button" className="active-sem sp23s w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showSP23()}>
                   Spring 2023
                 </button>
                 <button type="button" className="fa23s w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showFA23()}>
@@ -251,11 +251,11 @@ const Skills = () => {
                   </div>
                   <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                 </div>
-                <div className="text-base semester fa22">
+                <div className="text-base hidden semester fa22">
                   <div className="text-left">Fall 2022:</div>
                   <br />
                   <div className="mb-2">
-                    CIS 421: Artificial Intelligence
+                    CIS 521: Artificial Intelligence
                     <br />
                   </div>
                   <div className="my-2">
@@ -276,8 +276,25 @@ const Skills = () => {
                   </div>
                   <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                 </div>
-                <div className="text-left text-base hidden semester sp23">
-                  TBD
+                <div className="text-left text-base semester sp23">
+                  <div className="text-left">Spring 2023:</div>
+                  <br />
+                  <div className=" mb-2">
+                    CIS 5200: Machine Learning
+                    <br />
+                  </div>
+                  <div className="my-2">
+                    CIS 3500: Software Design and Engineering
+                    <br />
+                  </div>
+                  <div className="my-2">
+                    MATH 5140: Advanced Linear Algebra
+                    <br />
+                  </div>
+                  <div className="my-2">
+                    CIS 5590: Programming and Problem Solving
+                    <br />
+                  </div>
                   <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                 </div>
                 <div className="text-left text-base hidden semester fa23">

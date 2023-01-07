@@ -13,6 +13,21 @@ const Portfolio = () => (
         </div>
 
         <div className="relative my-8 flex xs:flex-col md:flex-row items-center ">
+          <img alt="paper trader" src={require("./images/pennbook.png")} className="duration-300 hover:scale-105 xs:m-auto md:mt-6 w-1/2 h-1/6 xs:left-0 md:left-10 relative mt-6 rounded-sm" />
+          <div className="relative xs:text-center xs:mt-4 xs:m-auto xs:right-0 md:right-10 z-10 md:mt-10 text-xl md:text-right font-medium tracking-normal text-slate-200">
+            PennBook &nbsp;
+            <div className="shadow-md my-2 xs:ml-2 md:ml-10 pl-4 pr-4 py-4 text-slate-400 rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">
+              For our Scalable and Cloud Computing course, we built a mock Facebook app with features such as 
+              account registration, friend networks, network visualization, dynamic content, real-time chat channels and news recommendation.
+            </div>
+            <div className="my-2 text-main-teal font-light text-sm tracking-wide ">React &nbsp; JavaScript &nbsp; Node &nbsp; DynamoDB &nbsp; AWS EC2</div>
+            <a href="https://github.com/jren2/stock-trader" target="_blank" className="hover:text-main-teal duration-300 hover:mr-1 text-base font-normal" rel="noreferrer">
+              View on GitHub →
+            </a>
+          </div>
+        </div>
+
+        <div className="relative my-8 flex xs:flex-col md:flex-row items-center ">
           <div className="relative xs:text-center xs:mt-4 xs:m-auto xs:left-0 md:left-10 z-10 md:mt-10 text-xl md:text-left font-medium tracking-normal text-slate-200">
             Plantr &nbsp;
             <p className="shadow-md my-2 xs:ml-2 md:ml-0 md:mr-10 pl-4 pr-4 py-4 text-slate-400 w-full rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">

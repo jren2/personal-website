@@ -48,7 +48,7 @@ const Home = () => {
               <img
                 alt="cat picture"
                 style={{ "--delay": "1.3s" }}
-                className="enterFade opacity-0 hover:rotate-12 duration-300 rounded-full mx-auto mlg:w-80"
+                className="enterFade opacity-0 object-cover hover:rotate-12 duration-300 rounded-full  mx-auto mlg:w-80"
                 width="500"
                 height="400"
                 src={require("./images/philly.png")}
