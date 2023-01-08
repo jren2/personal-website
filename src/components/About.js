@@ -1,6 +1,5 @@
 /* eslint-disable global-require */
 import React, { useEffect } from "react"
-import { Parallax } from "react-scroll-parallax"
 
 const About = () => {
   useEffect(() => {

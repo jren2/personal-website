@@ -1,32 +1,15 @@
 /* eslint-disable global-require */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from "react"
-import { firebaseLink } from "../config"
 import GithubButton from "./GithubButton"
-import Name from "./Name"
 import ResumeButton from "./ResumeButton"
 import LinkedinButton from "./LinkedinButton"
 
 const Home = () => {
-  useEffect(() => {
-    const logo = document.querySelectorAll("#new-logo path")
-    // for (let i = 0; i < logo.length; i++) {
-    //   console.log("Letter is " + logo[i].getTotalLength())
-    // }
-  })
 
   return (
     <>
         <div className="relative">
-          {/* <div className="flex flex-row h-16 items-center">
-            <a href="#home" className="flex flex-row mt-3 ml-3 h-16 w-16">
-              <img alt="logo" className="rounded-3xl" src={require("./images/logo.png")} />
-            </a>
-            <div className="ml-auto flex rounded-full bg-main-teal h-16 w-16">
-
-            </div>
-
-          </div> */}
           <div className="flex flex-row mb-8 justify-between xs:px-24 md:px-36 xs:flex-col xs:pb-14 lg:pt-28 lg:flex-row">
             <div className="mt-16 z-10 xs:text-center xs:justify-center lg:justify-start lg:text-left ">
               <div className="text-slate-300 relative tracking-wide xs:m-auto lg:m-0">

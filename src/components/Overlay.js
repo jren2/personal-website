@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import {motion} from 'framer-motion'
 import { firebaseLink } from "../config";
 
@@ -36,17 +36,15 @@ const Overlay = ({sidebar, setSidebar}) => {
 
   const shift = (home) => {
     if (sidebar) {
-      document.getElementById("body").classList.remove("translate-x-[26vw]")
-
-      const underlayWrapperElement = document.getElementById("underlay-wrapper")
-      underlayWrapperElement.classList.remove("duration-[1500ms]")
-      underlayWrapperElement.classList.remove("z-10")
-      underlayWrapperElement.classList.add("-z-10")
-
       const elements = document.querySelectorAll(".overlay-element")
       for (let i = 0; i < elements.length; i++) {
         elements[i].style.left = "0"
       }
+      const underlayWrapperElement = document.getElementById("underlay-wrapper")
+      underlayWrapperElement.classList.remove("duration-[1500ms]")
+      underlayWrapperElement.classList.remove("z-10")
+      underlayWrapperElement.classList.add("-z-10")
+      document.getElementById("body").classList.remove("translate-x-[26vw]")
 
       const underlayElements = document.querySelectorAll(".underlay-element")
       for (let i = 0; i < underlayElements.length; i++) {
@@ -56,8 +54,10 @@ const Overlay = ({sidebar, setSidebar}) => {
       }
       setSidebar(!sidebar)
     } else if (!home) {
-      document.getElementById("body").classList.add("translate-x-[26vw]")
-
+      const elements = document.querySelectorAll(".overlay-element")
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].style.left = "26vw"
+      }
       const underlayWrapperElement = document.getElementById("underlay-wrapper")
       underlayWrapperElement.classList.add("duration-[1500ms]")
       underlayWrapperElement.classList.remove("-z-10")
@@ -69,29 +69,26 @@ const Overlay = ({sidebar, setSidebar}) => {
         underlayElements[i].classList.remove("-translate-x-32")
         underlayElements[i].classList.add("scale-100")
       }
-
-      const elements = document.querySelectorAll(".overlay-element")
-      for (let i = 0; i < elements.length; i++) {
-        elements[i].style.left = "26vw"
-      }
+      document.getElementById("body").classList.add("translate-x-[26vw]")
       setSidebar(!sidebar)
+      
     }
   }
 
   return (
     <>
-      <div className="overlay-element left-0 flex  duration-500 w-full flex-nowrap top-4 fixed z-50">
+      <div className="overlay-element left-0 flex duration-500 w-full flex-nowrap top-4 fixed z-50">
         <a href="#home" onClick={() => shift(true)} className="flex flex-row ml-4 h-14 w-14">
           <img alt="logo" className="rounded-3xl" src={require("./images/logo.png")} />
         </a>
         <a
-      href={firebaseLink}
-      target="_blank"
-      className="ml-auto mr-4"
-      rel="noreferrer"
-    >
-      <p className="text-slate-300 border border-1 p-2 border-slate-300 rounded-lg"> CV</p>
-      </a>
+          href={firebaseLink}
+          target="_blank"
+          className="ml-auto mr-4"
+          rel="noreferrer"
+        >
+          <p className="text-slate-300 border border-1 p-2 border-slate-300 rounded-lg"> CV</p>
+        </a>
       </div>
       <div id = "sidebar-button" >
         <div className={`z-40 left-0 fixed duration-150 ${sidebar ? "text-zinc-800" : "text-slate-300"} top-[40vh] ml-6 rotate-[75deg] flex flex-row`}>

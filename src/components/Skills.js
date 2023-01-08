@@ -11,105 +11,89 @@ const Skills = () => {
 
   const showFA20 = () => {
     const fa20 = document.querySelector(".fa20")
-    hideSems()
-    fa20.classList.remove("hidden")
-
     const activeSem = document.querySelector(".active-sem")
-    activeSem.classList.remove("active-sem")
-
     const fa20s = document.querySelector(".fa20s")
 
+    hideSems()
+    fa20.classList.remove("hidden")
+    activeSem.classList.remove("active-sem")
     fa20s.classList.add("active-sem")
   }
 
   const showSP21 = () => {
     const sp21 = document.querySelector(".sp21")
-    hideSems()
-    sp21.classList.remove("hidden")
-
     const activeSem = document.querySelector(".active-sem")
-    activeSem.classList.remove("active-sem")
-
     const sp21s = document.querySelector(".sp21s")
 
+    hideSems()
+    sp21.classList.remove("hidden")
+    activeSem.classList.remove("active-sem")
     sp21s.classList.add("active-sem")
   }
 
   const showFA21 = () => {
     const fa21 = document.querySelector(".fa21")
-    hideSems()
-    fa21.classList.remove("hidden")
-
     const activeSem = document.querySelector(".active-sem")
-    activeSem.classList.remove("active-sem")
-
     const fa21s = document.querySelector(".fa21s")
 
+    hideSems()
+    fa21.classList.remove("hidden")
+    activeSem.classList.remove("active-sem")
     fa21s.classList.add("active-sem")
   }
 
   const showSP22 = () => {
     const sp22 = document.querySelector(".sp22")
+    const activeSem = document.querySelector(".active-sem")
+    const sp22s = document.querySelector(".sp22s")
+    
     hideSems()
     sp22.classList.remove("hidden")
-
-    const activeSem = document.querySelector(".active-sem")
     activeSem.classList.remove("active-sem")
-
-    const sp22s = document.querySelector(".sp22s")
-
     sp22s.classList.add("active-sem")
   }
 
   const showFA22 = () => {
     const fa22 = document.querySelector(".fa22")
-    hideSems()
-    fa22.classList.remove("hidden")
-
     const activeSem = document.querySelector(".active-sem")
-    activeSem.classList.remove("active-sem")
-
     const fa22s = document.querySelector(".fa22s")
 
+    hideSems()
+    fa22.classList.remove("hidden")
+    activeSem.classList.remove("active-sem")
     fa22s.classList.add("active-sem")
   }
 
   const showSP23 = () => {
     const sp23 = document.querySelector(".sp23")
-    hideSems()
-    sp23.classList.remove("hidden")
-
     const activeSem = document.querySelector(".active-sem")
-    activeSem.classList.remove("active-sem")
-
     const sp23s = document.querySelector(".sp23s")
 
+    hideSems()
+    sp23.classList.remove("hidden")
+    activeSem.classList.remove("active-sem")
     sp23s.classList.add("active-sem")
   }
 
   const showFA23 = () => {
     const fa23 = document.querySelector(".fa23")
-    hideSems()
-    fa23.classList.remove("hidden")
-
     const activeSem = document.querySelector(".active-sem")
-    activeSem.classList.remove("active-sem")
-
     const fa23s = document.querySelector(".fa23s")
 
+    hideSems()
+    fa23.classList.remove("hidden")
+    activeSem.classList.remove("active-sem")
     fa23s.classList.add("active-sem")
   }
 
   const showSP24 = () => {
     const sp24 = document.querySelector(".sp24")
-    hideSems()
-    sp24.classList.remove("hidden")
-
     const activeSem = document.querySelector(".active-sem")
-    activeSem.classList.remove("active-sem")
-
     const sp24s = document.querySelector(".sp24s")
 
+    hideSems()
+    sp24.classList.remove("hidden")
+    activeSem.classList.remove("active-sem")
     sp24s.classList.add("active-sem")
   }
 
