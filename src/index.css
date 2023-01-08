@@ -8,6 +8,7 @@
     --tw-bg-opacity: 1;
     background-color: rgb(24 24 27 / var(--tw-bg-opacity));
     overflow-x: hidden;
+    overscroll-behavior-y: none;
   }
 
   #name path:nth-child(1) {
@@ -209,14 +210,6 @@
   .semester {
     font-weight: 400;
     transition: 0.7;
-  }
-
-  .center-overlay {
-    margin-left: 14px;
-  }
-
-  .overlay-bottom {
-    bottom: 13%;
   }
 
   .overlay-text {

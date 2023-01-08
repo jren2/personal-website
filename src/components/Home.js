@@ -17,9 +17,17 @@ const Home = () => {
 
   return (
     <>
-      <div>
-        <div className="relative xs:h-fit">
-          <div className="flex flex-row justify-between xs:px-24 md:px-36 xs:flex-col xs:pb-12 lg:py-16 lg:flex-row">
+        <div className="relative">
+          {/* <div className="flex flex-row h-16 items-center">
+            <a href="#home" className="flex flex-row mt-3 ml-3 h-16 w-16">
+              <img alt="logo" className="rounded-3xl" src={require("./images/logo.png")} />
+            </a>
+            <div className="ml-auto flex rounded-full bg-main-teal h-16 w-16">
+
+            </div>
+
+          </div> */}
+          <div className="flex flex-row mb-8 justify-between xs:px-24 md:px-36 xs:flex-col xs:pb-14 lg:pt-28 lg:flex-row">
             <div className="mt-16 z-10 xs:text-center xs:justify-center lg:justify-start lg:text-left ">
               <div className="text-slate-300 relative tracking-wide xs:m-auto lg:m-0">
                 <div style={{ "--shift": "250px", "--duration": "0.7s", "--delay": "0.3s" }} className="typeAnimation absolute w-full h-full bg-zinc-900" />
@@ -69,7 +77,6 @@ const Home = () => {
           </div>
           <div />
         </div>
-      </div>
     </>
   )
 }

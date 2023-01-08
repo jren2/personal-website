@@ -5,6 +5,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { React, useState, useEffect } from "react"
 import { firebaseLink } from "../config"
+import ResumeButton from "./ResumeButton"
 
 const Navbar = () => {
   useEffect(() => {
@@ -40,11 +41,11 @@ const Navbar = () => {
   return (
     <>
       <nav id="nav" className="w-full nav backdrop-blur bg-zinc-900/80 sticky top-0 items-center z-40">
-        <div className="flex flex-nowrap flex-row shadow-zinc-900 shadow-md">
-          <a href="#home" className="flex flex-row mt-3 ml-3 h-16 w-16">
+        <div className="flex flex-nowrap shadow-zinc-900 justify-between shadow-md">
+          <a href="#home" className="flex flex-row mt-3 ml-6 h-16 w-16">
             <img alt="logo" className="rounded-3xl" src={require("./images/logo.png")} />
           </a>
-          <div className="flex justify-end flex-row items-center h-20 ml-auto tracking-wide">
+          {/* <div className="m-auto flex justify-end flex-row items-center h-20 ml-auto tracking-wide">
             <a
               href="#about"
               className="xs:invisible xs:absolute md:static md:visible text-slate-200 mx-4 hover:duration-100 hover:border-main-teal hover:border-b-[3px] hover:text-main-teal px-1 py-[0.75] text-base font-normal"
@@ -81,18 +82,18 @@ const Navbar = () => {
             >
               Contact Me
             </a>
-            <a
-              href={firebaseLink}
-              target="_blank"
-              className="relative inline-flex items-center justify-start truncate px-6 py-3 ml-4 mr-6 overflow-hidden text-base font-normal rounded-md group"
-              rel="noreferrer"
-            >
-              <span className="w-16 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 opacity-[3%]" />
-              <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-main-teal opacity-100 group-hover:-translate-x-4" />
-              <span className="relative w-full text-left text-main-teal transition-colors duration-200 ease-in-out group-hover:text-gray-900">Download CV</span>
-              <span className="absolute inset-0 border-2 rounded-md border-main-teal" />
-            </a>
+          </div> */}
+          {/* <div className="flex rounded-full bg-main-teal h-16 w-16 mr-2 mt-2">
+            <p className="hover:rotate-45">HELLO</p>
+          </div> */}
+
+          <div className="mr-6 mt-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#cbd4e1" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>  
+            
           </div>
+          
         </div>
       </nav>
     </>
