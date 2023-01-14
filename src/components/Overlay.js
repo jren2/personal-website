@@ -177,7 +177,7 @@ const Overlay = ({sidebar, setSidebar}) => {
             </a>
           </div>
           <div className="ml-6 hover:-translate-y-1 hover:text-main-teal duration-300 w-6 h-6">
-            <a href="https://www.linkedin.com/in/jason-ren-89855b203/" aria-label="Linkedin" target="_blank" rel="noreferrer" cursorshover="true">
+            <a href="https://www.linkedin.com/in/jasonrendev" aria-label="Linkedin" target="_blank" rel="noreferrer" cursorshover="true">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"

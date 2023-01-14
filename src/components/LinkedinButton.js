@@ -3,7 +3,7 @@ import React from "react"
 const LinkedinButton = () => {
   return (
     <a
-      href="https://www.linkedin.com/in/jason-ren-89855b203/"
+      href="https://www.linkedin.com/in/jasonrendev"
       target="_blank"
       className="relative border-main-teal border-2 inline-flex items-center justify-start px-9 p-3 overflow-hidden transition-all rounded-xl group"
       rel="noreferrer"
