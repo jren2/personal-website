@@ -12,11 +12,11 @@ const Home = () => {
         <div className="relative">
           <div className="flex flex-row mb-8 justify-between xs:px-24 md:px-36 xs:flex-col xs:pb-14 lg:pt-28 lg:flex-row">
             <div className="mt-16 z-10 xs:text-center xs:justify-center lg:justify-start lg:text-left ">
-              <div className="text-slate-300 relative tracking-wide xs:m-auto lg:m-0">
+              <div className="text-slate-300 relative tracking-wide xs:m-auto lg:m-0 overflow-hidden">
                 <div style={{ "--shift": "250px", "--duration": "0.7s", "--delay": "0.3s" }} className="typeAnimation absolute w-full h-full bg-zinc-900" />
                 Hello! My name is,
               </div>
-              <div className="animate-gradient relative bg-clip-text text-transparent bg-gradient-to-r from-main-teal via-blue-300 to-main-teal text-8xl xs:my-6 xs:m-auto font-bold tracking-normal">
+              <div className="overflow-hidden animate-gradient relative bg-clip-text text-transparent bg-gradient-to-r from-main-teal via-blue-300 to-main-teal text-8xl xs:my-6 xs:m-auto font-bold tracking-normal">
                 <div style={{ "--shift": "500px", "--duration": "0.6s", "--delay": "0.4s" }} className="typeAnimation absolute w-full h-full bg-zinc-900" />
                 Jason Ren
               </div>
@@ -47,7 +47,7 @@ const Home = () => {
             </div>
           </div>
           <div className="bg-zinc-800">
-            <svg className="-translate-y-2" width="full" height="41" viewBox="0 0 1514 41" fill="#1f2937" xmlns="http://www.w3.org/2000/svg">
+            <svg className="-translate-y-2 w-full" height="41" viewBox="0 0 1514 41" fill="#1f2937" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 40.5V0.5H753H1513.5V40.5C1242.5 -36.5003 1122.96 40.5 937 40.5C772 40.5 217.5 -34 0 40.5Z" fill="#18181B" />
             </svg>
           </div>

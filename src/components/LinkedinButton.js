@@ -5,7 +5,7 @@ const LinkedinButton = () => {
     <a
       href="https://www.linkedin.com/in/jasonrendev"
       target="_blank"
-      className="relative border-main-teal border-2 inline-flex items-center justify-start px-9 p-3 overflow-hidden transition-all rounded-xl group"
+      className="relative sm:my-4 xl:my-0 border-main-teal border-2 inline-flex items-center justify-start px-9 p-3 overflow-hidden transition-all rounded-xl group"
       rel="noreferrer"
     >
       <span className="w-48 h-48 rounded rotate-[-40deg] bg-gradient-to-r from-violet-500 via-main-teal to-main-teal absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0" />
