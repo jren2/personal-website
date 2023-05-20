@@ -298,7 +298,7 @@ const Skills = () => {
               Skills
             </div>
             <div className="flex flex-col gap-8">
-              <div className="w-full flex flex-row justify-center">
+              <div className="w-full cursor-default flex flex-row justify-center">
                 <div className="h-fit w-1/2 group hover:-translate-y-3 mr-2 duration-300 card text-teal-300 text-left border-b-main-teal border-b-8">
                   <div>
                     <img alt="sde" className="object-cover" width="70px" height="70px" src={require("./images/icons/sde.png")} />
@@ -324,8 +324,8 @@ const Skills = () => {
                     <ul className="text-slate-400">
                       <li className="list-element tracking-wide font-normal text-sm"> Python</li>
                       <li className="ml-4 list-element tracking-wide font-normal text-xs"> Pandas</li>
-                      <li className="ml-4 list-element tracking-wide font-normal text-xs"> Matplotlib</li>
-                      <li className="ml-4 list-element tracking-wide font-normal text-xs"> NumPy</li>
+                      <li className="ml-4 list-element tracking-wide font-normal text-xs"> TensorFlow</li>
+                      <li className="ml-4 list-element tracking-wide font-normal text-xs"> PyTorch</li>
                       <li className="list-element tracking-wide font-normal text-sm"> R</li>
                       <li className="list-element tracking-wide font-normal text-sm"> MATLAB</li>
                     </ul>
@@ -334,7 +334,7 @@ const Skills = () => {
                 <div />
               </div>
 
-              <div className="h-fit w-1/2 group card text-teal-300 text-left m-auto  border-b-main-teal border-b-8 hover:-translate-y-3 duration-300">
+              <div className="h-fit w-1/2 group card cursor-default text-teal-300 text-left m-auto  border-b-main-teal border-b-8 hover:-translate-y-3 duration-300">
                 <div className="object-fill">
                   <img alt="wde" className="ml-1" width="50px" height="50px" src={require("./images/icons/wde.png")} />
                 </div>
@@ -345,19 +345,20 @@ const Skills = () => {
                     <ul className="text-slate-400">
                       <li className="truncate list-element tracking-wide font-normal text-sm"> JavaScript</li>
                       <li className="truncate list-element tracking-wide font-normal text-sm"> React</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> Angular</li>
                       <li className="truncate list-element tracking-wide font-normal text-sm"> HTML/CSS</li>
-                      <li className="truncate list-element tracking-wide font-normal text-sm"> Bootstrap</li>
-                      <li className="truncate list-element tracking-wide font-normal text-sm"> Tailwind</li>
                       <li className="truncate list-element tracking-wide font-normal text-sm"> jQuery</li>
                     </ul>
                   </div>
                   <div>
                     Backend
                     <ul className="text-slate-400">
-                      <li className="truncate list-element tracking-wide font-normal text-sm"> Node JS</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> NodeJS</li>
                       <li className="truncate list-element tracking-wide font-normal text-sm"> MongoDB</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> MySQL</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> DynamoDB</li>
                       <li className="truncate list-element tracking-wide font-normal text-sm"> Python</li>
-                      <li className="truncate list-element tracking-wide font-normal text-sm"> Express JS</li>
+                      <li className="truncate list-element tracking-wide font-normal text-sm"> ExpressJS</li>
                     </ul>
                   </div>
                 </div>
