@@ -79,7 +79,7 @@ const Overlay = ({sidebar, setSidebar}) => {
     <>
       <div className="overlay-element left-0 flex duration-500 w-full flex-nowrap top-4 fixed z-50">
         <a href="#home" onClick={() => shift(true)} className="flex flex-row ml-4 h-14 w-14">
-          <img alt="logo" className="rounded-3xl" src={require("./images/logo.png")} />
+          <img alt="logo" className="rounded-3xl" src={require("./images/icons/logo.png")} />
         </a>
         <a
           href={firebaseLink}

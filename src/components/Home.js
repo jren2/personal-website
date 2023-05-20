@@ -37,12 +37,12 @@ const Home = () => {
             </div>
             <div className="text-slate-100 text-center items-center z-10 xs:mt-12 lg:mt-0">
               <img
-                alt="cat picture"
+                alt="profile picture"
                 style={{ "--delay": "1.3s" }}
                 className="enterFade opacity-0 object-cover hover:rotate-12 duration-300 rounded-full  mx-auto mlg:w-80"
                 width="500"
                 height="400"
-                src={require("./images/philly.png")}
+                src={require("./images/FullSizeRender.jpeg")}
               />
             </div>
           </div>

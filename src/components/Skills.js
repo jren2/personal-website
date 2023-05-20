@@ -301,7 +301,7 @@ const Skills = () => {
               <div className="w-full flex flex-row justify-center">
                 <div className="h-fit w-1/2 group hover:-translate-y-3 mr-2 duration-300 card text-teal-300 text-left border-b-main-teal border-b-8">
                   <div>
-                    <img alt="sde" className="object-cover" width="70px" height="70px" src={require("./images/sde.png")} />
+                    <img alt="sde" className="object-cover" width="70px" height="70px" src={require("./images/icons/sde.png")} />
                   </div>
                   <div className="group-hover:text-teal-300 duration-300 my-2 text-slate-200 text-xl">Software Development</div>
                   <div className="text-slate-400 text-lg">
@@ -317,7 +317,7 @@ const Skills = () => {
 
                 <div className="h-fit w-1/2 mx-auto group hover:-translate-y-3 duration-300 card text-teal-300 text-left border-b-main-teal border-b-8">
                   <div>
-                    <img alt="ds" width="70px" height="70px" src={require("./images/ds.png")} />
+                    <img alt="ds" width="70px" height="70px" src={require("./images/icons/ds.png")} />
                   </div>
                   <div className="group-hover:text-teal-300 duration-300 my-2 text-slate-200 text-xl">Data Science</div>
                   <div className="text-slate-400 text-lg">
@@ -336,7 +336,7 @@ const Skills = () => {
 
               <div className="h-fit w-1/2 group card text-teal-300 text-left m-auto  border-b-main-teal border-b-8 hover:-translate-y-3 duration-300">
                 <div className="object-fill">
-                  <img alt="wde" className="ml-1" width="50px" height="50px" src={require("./images/wde.png")} />
+                  <img alt="wde" className="ml-1" width="50px" height="50px" src={require("./images/icons/wde.png")} />
                 </div>
                 <div className="group-hover:text-teal-300 duration-300 mt-5 mb-2 text-slate-200 text-xl">Web Development</div>
                 <div className="text-slate-300 text-lg grid grid-cols-2 gap-4">

@@ -12,7 +12,7 @@ const Experience = () => (
           Experience
         </div>
         <div className="flex xs:flex-col xs:items-center md:flex-row mt-16 mb-6 gap-4">
-          <img alt="css logo" className="h-1/2 rounded-3xl" width="180" src={require("./images/csslogo.png")} />
+          <img alt="css logo" className="h-1/2 rounded-3xl" width="180" src={require("./images/icons/csslogo.png")} />
           <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
             Research Assistant
             <a href="https://css.seas.upenn.edu/" target="blank_" className="text-main-teal inline">
@@ -29,7 +29,7 @@ const Experience = () => (
           </div>
         </div>
         <div className="flex xs:flex-col xs:items-center md:flex-row mt-10 mb-6 gap-4">
-          <img alt="ren logo" className="h-1/2 rounded-3xl" width="180" src={require("./images/ren.png")} />
+          <img alt="ren logo" className="h-1/2 rounded-3xl" width="180" src={require("./images/icons/ren.png")} />
           <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
             Software Developer Intern
             <a href="https://www.renenergyglobal.com/" target="blank_" className="text-main-teal inline">
@@ -47,7 +47,7 @@ const Experience = () => (
           </div>
         </div>
         <div className="flex xs:flex-col xs:items-center md:flex-row mt-16 mb-6 gap-4">
-          <img alt="juni logo" className=" h-1/2 rounded-3xl" width="180" src={require("./images/juni.png")} />
+          <img alt="juni logo" className=" h-1/2 rounded-3xl" width="180" src={require("./images/icons/juni.png")} />
           <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
             Computer Science Instructor
             <a href="https://junilearning.com/" target="blank_" className="text-main-teal inline">

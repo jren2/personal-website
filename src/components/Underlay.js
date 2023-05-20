@@ -63,7 +63,7 @@ const Underlay = ({sidebar, setSidebar}) => {
             Skills
           </p>
           <div className="cursor-pointer bg-zinc-800 overflow-hidden max-w-[18vw] w-[17vw] rounded-lg">
-            <img alt="logo" className="hover:scale-95 duration-150 rounded-lg w-[17vw]"  src={require("./images/skills.png")} />
+            <img alt="logo" className="hover:scale-95 duration-150 rounded-lg w-[17vw]"  src={require("./images/sidebar/skills.png")} />
           </div>
         </a>
         <a href="#experience" onClick={() => shift(false)}  className="underlay-element mb-4 duration-500 scale-95 -translate-x-32 flex flex-col w-full px-5">
@@ -71,7 +71,7 @@ const Underlay = ({sidebar, setSidebar}) => {
             Experience
           </p>
           <div className="cursor-pointer bg-zinc-800 overflow-hidden max-w-[18vw] w-[17vw] rounded-lg">
-            <img alt="logo" className="hover:scale-95 duration-150 rounded-lg w-[17vw]"  src={require("./images/experience.png")} />
+            <img alt="logo" className="hover:scale-95 duration-150 rounded-lg w-[17vw]"  src={require("./images/sidebar/experience.png")} />
           </div>
         </a>
         <a href="#portfolio" onClick={() => shift(false)}  className="underlay-element mb-4 duration-500 scale-95 -translate-x-32 flex flex-col w-full px-5">
@@ -79,7 +79,7 @@ const Underlay = ({sidebar, setSidebar}) => {
             Projects
           </p>
           <div className="cursor-pointer bg-zinc-800 overflow-hidden max-w-[18vw] w-[17vw] rounded-lg">
-            <img alt="logo" className="hover:scale-95 duration-150 rounded-lg w-[17vw]"  src={require("./images/projects.png")} />
+            <img alt="logo" className="hover:scale-95 duration-150 rounded-lg w-[17vw]"  src={require("./images/sidebar/projects.png")} />
           </div>
         </a>
         <a href="#contact" onClick={() => shift(false)}  className="underlay-element duration-500 scale-95 -translate-x-32 flex flex-col w-full px-5">
@@ -87,7 +87,7 @@ const Underlay = ({sidebar, setSidebar}) => {
             Contact
           </p>
           <div className="cursor-pointer bg-zinc-800 overflow-hidden max-w-[18vw] w-[17vw] rounded-lg">
-            <img alt="logo" className="hover:scale-95 duration-150 rounded-lg w-[17vw]"  src={require("./images/contact.png")} />
+            <img alt="logo" className="hover:scale-95 duration-150 rounded-lg w-[17vw]"  src={require("./images/sidebar/contact.png")} />
           </div>
         </a>
       </div>

@@ -32,7 +32,7 @@ const About = () => {
       <div id="about" className="bg-zinc-800">
         &nbsp;
         <div className="flex xs:flex-col lg:flex-row h-fit xs:px-24 lg:px-40 xl:px-56 py-24 gap-16 text-main-teal">
-          <div className="h-fit w-11/12 xs:text-center lg:text-left xs:m-auto lg:-mt-2">
+          <div id="am-text" className="h-fit w-11/12 xs:text-center lg:text-left xs:m-auto lg:-mt-2">
             <p className="offsetSubtitle relative text-slate-200 text-3xl items-center w-fit xs:m-auto lg:ml-16 pb-6 font-medium tracking-wide">
               <div style={{ "--shift": "150px", "--duration": "0.25s", "--delay": "0s" }} className="typeDisappear absolute w-full h-full bg-zinc-800" />
               About Me
@@ -65,7 +65,7 @@ const About = () => {
               </span>
             </p>
           </div>
-          <div className="reveal opacity-0.5 rotate-6 h-fit w-7/12 hover:rotate-0 duration-300 m-auto">
+          <div id="am-picture" className="reveal opacity-0.5 rotate-6 h-fit w-7/12 hover:rotate-0 duration-300 m-auto">
             <img alt="headshot" className="rounded-3xl" src={require("./images/option.png")} />
           </div>
         </div>
