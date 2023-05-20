@@ -15,6 +15,19 @@
     opacity: 1;
   }
 
+  #coursework-chooser::before {
+    content: "";
+    width: 2px;
+    height: 3rem;
+    background-color: rgba(0, 219, 198, 1);
+    z-index: 100;
+    top: calc(3rem * var(--coursework-chooser-index));
+    left: 0;
+    position: absolute;
+    border-radius: 0.5rem;
+    transition: top 0.5s ease;
+  }
+
   .project-card::before {
     content: "";
     background: radial-gradient(

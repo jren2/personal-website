@@ -1,101 +1,18 @@
 /* eslint-disable global-require */
-import React from "react"
+import React, { useState, useEffect } from "react"
 
 const Skills = () => {
-  const hideSems = () => {
-    const sems = document.querySelectorAll(".semester")
-    sems.forEach((semester) => {
-      semester.classList.add("hidden")
-    })
+  const [activeSem, setActiveSem] = useState(5)
+
+  const changeSem = (semester) => {
+    const slider = document.getElementById("coursework-chooser")
+    slider.style.setProperty("--coursework-chooser-index", semester)
   }
 
-  const showFA20 = () => {
-    const fa20 = document.querySelector(".fa20")
-    const activeSem = document.querySelector(".active-sem")
-    const fa20s = document.querySelector(".fa20s")
-
-    hideSems()
-    fa20.classList.remove("hidden")
-    activeSem.classList.remove("active-sem")
-    fa20s.classList.add("active-sem")
-  }
-
-  const showSP21 = () => {
-    const sp21 = document.querySelector(".sp21")
-    const activeSem = document.querySelector(".active-sem")
-    const sp21s = document.querySelector(".sp21s")
-
-    hideSems()
-    sp21.classList.remove("hidden")
-    activeSem.classList.remove("active-sem")
-    sp21s.classList.add("active-sem")
-  }
-
-  const showFA21 = () => {
-    const fa21 = document.querySelector(".fa21")
-    const activeSem = document.querySelector(".active-sem")
-    const fa21s = document.querySelector(".fa21s")
-
-    hideSems()
-    fa21.classList.remove("hidden")
-    activeSem.classList.remove("active-sem")
-    fa21s.classList.add("active-sem")
-  }
-
-  const showSP22 = () => {
-    const sp22 = document.querySelector(".sp22")
-    const activeSem = document.querySelector(".active-sem")
-    const sp22s = document.querySelector(".sp22s")
-    
-    hideSems()
-    sp22.classList.remove("hidden")
-    activeSem.classList.remove("active-sem")
-    sp22s.classList.add("active-sem")
-  }
-
-  const showFA22 = () => {
-    const fa22 = document.querySelector(".fa22")
-    const activeSem = document.querySelector(".active-sem")
-    const fa22s = document.querySelector(".fa22s")
-
-    hideSems()
-    fa22.classList.remove("hidden")
-    activeSem.classList.remove("active-sem")
-    fa22s.classList.add("active-sem")
-  }
-
-  const showSP23 = () => {
-    const sp23 = document.querySelector(".sp23")
-    const activeSem = document.querySelector(".active-sem")
-    const sp23s = document.querySelector(".sp23s")
-
-    hideSems()
-    sp23.classList.remove("hidden")
-    activeSem.classList.remove("active-sem")
-    sp23s.classList.add("active-sem")
-  }
-
-  const showFA23 = () => {
-    const fa23 = document.querySelector(".fa23")
-    const activeSem = document.querySelector(".active-sem")
-    const fa23s = document.querySelector(".fa23s")
-
-    hideSems()
-    fa23.classList.remove("hidden")
-    activeSem.classList.remove("active-sem")
-    fa23s.classList.add("active-sem")
-  }
-
-  const showSP24 = () => {
-    const sp24 = document.querySelector(".sp24")
-    const activeSem = document.querySelector(".active-sem")
-    const sp24s = document.querySelector(".sp24s")
-
-    hideSems()
-    sp24.classList.remove("hidden")
-    activeSem.classList.remove("active-sem")
-    sp24s.classList.add("active-sem")
-  }
+  useEffect(() => {
+    const slider = document.getElementById("coursework-chooser")
+    slider.style.setProperty("--coursework-chooser-index", activeSem)
+  }, [])
 
   return (
     <>
@@ -104,191 +21,236 @@ const Skills = () => {
           <div className="xs:w-full lg:w-6/12 h-fit text-center text-slate-200 text-3xl font-medium tracking-wide">
             <div className="courseSubtitle relative w-fit mx-auto flex flex-col text-center my-6">
               <div style={{ "--shift": "250px", "--duration": "0.4s", "--delay": "0.1s" }} className="typeDisappear absolute w-full h-full bg-zinc-800" />
-              Coursework
-            </div>
-            <div className="w-full m-auto flex flex-row text-slate-400 ">
-              <div className="m-auto w-32 lg:ml-8 mr-8  border-solid border-l-2 border-zinc-600">
-                <button type="button" className="fa20s w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showFA20()}>
+                Coursework
+              </div>
+            <div className="relative w-full m-auto flex flex-row text-slate-400">
+              <div className="m-auto w-32 relative">
+                <div id="coursework-chooser" className="absolute w-[2px] h-full bg-slate-400/50 rounded-lg"></div>
+                <button 
+                  type="button" 
+                  className={`${activeSem === 0 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
+                  onClick={() => { setActiveSem(0); changeSem(0) }}
+                >
                   Fall 2020
                 </button>
-                <button type="button" className="sp21s w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3 " onClick={() => showSP21()}>
+                <button 
+                  type="button" 
+                  className={`${activeSem === 1 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3 `}
+                  onClick={() => { setActiveSem(1); changeSem(1)}}
+                >
                   Spring 2021
                 </button>
-                <button type="button" className="fa21s w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showFA21()}>
+                <button 
+                  type="button" 
+                  className={`${activeSem === 2 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
+                  onClick={() => { setActiveSem(2); changeSem(2)}}
+                >
                   Fall 2021
                 </button>
-                <button type="button" className="sp22s w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showSP22()}>
+                <button 
+                  type="button" 
+                  className={`${activeSem === 3 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
+                  onClick={() => { setActiveSem(3); changeSem(3)}}
+                >
                   Spring 2022
                 </button>
                 <button
                   type="button"
-                  className="fa22s w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3"
-                  onClick={() => showFA22()}
+                  className={`${activeSem === 4 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
+                  onClick={() => { setActiveSem(4); changeSem(4)}}
                 >
                   Fall 2022
                 </button>
-                <button type="button" className="active-sem sp23s w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showSP23()}>
+                <button 
+                  type="button" 
+                  className={`${activeSem === 5 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
+                  onClick={() => { setActiveSem(5); changeSem(5)}}
+                >
                   Spring 2023
                 </button>
-                <button type="button" className="fa23s w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showFA23()}>
+                <button 
+                  type="button" 
+                  className={`${activeSem === 6 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
+                  onClick={() => { setActiveSem(6); changeSem(6)}}
+                >
                   Fall 2023
                 </button>
-                <button type="button" className="sp24s w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3" onClick={() => showSP24()}>
+                <button 
+                  type="button" 
+                  className={`${activeSem === 7 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
+                  onClick={() => { setActiveSem(7); changeSem(7)}}
+                >
                   Spring 2024
                 </button>
               </div>
 
               <div className="w-fit m-auto my-2 text-left">
-                <div className="text-base hidden semester fa20 duration-300">
-                  <div className="text-left">Fall 2020:</div>
-                  <br />
-                  <div className="mb-2">
-                    CIS 120: Programming Languages & Techniques I
+                {activeSem === 0 && (
+                  <div className="text-base semester duration-300">
+                    <div className="text-left">Fall 2020:</div>
                     <br />
+                    <div className="mb-2">
+                      CIS 120: Programming Languages & Techniques I
+                      <br />
+                    </div>
+                    <div className="mb-2">
+                      MATH 114: Calculus II
+                      <br />
+                    </div>
+                    <div className="mb-2">
+                      PHYS 150: Principles I
+                      <br />
+                    </div>
+                    <div className="mb-2">
+                      CHEM 101: General Chemistry I
+                      <br />
+                    </div>
+                    <div className="mb-2">
+                      ECON 001: Introduction to Microeconomics
+                      <br />
+                    </div>
+                    <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                   </div>
-                  <div className="mb-2">
-                    MATH 114: Calculus II
+                )}
+                {activeSem === 1 && (
+                  <div className="text-base semester sp21 duration-300">
+                    <div className="text-left">Spring 2021:</div>
                     <br />
+                    <div className="mb-2">
+                      CIS 160: Mathematical Foundations of Computer Science
+                      <br />
+                    </div>
+                    <div className="mb-2">
+                      ESE 150: Digital Audio Basics
+                      <br />
+                    </div>
+                    <div className="mb-2">
+                      MATH 240: Calculus III
+                      <br />
+                    </div>
+                    <div className="mb-2">
+                      PHYS 151: Principles II
+                      <br />
+                    </div>
+                    <div className="mb-2">
+                      WRIT 031: Writing Seminar in Cognitive Science
+                      <br />
+                    </div>
+                    <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                   </div>
-                  <div className="mb-2">
-                    PHYS 150: Principles I
+                )}
+                {activeSem === 2 && (
+                  <div className="text-base semester fa21">
+                    <div className="text-left">Fall 2021:</div>
                     <br />
+                    <div className="mb-2">
+                      CIS 121: Data Structures and Algorithms
+                      <br />
+                    </div>
+                    <div className="my-2">
+                      CIS 262: Automata, Computability and Complexity
+                      <br />
+                    </div>
+                    <div className="my-2">
+                      CIS 261: Discrete Probability and Statistical Inference
+                      <br />
+                    </div>
+                    <div className="my-2">
+                      ESE 215: Electrical Circuits and Systems
+                      <br />
+                    </div>
+                    <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                   </div>
-                  <div className="mb-2">
-                    CHEM 101: General Chemistry I
+                )}
+                {activeSem === 3 && (
+                  <div className="text-base semester sp22">
+                    <div className="text-left ">Spring 2022:</div>
                     <br />
+                    <div className="mb-2">
+                      CIS 320: Introduction to Algorithms
+                      <br />
+                    </div>
+                    <div className="my-2">
+                      CIS 423: Ethical Algorithm Design
+                      <br />
+                    </div>
+                    <div className="my-2">
+                      CIS 240: Introduction to Computer Systems
+                      <br />
+                    </div>
+                    <div className="my-2">
+                      CIS 197: JavaScript
+                      <br />
+                    </div>
+                    <div className="my-2">
+                      STAT 431: Statistical Inference
+                      <br />
+                    </div>
+                    <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                   </div>
-                  <div className="mb-2">
-                    ECON 001: Introduction to Microeconomics
+                )}
+                {activeSem === 4 && (
+                  <div className="text-base semester fa22">
+                    <div className="text-left">Fall 2022:</div>
                     <br />
+                    <div className="mb-2">
+                      CIS 521: Artificial Intelligence
+                      <br />
+                    </div>
+                    <div className="my-2">
+                      CIS 545: Big Data Analytics
+                      <br />
+                    </div>
+                    <div className="my-2">
+                      CIS 380: Computer Operating Systems
+                      <br />
+                    </div>
+                    <div className="my-2">
+                      NETS 212: Scalable and Cloud Computing
+                      <br />
+                    </div>
+                    <div className="my-2">
+                      MKTG 101: Introduction to Marketing
+                      <br />
+                    </div>
+                    <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                   </div>
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-                <div className="text-base hidden semester sp21 duration-300">
-                  <div className="text-left">Spring 2021:</div>
-                  <br />
-                  <div className="mb-2">
-                    CIS 160: Mathematical Foundations of Computer Science
+                )}
+                {activeSem === 5 && (
+                  <div className="text-left text-base semester sp23">
+                    <div className="text-left">Spring 2023:</div>
                     <br />
+                    <div className=" mb-2">
+                      CIS 5200: Machine Learning
+                      <br />
+                    </div>
+                    <div className="my-2">
+                      CIS 3500: Software Design and Engineering
+                      <br />
+                    </div>
+                    <div className="my-2">
+                      MATH 5140: Advanced Linear Algebra
+                      <br />
+                    </div>
+                    <div className="my-2">
+                      CIS 5590: Programming and Problem Solving
+                      <br />
+                    </div>
+                    <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                   </div>
-                  <div className="mb-2">
-                    ESE 150: Digital Audio Basics
-                    <br />
+                )}
+                {activeSem === 6 && (
+                  <div className="text-left text-base semester fa23">
+                    TBD
+                    <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                   </div>
-                  <div className="mb-2">
-                    MATH 240: Calculus III
-                    <br />
+                )}
+                {activeSem === 7 && (
+                  <div className="text-left text-base semester sp24">
+                    TBD
+                    <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
                   </div>
-                  <div className="mb-2">
-                    PHYS 151: Principles II
-                    <br />
-                  </div>
-                  <div className="mb-2">
-                    WRIT 031: Writing Seminar in Cognitive Science
-                    <br />
-                  </div>
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-                <div className="text-base hidden semester fa21">
-                  <div className="text-left">Fall 2021:</div>
-                  <br />
-                  <div className="mb-2">
-                    CIS 121: Data Structures and Algorithms
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 262: Automata, Computability and Complexity
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 261: Discrete Probability and Statistical Inference
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    ESE 215: Electrical Circuits and Systems
-                    <br />
-                  </div>
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-                <div className="text-base hidden semester sp22">
-                  <div className="text-left ">Spring 2022:</div>
-                  <br />
-                  <div className="mb-2">
-                    CIS 320: Introduction to Algorithms
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 423: Ethical Algorithm Design
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 240: Introduction to Computer Systems
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 197: JavaScript
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    STAT 431: Statistical Inference
-                    <br />
-                  </div>
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-                <div className="text-base hidden semester fa22">
-                  <div className="text-left">Fall 2022:</div>
-                  <br />
-                  <div className="mb-2">
-                    CIS 521: Artificial Intelligence
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 545: Big Data Analytics
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 380: Computer Operating Systems
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    NETS 212: Scalable and Cloud Computing
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    MKTG 101: Introduction to Marketing
-                    <br />
-                  </div>
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-                <div className="text-left text-base semester sp23">
-                  <div className="text-left">Spring 2023:</div>
-                  <br />
-                  <div className=" mb-2">
-                    CIS 5200: Machine Learning
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 3500: Software Design and Engineering
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    MATH 5140: Advanced Linear Algebra
-                    <br />
-                  </div>
-                  <div className="my-2">
-                    CIS 5590: Programming and Problem Solving
-                    <br />
-                  </div>
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-                <div className="text-left text-base hidden semester fa23">
-                  TBD
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
-                <div className="text-left text-base hidden semester sp24">
-                  TBD
-                  <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
-                </div>
+                )}
               </div>
             </div>
           </div>
