@@ -99,7 +99,7 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <div id="project-cards" className="grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-24 w-11/12 lg:h-[70vh] sm:h-[110vh] xs:h-[180vh] mx-auto text-slate-200">
+          <div id="project-cards" className="grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-24 w-11/12 h-fit mx-auto text-slate-200">
             <PortfolioCard 
               title="Stock Predictor Bot" 
               link="https://github.com/jren2/Stock-Predictor" 

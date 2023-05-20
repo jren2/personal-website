@@ -20,7 +20,7 @@ const PortfolioCard = ({ title, description, technologies, link }) => (
     <div className="text-slate-200/70 text-sm mt-2">
       {description}
     </div>
-    <div className="absolute bottom-6 text-xs text-slate-200/50">
+    <div className="mt-4 text-xs text-slate-200/50">
       {
         technologies.map((technology, index) => (
           <span key={index} className="mr-2">
