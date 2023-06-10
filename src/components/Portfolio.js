@@ -29,73 +29,153 @@ const Portfolio = () => {
 
           <div className="relative my-8 flex xs:flex-col md:flex-row items-center ">
             <div className="relative xs:text-center xs:mt-4 xs:m-auto xs:left-0 md:left-10 z-10 md:mt-10 text-xl md:text-left font-medium tracking-normal text-slate-200">
-              Sky High Entertainment &nbsp;
-              <p className="shadow-md my-2 xs:ml-2 md:ml-0 md:mr-10 pl-4 pr-4 py-4 text-slate-200/70 w-full rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">
-                An app that fulfills humanity's need for thematically appropriate in-flight entertainment. 
-                Search for flights based on price, destination, duration, and more, while receiving movie recommendations tailored to your flight specifics.
-                <br />
-                <br />
-                Enhance your travel experience with the perfect film that matches your flight time and location. 
-                Explore airport information and discover movies based on production country, companies, genres, and more.
-              </p>
-              <div className="my-2 text-main-teal font-light text-sm tracking-wide ">JavaScript &nbsp; React &nbsp; MySQL &nbsp; ExpressJS &nbsp; NodeJS</div>
-              <a href="https://github.com/jren2/sky-high-entertainment/" target="_blank" className="hover:text-main-teal duration-300 hover:mr-1 text-base font-normal" rel="noreferrer">
-                View on GitHub →
-              </a>
+              <div style={{"--delay" : "0.3s", "--slideDuration":"0.5s"}} className="slideUp opacity-0 -translate-x-12">
+                Sky High Entertainment &nbsp;
+                <p className="shadow-md my-2 xs:ml-2 md:ml-0 md:mr-10 pl-4 pr-4 py-4 text-slate-200/70 w-full rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">
+                  An app that fulfills humanity's need for thematically appropriate in-flight entertainment. 
+                  Search for flights based on price, destination, duration, and more, while receiving movie recommendations tailored to your flight specifics.
+                  <br />
+                  <br />
+                  Enhance your travel experience with the perfect film that matches your flight time and location. 
+                  Explore airport information and discover movies based on production country, companies, genres, and more.
+                </p>
+              </div>
+              <div className="my-2 text-main-teal font-light text-sm tracking-wide flex flex-row">
+                <div style={{"--delay" : "0.5s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  JavaScript &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.56s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  React &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.64s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  MySQL &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.70s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  ExpressJS &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.76s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  NodeJS &nbsp; 
+                </div>
+              </div>
+              <div  style={{"--delay" : "0.8s", "--slideDuration":"0.2s"}}  className="slideUp opacity-0 -translate-x-6">
+                <a href="https://github.com/jren2/sky-high-entertainment/" target="_blank" className="hover:text-main-teal duration-300 hover:mr-1 text-base font-normal" rel="noreferrer">
+                  View on GitHub →
+                </a>
+              </div>
             </div>
-            <img alt="sky high entertainment" src={require("./images/projects/SkyHighEntertainment.png")} className="duration-300 hover:scale-105 xs:m-auto md:mt-6 w-1/2  h-1/6 xs:right-0 md:right-10 relative mt-6 rounded-sm" />
+            <img alt="sky high entertainment" src={require("./images/projects/SkyHighEntertainment.png")} style={{"--delay" : "0.5s", "--slideDuration":"0.5s"}} className="slideUp opacity-0 translate-x-12 duration-300 hover:scale-105 relative w-1/2 h-1/6 xs:m-auto md:mt-6 xs:right-0 md:right-10 mt-6 rounded-sm" />
           </div>
 
           <div className="relative my-8 flex xs:flex-col md:flex-row items-center ">
-            <img alt="paper trader" src={require("./images/projects/pennbook.png")} className="duration-300 hover:scale-105 xs:m-auto md:mt-6 w-1/2 h-1/6 xs:left-0 md:left-10 relative mt-6 rounded-sm" />
+            <img alt="paper trader" src={require("./images/projects/pennbook.png")} style={{"--delay" : "0.5s", "--slideDuration":"0.5s"}} className="slideUp opacity-0 -translate-x-12 duration-300 hover:scale-105 xs:m-auto md:mt-6 w-1/2 h-1/6 xs:left-0 md:left-10 relative mt-6 rounded-sm" />
             <div className="relative xs:text-center xs:mt-4 xs:m-auto xs:right-0 md:right-10 z-10 md:mt-10 text-xl md:text-right font-medium tracking-normal text-slate-200">
-              PennBook &nbsp;
-              <div className="shadow-md my-2 xs:ml-2 md:ml-10 pl-4 pr-4 py-4 text-slate-200/70 rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">
-                A scalable social media platform built on top of the cloud. Users can register accounts, add friends,
-                visualize their first and second degree friend networks, post dynamic content, and join real-time chat channels. 
-                Users will also be recommended relevant news articles based on their interests through distributed PageRank.
+              <div style={{"--delay" : "0.3s", "--slideDuration":"0.5s"}} className="slideUp opacity-0 translate-x-12">
+                PennBook &nbsp;
+                <div className="shadow-md my-2 xs:ml-2 md:ml-10 pl-4 pr-4 py-4 text-slate-200/70 rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">
+                  A scalable social media platform built on top of the cloud. Users can register accounts, add friends,
+                  visualize their first and second degree friend networks, post dynamic content, and join real-time chat channels. 
+                  Users will also be recommended relevant news articles based on their interests through distributed PageRank.
+                </div>
               </div>
-              <div className="my-2 text-main-teal font-light text-sm tracking-wide ">React &nbsp; NodeJS &nbsp; Apache Spark &nbsp; DynamoDB &nbsp; AWS EC2</div>
-              <a href="https://github.com/jren2/stock-trader" target="_blank" className="hover:text-main-teal duration-300 hover:mr-1 text-base font-normal" rel="noreferrer">
-                View on GitHub →
-              </a>
+              <div className="my-2 text-main-teal font-light text-sm tracking-wide flex flex-row-reverse">
+                <div style={{"--delay" : "0.5s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  React &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.56s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  NodeJS &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.64s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  Apache Spark &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.70s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  DynamoDB &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.76s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  AWS EC2 &nbsp; 
+                </div>
+              </div>
+              <div  style={{"--delay" : "0.8s", "--slideDuration":"0.2s"}}  className="slideUp opacity-0 -translate-x-6">
+                <a href="https://github.com/jren2/stock-trader" target="_blank" className="hover:text-main-teal duration-300 hover:mr-1 text-base font-normal" rel="noreferrer">
+                  View on GitHub →
+                </a>
+              </div>
             </div>
           </div>
 
           <div className="relative my-8 flex xs:flex-col md:flex-row items-center ">
             <div className="relative xs:text-center xs:mt-4 xs:m-auto xs:left-0 md:left-10 z-10 md:mt-10 text-xl md:text-left font-medium tracking-normal text-slate-200">
-              Plantr &nbsp;
-              <p className="shadow-md my-2 xs:ml-2 md:ml-0 md:mr-10 pl-4 pr-4 py-4 text-slate-200/70 w-full rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">
-                Winner of{" "}
-                <a href="https://pennapps.com/" className="text-slate-300" target="_blank" rel="noreferrer">
-                  PennApps XXIII
-                </a>{" "}
-                Best use of Web Automation/non-REST API Data Sources!
-                <br />
-                We built Plantr to use Pl@nt Net's image recognition to identify any picture of a plant you give it along with similar plants!
-                <br />
-                We then web scrape each plant's Wiki and run a sentiment analysis with Google's Natural Language API to help you decide if this plant is best for you!
-              </p>
-              <div className="my-2 text-main-teal font-light text-sm tracking-wide ">JavaScript &nbsp; React &nbsp; Google Natural Language API &nbsp; Pl@ntNet API &nbsp; WikiJS</div>
-              <a href="https://github.com/jren2/Stock-Predictor" target="_blank" className="hover:text-main-teal duration-300 hover:mr-1 text-base font-normal" rel="noreferrer">
-                View on GitHub →
-              </a>
+              <div style={{"--delay" : "0.3s", "--slideDuration":"0.5s"}} className="slideUp opacity-0 -translate-x-12">
+                Plantr &nbsp;
+                <p className="shadow-md my-2 xs:ml-2 md:ml-0 md:mr-10 pl-4 pr-4 py-4 text-slate-200/70 w-full rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">
+                  Winner of{" "}
+                  <a href="https://pennapps.com/" className="text-slate-300" target="_blank" rel="noreferrer">
+                    PennApps XXIII
+                  </a>{" "}
+                  Best use of Web Automation/non-REST API Data Sources!
+                  <br />
+                  We built Plantr to use Pl@nt Net's image recognition to identify any picture of a plant you give it along with similar plants!
+                  <br />
+                  We then web scrape each plant's Wiki and run a sentiment analysis with Google's Natural Language API to help you decide if this plant is best for you!
+                </p>
+              </div>
+              <div className="my-2 text-main-teal font-light text-sm tracking-wide flex flex-row">
+                <div style={{"--delay" : "0.5s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  JavaScript &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.56s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  React &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.64s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  Google Natural Language API &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.70s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  Pl@ntNet API &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.76s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  WikiJS &nbsp; 
+                </div>
+              </div>
+              <div  style={{"--delay" : "0.8s", "--slideDuration":"0.2s"}}  className="slideUp opacity-0 -translate-x-6">
+                <a href="https://github.com/jren2/Stock-Predictor" target="_blank" className="hover:text-main-teal duration-300 hover:mr-1 text-base font-normal" rel="noreferrer">
+                  View on GitHub →
+                </a>
+              </div>
             </div>
-            <img alt="plantr" src={require("./images/projects/plantr.png")} className="duration-300 hover:scale-105 xs:m-auto md:mt-6 w-1/2  h-1/6 xs:right-0 md:right-10 relative mt-6 rounded-sm" />
+            <img alt="plantr" src={require("./images/projects/plantr.png")} style={{"--delay" : "0.5s", "--slideDuration":"0.5s"}} className="slideUp opacity-0 translate-x-12 duration-300 hover:scale-105 xs:m-auto md:mt-6 w-1/2  h-1/6 xs:right-0 md:right-10 relative mt-6 rounded-sm" />
           </div>
 
           <div className="relative my-8 flex xs:flex-col md:flex-row items-center ">
-            <img alt="paper trader" src={require("./images/projects/stock.png")} className="duration-300 hover:scale-105 xs:m-auto md:mt-6 w-1/2 h-1/6 xs:left-0 md:left-10 relative mt-6 rounded-sm" />
+            <img alt="paper trader" src={require("./images/projects/stock.png")} style={{"--delay" : "0.5s", "--slideDuration":"0.5s"}} className="slideUp opacity-0 -translate-x-12 duration-300 hover:scale-105 xs:m-auto md:mt-6 w-1/2 h-1/6 xs:left-0 md:left-10 relative mt-6 rounded-sm" />
             <div className="relative xs:text-center xs:mt-4 xs:m-auto xs:right-0 md:right-10 z-10 md:mt-10 text-xl md:text-right font-medium tracking-normal text-slate-200">
-              Stock Trading Simulator &nbsp;
-              <div className="shadow-md my-2 xs:ml-2 md:ml-10 pl-4 pr-4 py-4 text-slate-200/70 rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">
-                A web app for simulating the stock trading experience without risking your own money! Sign up for an account to buy and sell real time updated stocks and view your progress in the
-                portfolio tab.
+              <div style={{"--delay" : "0.3s", "--slideDuration":"0.5s"}} className="slideUp opacity-0 translate-x-12">
+                Stock Trading Simulator &nbsp;
+                <div className="shadow-md my-2 xs:ml-2 md:ml-10 pl-4 pr-4 py-4 text-slate-200/70 rounded-sm text-base font-normal tracking-wide bg-zinc-900/90">
+                  A web app for simulating the stock trading experience without risking your own money! Sign up for an account to buy and sell real time updated stocks and view your progress in the
+                  portfolio tab.
+                </div>
               </div>
-              <div className="my-2 text-main-teal font-light text-sm tracking-wide ">React &nbsp; JavaScript &nbsp; MongoDB &nbsp; ExpressJS &nbsp; Bootstrap</div>
-              <a href="https://github.com/jren2/stock-trader" target="_blank" className="hover:text-main-teal duration-300 hover:mr-1 text-base font-normal" rel="noreferrer">
-                View on GitHub →
-              </a>
+              <div className="my-2 text-main-teal font-light text-sm tracking-wide flex flex-row-reverse">
+                <div style={{"--delay" : "0.5s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  React &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.56s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  JavaScript &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.64s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  MongoDB &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.70s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  ExpressJS &nbsp; 
+                </div>
+                <div style={{"--delay" : "0.76s", "--slideDuration":"0.2s"}} className="slideUp opacity-0 translate-y-4">
+                  Bootstrap &nbsp; 
+                </div>
+              </div>
+              <div  style={{"--delay" : "0.8s", "--slideDuration":"0.2s"}}  className="slideUp opacity-0 -translate-x-6">
+                <a href="https://github.com/jren2/stock-trader" target="_blank" className="hover:text-main-teal duration-300 hover:mr-1 text-base font-normal" rel="noreferrer">
+                  View on GitHub →
+                </a>
+              </div>
             </div>
           </div>
 

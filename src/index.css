@@ -110,10 +110,25 @@
     animation: disappear var(--duration) linear forwards var(--delay);
   }
 
+  .slideAnimation {
+    animation: slide var(--slideDuration) ease-in-out forwards var(--delay);
+  }
+
+  .slideAnimation:hover {
+    translate: 0px var(--slideUpShift);
+  }
+  
   @keyframes disappear {
     to {
       transform: translate(var(--shift), 0px);
       visibility: hidden;
+    }
+  }
+
+  @keyframes slide {
+    to {
+      transform: translate(0px, 0px);
+      opacity: 1;
     }
   }
 

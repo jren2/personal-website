@@ -1,5 +1,6 @@
 /* eslint-disable global-require */
 import React, { useState, useEffect } from "react"
+const semesters = ["Fall 2020", "Spring 2021", "Fall 2021", "Spring 2022", "Fall 2022", "Spring 2023", "Fall 2023", "Spring 2024"]
 
 const Skills = () => {
   const [activeSem, setActiveSem] = useState(5)
@@ -23,65 +24,20 @@ const Skills = () => {
               <div style={{ "--shift": "250px", "--duration": "0.4s", "--delay": "0.1s" }} className="typeDisappear absolute w-full h-full bg-zinc-800" />
                 Coursework
               </div>
-            <div className="relative w-full m-auto flex flex-row text-slate-400">
+            <div style={{"--delay":"0.4s"}} className="reveal opacity-0 relative w-full m-auto flex flex-row text-slate-400">
               <div className="m-auto w-32 relative">
                 <div id="coursework-chooser" className="absolute w-[2px] h-full bg-slate-400/50 rounded-lg"></div>
-                <button 
-                  type="button" 
-                  className={`${activeSem === 0 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
-                  onClick={() => { setActiveSem(0); changeSem(0) }}
-                >
-                  Fall 2020
-                </button>
-                <button 
-                  type="button" 
-                  className={`${activeSem === 1 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3 `}
-                  onClick={() => { setActiveSem(1); changeSem(1)}}
-                >
-                  Spring 2021
-                </button>
-                <button 
-                  type="button" 
-                  className={`${activeSem === 2 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
-                  onClick={() => { setActiveSem(2); changeSem(2)}}
-                >
-                  Fall 2021
-                </button>
-                <button 
-                  type="button" 
-                  className={`${activeSem === 3 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
-                  onClick={() => { setActiveSem(3); changeSem(3)}}
-                >
-                  Spring 2022
-                </button>
-                <button
-                  type="button"
-                  className={`${activeSem === 4 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
-                  onClick={() => { setActiveSem(4); changeSem(4)}}
-                >
-                  Fall 2022
-                </button>
-                <button 
-                  type="button" 
-                  className={`${activeSem === 5 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
-                  onClick={() => { setActiveSem(5); changeSem(5)}}
-                >
-                  Spring 2023
-                </button>
-                <button 
-                  type="button" 
-                  className={`${activeSem === 6 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
-                  onClick={() => { setActiveSem(6); changeSem(6)}}
-                >
-                  Fall 2023
-                </button>
-                <button 
-                  type="button" 
-                  className={`${activeSem === 7 ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
-                  onClick={() => { setActiveSem(7); changeSem(7)}}
-                >
-                  Spring 2024
-                </button>
+                {
+                  semesters.map((semester, idx) => (
+                    <button 
+                      type="button" 
+                      className={`${activeSem === idx ? "text-main-teal bg-zinc-700" : ""} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
+                      onClick={() => { setActiveSem(idx); changeSem(idx) }}
+                    >
+                      {semester}
+                    </button>
+                  ))
+                }
               </div>
 
               <div className="w-fit m-auto my-2 text-left">
@@ -221,7 +177,7 @@ const Skills = () => {
                     <div className="text-left">Spring 2023:</div>
                     <br />
                     <div className=" mb-2">
-                      CIS 5200: Machine Learning
+                      CIS 5190: Applied Machine Learning
                       <br />
                     </div>
                     <div className="my-2">
@@ -233,7 +189,7 @@ const Skills = () => {
                       <br />
                     </div>
                     <div className="my-2">
-                      CIS 5590: Programming and Problem Solving
+                      CIS 5500: Database and Information Systems
                       <br />
                     </div>
                     <div className="invisible h-1">CIS 160: Mathematical Foundations of Computer Science</div>
@@ -261,7 +217,7 @@ const Skills = () => {
             </div>
             <div className="flex flex-col gap-8">
               <div className="w-full cursor-default flex flex-row justify-center">
-                <div className="h-fit w-1/2 group hover:-translate-y-3 mr-2 duration-300 card text-teal-300 text-left border-b-main-teal border-b-8">
+                <div style={{"--delay" : "0.3s", "--slideDuration":"0.3s", "--slideUpShift":"-0.5rem"}} className="slideUp opacity-0 hover:scale-110 translate-y-5 h-fit w-1/2 group mr-2 duration-300 card text-teal-300 text-left border-b-main-teal border-b-8">
                   <div>
                     <img alt="sde" className="object-cover" width="70px" height="70px" src={require("./images/icons/sde.png")} />
                   </div>
@@ -277,26 +233,26 @@ const Skills = () => {
                   </div>
                 </div>
 
-                <div className="h-fit w-1/2 mx-auto group hover:-translate-y-3 duration-300 card text-teal-300 text-left border-b-main-teal border-b-8">
+                <div style={{"--delay" : "0.5s", "--slideDuration":"0.3s", "--slideUpShift":"-0.5rem"}} className="slideUp opacity-0 translate-y-5 h-fit w-1/2 mx-auto group hover:-translate-y-3 duration-300 card text-teal-300 text-left border-b-main-teal border-b-8">
                   <div>
                     <img alt="ds" width="70px" height="70px" src={require("./images/icons/ds.png")} />
                   </div>
                   <div className="group-hover:text-teal-300 duration-300 my-2 text-slate-200 text-xl">Data Science</div>
-                  <div className="text-slate-400 text-lg">
-                    <ul className="text-slate-400">
-                      <li className="list-element tracking-wide font-normal text-sm"> Python</li>
-                      <li className="ml-4 list-element tracking-wide font-normal text-xs"> Pandas</li>
-                      <li className="ml-4 list-element tracking-wide font-normal text-xs"> TensorFlow</li>
-                      <li className="ml-4 list-element tracking-wide font-normal text-xs"> PyTorch</li>
-                      <li className="list-element tracking-wide font-normal text-sm"> R</li>
-                      <li className="list-element tracking-wide font-normal text-sm"> MATLAB</li>
-                    </ul>
+                    <div className="text-slate-400 text-lg">
+                      <ul className="text-slate-400">
+                        <li className="list-element tracking-wide font-normal text-sm"> Python</li>
+                        <li className="ml-4 list-element tracking-wide font-normal text-xs"> Pandas</li>
+                        <li className="ml-4 list-element tracking-wide font-normal text-xs"> TensorFlow</li>
+                        <li className="ml-4 list-element tracking-wide font-normal text-xs"> PyTorch</li>
+                        <li className="list-element tracking-wide font-normal text-sm"> R</li>
+                        <li className="list-element tracking-wide font-normal text-sm"> MATLAB</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
                 <div />
               </div>
 
-              <div className="h-fit w-1/2 group card cursor-default text-teal-300 text-left m-auto  border-b-main-teal border-b-8 hover:-translate-y-3 duration-300">
+              <div style={{"--delay" : "0.3s", "--slideDuration":"0.3s", "--slideUpShift":"-0.5rem"}}  className="slideUp opacity-0 translate-y-5 h-fit w-1/2 group card cursor-default text-teal-300 text-left m-auto  border-b-main-teal border-b-8 hover:-translate-y-3 duration-300">
                 <div className="object-fill">
                   <img alt="wde" className="ml-1" width="50px" height="50px" src={require("./images/icons/wde.png")} />
                 </div>
@@ -325,7 +281,6 @@ const Skills = () => {
                   </div>
                 </div>
               </div>
-              <div />
             </div>
           </div>
         </div>

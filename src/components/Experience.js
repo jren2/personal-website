@@ -11,7 +11,38 @@ const Experience = () => (
           <div style={{ "--shift": "250px", "--duration": "0.4s", "--delay": "0.1s" }} className="typeDisappear absolute w-full h-full bg-zinc-800" />
           Experience
         </div>
-        <div className="flex xs:flex-col xs:items-center md:flex-row mt-16 mb-6 gap-4">
+        <div style={{"--delay":"0.2s", "--slideDuration":"0.2s"}} className="flex slideUp opacity-0 translate-y-5 xs:flex-col xs:items-center md:flex-row mt-12 mb-6 gap-4">
+          <img alt="css logo" className="h-3/4 rounded-3xl" width="180" src={require("./images/icons/mathworks.png")} />
+          <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
+            Software Engineering Intern
+            <a href="https://css.seas.upenn.edu/" target="blank_" className="text-main-teal inline">
+              {" "}
+              @ Mathworks{" "}
+            </a>
+            <div className="mt-1 mb-4 text-slate-400 text-sm">May 2023 - August 2023</div>
+            <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
+              &emsp; Built a UI to streamline the project creation process in the MATLAB Signal Integrity Toolbox between both beginning and experienced users 
+            </div>
+            <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
+              &emsp; Documented progress and bugs with Confluence and Jira
+            </div>
+          </div>
+        </div>
+        <div style={{"--delay":"0.2s", "--slideDuration":"0.2s"}} className="flex slideUp opacity-0 translate-y-5 xs:flex-col xs:items-center md:flex-row mt-12 mb-6 gap-4">
+          <img alt="css logo" width="180" className="rounded-3xl" src={require("./images/icons/upenn.png")} />
+          <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
+            CIS 3200 TA
+            <a href="https://css.seas.upenn.edu/" target="blank_" className="text-main-teal inline">
+              {" "}
+              @ University of Pennsylvlania{" "}
+            </a>
+            <div className="mt-1 mb-4 text-slate-400 text-sm">January 2023 - May 2023</div>
+            <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
+              &emsp; TA'd the advanced algorithms and data structures class of 175+ students in topics such as graphs algorithms, flow networks and approximation algorithms.
+            </div>
+          </div>
+        </div>
+        <div style={{"--delay":"0.2s", "--slideDuration":"0.2s"}} className="flex slideUp opacity-0 translate-y-5 xs:flex-col xs:items-center md:flex-row mt-12 mb-6 gap-4">
           <img alt="css logo" className="h-1/2 rounded-3xl" width="180" src={require("./images/icons/csslogo.png")} />
           <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
             Research Assistant
@@ -19,7 +50,7 @@ const Experience = () => (
               {" "}
               @ Computational Social Science Lab{" "}
             </a>
-            <div className="mt-1 mb-4 text-slate-400 text-sm">September 2022 - Present</div>
+            <div className="mt-1 mb-4 text-slate-400 text-sm">September 2022 - May 2023</div>
             <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
               &emsp; Built digital experiments to assist with high throughput on group dynamics research with JavaScript, React, Meteor and Empirica stack
             </div>
@@ -28,7 +59,7 @@ const Experience = () => (
             </div>
           </div>
         </div>
-        <div className="flex xs:flex-col xs:items-center md:flex-row mt-10 mb-6 gap-4">
+        <div style={{"--delay":"0.2s", "--slideDuration":"0.2s"}} className="flex slideUp opacity-0 translate-y-5 xs:flex-col xs:items-center md:flex-row mt-10 mb-6 gap-4">
           <img alt="ren logo" className="h-1/2 rounded-3xl" width="180" src={require("./images/icons/ren.png")} />
           <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
             Software Developer Intern
@@ -36,7 +67,7 @@ const Experience = () => (
               {" "}
               @ Ren Energy{" "}
             </a>
-            <div className="mt-1 mb-4 text-slate-400 text-sm">August 2022 - Present</div>
+            <div className="mt-1 mb-4 text-slate-400 text-sm">August 2022 - December 2022</div>
             <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
               &emsp; Assembled production level components with Angular, TypeScript and frameworks such as MapBoxGL for Ren’s main user facing application which led to a smoother client targeted
               experience
@@ -46,7 +77,7 @@ const Experience = () => (
             </div>
           </div>
         </div>
-        <div className="flex xs:flex-col xs:items-center md:flex-row mt-16 mb-6 gap-4">
+        <div style={{"--delay":"0.2s", "--slideDuration":"0.2s"}} className="flex slideUp opacity-0 translate-y-5 xs:flex-col xs:items-center md:flex-row mt-12 mb-6 gap-4">
           <img alt="juni logo" className=" h-1/2 rounded-3xl" width="180" src={require("./images/icons/juni.png")} />
           <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
             Computer Science Instructor
@@ -54,7 +85,7 @@ const Experience = () => (
               {" "}
               @ Juni Learning{" "}
             </a>
-            <div className="mt-1 mb-4 text-slate-400 text-sm">June 2021 - Present</div>
+            <div className="mt-1 mb-4 text-slate-400 text-sm">June 2021 - September 2022</div>
             <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
               &emsp; Tutored students and developed projects in Python, Java and Scratch for children ages 8-18 and encouraged resiliency and problem-solving skills while facilitating a motivating
               environment

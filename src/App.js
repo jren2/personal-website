@@ -25,7 +25,7 @@ export function App() {
         <div id="home" />
         {/* <div className="intro-overlay fixed w-full h-full bg-black z-50"></div>
         <div className="intro-overlay text-center mx-[32vw] my-[20vh] w-full fixed z-50">
-          <Name open className="mx-auto z-50" />
+          <IntroNameAnimation open className="mx-auto z-50" />
         </div> */}
         {/* <Navbar /> */}
         <Home />

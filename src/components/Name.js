@@ -1,6 +1,6 @@
 import React from "react"
 
-const Name = ({ open }) => {
+const IntroNameAnimation = ({ open }) => {
   return (
     <svg id={open ? "name" : "home-name"} width="490" height="119" viewBox="0 0 775 119" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g filter="url(#filter0_d_3_2)">
@@ -237,4 +237,4 @@ const Name = ({ open }) => {
   )
 }
 
-export default Name
+export default IntroNameAnimation

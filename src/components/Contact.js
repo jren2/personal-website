@@ -12,7 +12,7 @@ const Contact = () => (
           <div style={{ "--shift": "250px", "--duration": "0.4s", "--delay": "0.1s" }} className="typeDisappear absolute w-full h-full bg-zinc-900" />
           Contact
         </div>
-        <div className="mb-10 text-center text-base font-medium tracking-wider text-slate-400"> Feel free to reach out to me through any of the resources below!</div>
+        <div className="mb-10 text-center text-base font-medium tracking-wider text-slate-200 opacity-75"> Feel free to reach out to me through any of the resources below!</div>
         <div className="text-center mt-14 flex xs:flex-col sm:flex-row">
           <div className="flex xs:flex-col m-auto sm:flex-row">
             <ResumeButton />
