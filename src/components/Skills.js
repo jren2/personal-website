@@ -24,7 +24,7 @@ const Skills = () => {
               <div style={{ "--shift": "250px", "--duration": "0.4s", "--delay": "0.1s" }} className="typeDisappear absolute w-full h-full bg-zinc-800" />
                 Coursework
               </div>
-            <div style={{"--delay":"0.4s"}} className="reveal opacity-0 relative w-full m-auto flex flex-row text-slate-400">
+            <div style={{"--delay":"0.4s"}} className="reveal opacity-0 relative w-full m-auto flex flex-row text-slate-200/70">
               <div className="m-auto w-32 relative">
                 <div id="coursework-chooser" className="absolute w-[2px] h-full bg-slate-400/50 rounded-lg"></div>
                 {
@@ -222,8 +222,8 @@ const Skills = () => {
                     <img alt="sde" className="object-cover" width="70px" height="70px" src={require("./images/icons/sde.png")} />
                   </div>
                   <div className="group-hover:text-teal-300 duration-300 my-2 text-slate-200 text-xl">Software Development</div>
-                  <div className="text-slate-400 text-lg">
-                    <ul className="text-slate-400">
+                  <div className="text-slate-200/70 text-lg">
+                    <ul className="text-slate-200/70">
                       <li className="list-element tracking-wide font-normal text-sm"> Java</li>
                       <li className="list-element tracking-wide font-normal text-sm"> Python</li>
                       <li className="list-element tracking-wide font-normal text-sm"> C</li>
@@ -238,8 +238,8 @@ const Skills = () => {
                     <img alt="ds" width="70px" height="70px" src={require("./images/icons/ds.png")} />
                   </div>
                   <div className="group-hover:text-teal-300 duration-300 my-2 text-slate-200 text-xl">Data Science</div>
-                    <div className="text-slate-400 text-lg">
-                      <ul className="text-slate-400">
+                    <div className="text-slate-200/70 text-lg">
+                      <ul className="text-slate-200/70">
                         <li className="list-element tracking-wide font-normal text-sm"> Python</li>
                         <li className="ml-4 list-element tracking-wide font-normal text-xs"> Pandas</li>
                         <li className="ml-4 list-element tracking-wide font-normal text-xs"> TensorFlow</li>
@@ -260,7 +260,7 @@ const Skills = () => {
                 <div className="text-slate-300 text-lg grid grid-cols-2 gap-4">
                   <div>
                     Frontend
-                    <ul className="text-slate-400">
+                    <ul className="text-slate-200/70">
                       <li className="truncate list-element tracking-wide font-normal text-sm"> JavaScript</li>
                       <li className="truncate list-element tracking-wide font-normal text-sm"> React</li>
                       <li className="truncate list-element tracking-wide font-normal text-sm"> Angular</li>
@@ -270,7 +270,7 @@ const Skills = () => {
                   </div>
                   <div>
                     Backend
-                    <ul className="text-slate-400">
+                    <ul className="text-slate-200/70">
                       <li className="truncate list-element tracking-wide font-normal text-sm"> NodeJS</li>
                       <li className="truncate list-element tracking-wide font-normal text-sm"> MongoDB</li>
                       <li className="truncate list-element tracking-wide font-normal text-sm"> MySQL</li>

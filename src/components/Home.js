@@ -27,7 +27,7 @@ const Home = () => {
         <div className="relative">
           <div className="flex flex-row mb-8 justify-between xs:px-24 md:px-36 xs:flex-col xs:pb-14 lg:pt-28 lg:flex-row">
             <div className="mt-16 z-10 xs:text-center xs:justify-center lg:justify-start lg:text-left ">
-              <div className="text-slate-300 relative tracking-wide xs:m-auto lg:m-0 overflow-hidden">
+              <div className="text-slate-200 relative tracking-wide xs:m-auto lg:m-0 overflow-hidden">
                 <div style={{ "--shift": "250px", "--duration": "0.7s", "--delay": "0.8s" }} className="typeAnimation absolute w-full h-full bg-zinc-900" />
                 Hello! My name is,
               </div>
@@ -35,7 +35,7 @@ const Home = () => {
                 <div style={{ "--shift": "500px", "--duration": "0.6s", "--delay": "0.9s" }} className="typeAnimation absolute w-full h-full bg-zinc-900" />
                 Jason Ren
               </div>
-              <div style={{ "--delay": "1.4s", "--slideDuration":"0.2s" }} className="text-slate-400 opacity-0 slideAnimation translate-y-5 relative w-auto text-base tracking-wide xs:m-auto md:w-96 lg:m-0 lg:w-96">
+              <div style={{ "--delay": "1.4s", "--slideDuration":"0.2s" }} className="text-slate-200/80 opacity-0 slideAnimation translate-y-5 relative w-auto text-base tracking-wide xs:m-auto md:w-96 lg:m-0 lg:w-96">
                 I&apos;m a CS student with interests and experience in software engineering, web development and data analysis!
               </div>
               <div className="xs:mt-8">

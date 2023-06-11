@@ -19,12 +19,9 @@ const Experience = () => (
               {" "}
               @ Mathworks{" "}
             </a>
-            <div className="mt-1 mb-4 text-slate-400 text-sm">May 2023 - August 2023</div>
-            <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
-              &emsp; Built a UI to streamline the project creation process in the MATLAB Signal Integrity Toolbox between both beginning and experienced users 
-            </div>
-            <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
-              &emsp; Documented progress and bugs with Confluence and Jira
+            <div className="mt-1 mb-4 text-slate-200/70 text-sm">May 2023 - August 2023</div>
+            <div className="list-element my-2 text-slate-200/70 text-base font-normal tracking-wide">
+              &emsp; Currently working with the MATLAB Signal Integrity team to make a better user experience for the toolbox!
             </div>
           </div>
         </div>
@@ -36,8 +33,8 @@ const Experience = () => (
               {" "}
               @ University of Pennsylvlania{" "}
             </a>
-            <div className="mt-1 mb-4 text-slate-400 text-sm">January 2023 - May 2023</div>
-            <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
+            <div className="mt-1 mb-4 text-slate-200/70 text-sm">January 2023 - May 2023</div>
+            <div className="list-element my-2 text-slate-200/70 text-base font-normal tracking-wide">
               &emsp; TA'd the advanced algorithms and data structures class of 175+ students in topics such as graphs algorithms, flow networks and approximation algorithms.
             </div>
           </div>
@@ -50,11 +47,11 @@ const Experience = () => (
               {" "}
               @ Computational Social Science Lab{" "}
             </a>
-            <div className="mt-1 mb-4 text-slate-400 text-sm">September 2022 - May 2023</div>
-            <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
+            <div className="mt-1 mb-4 text-slate-200/70 text-sm">September 2022 - May 2023</div>
+            <div className="list-element my-2 text-slate-200/70 text-base font-normal tracking-wide">
               &emsp; Built digital experiments to assist with high throughput on group dynamics research with JavaScript, React, Meteor and Empirica stack
             </div>
-            <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
+            <div className="list-element my-2 text-slate-200/70 text-base font-normal tracking-wide">
               &emsp; Collaborated with senior researchers and research assistants weekly to accelerate the data analysis process
             </div>
           </div>
@@ -67,12 +64,12 @@ const Experience = () => (
               {" "}
               @ Ren Energy{" "}
             </a>
-            <div className="mt-1 mb-4 text-slate-400 text-sm">August 2022 - December 2022</div>
-            <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
+            <div className="mt-1 mb-4 text-slate-200/70 text-sm">August 2022 - December 2022</div>
+            <div className="list-element my-2 text-slate-200/70 text-base font-normal tracking-wide">
               &emsp; Assembled production level components with Angular, TypeScript and frameworks such as MapBoxGL for Ren’s main user facing application which led to a smoother client targeted
               experience
             </div>
-            <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
+            <div className="list-element my-2 text-slate-200/70 text-base font-normal tracking-wide">
               Maintained a mature codebase and optimized workflow in 2-week sprints through version control on GitLab
             </div>
           </div>
@@ -85,12 +82,12 @@ const Experience = () => (
               {" "}
               @ Juni Learning{" "}
             </a>
-            <div className="mt-1 mb-4 text-slate-400 text-sm">June 2021 - September 2022</div>
-            <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
+            <div className="mt-1 mb-4 text-slate-200/70 text-sm">June 2021 - September 2022</div>
+            <div className="list-element my-2 text-slate-200/70 text-base font-normal tracking-wide">
               &emsp; Tutored students and developed projects in Python, Java and Scratch for children ages 8-18 and encouraged resiliency and problem-solving skills while facilitating a motivating
               environment
             </div>
-            <div className="list-element my-2 text-slate-400 text-base font-normal tracking-wide">
+            <div className="list-element my-2 text-slate-200/70 text-base font-normal tracking-wide">
               &emsp; Developed communication skills with parents via updates on student progress and learning assessments
             </div>
           </div>
