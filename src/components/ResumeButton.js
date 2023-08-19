@@ -1,7 +1,7 @@
-import React from "react"
-import { firebaseLink } from "../config"
+import React from 'react';
+import { firebaseLink } from '../config';
 
-const ResumeButton = () => {
+function ResumeButton() {
   return (
     <a
       href={firebaseLink}
@@ -22,7 +22,7 @@ const ResumeButton = () => {
         </svg>
       </span>
     </a>
-  )
+  );
 }
 
-export default ResumeButton
+export default ResumeButton;
