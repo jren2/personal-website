@@ -30,6 +30,7 @@ function Skills() {
               {
                   semesters.map((semester, idx) => (
                     <button
+                      key={`${semester}`}
                       type="button"
                       className={`${activeSem === idx ? 'text-main-teal bg-zinc-700' : ''} semester-choice w-32 hover:border-l-main-teal hover:text-main-teal hover:bg-zinc-700 duration-500 text-left  text-base p-3`}
                       onClick={() => { setActiveSem(idx); changeSem(idx); }}
@@ -244,7 +245,7 @@ function Skills() {
             <div className="w-full cursor-default flex flex-row justify-center">
               <div style={{ '--delay': '0.3s', '--slideDuration': '0.3s', '--slideUpShift': '-0.5rem' }} className="slideUp opacity-0 hover:scale-110 translate-y-5 h-fit w-1/2 group mr-2 duration-300 card text-teal-300 text-left border-b-main-teal border-b-8">
                 <div>
-                  <img alt="sde" className="object-cover" width="70px" height="70px" src={require('./images/icons/sde.png')} />
+                  <img alt="sde" className="object-cover" width="70px" height="70px" src={require('./images/icons/sde.webp')} />
                 </div>
                 <div className="group-hover:text-teal-300 duration-300 my-2 text-slate-200 text-xl">Software Development</div>
                 <div className="text-slate-200/70 text-lg">
@@ -260,7 +261,7 @@ function Skills() {
 
               <div style={{ '--delay': '0.5s', '--slideDuration': '0.3s', '--slideUpShift': '-0.5rem' }} className="slideUp opacity-0 translate-y-5 h-fit w-1/2 mx-auto group hover:-translate-y-3 duration-300 card text-teal-300 text-left border-b-main-teal border-b-8">
                 <div>
-                  <img alt="ds" width="70px" height="70px" src={require('./images/icons/ds.png')} />
+                  <img alt="ds" width="70px" height="70px" src={require('./images/icons/ds.webp')} />
                 </div>
                 <div className="group-hover:text-teal-300 duration-300 my-2 text-slate-200 text-xl">Data Science</div>
                 <div className="text-slate-200/70 text-lg">
@@ -279,7 +280,7 @@ function Skills() {
 
             <div style={{ '--delay': '0.3s', '--slideDuration': '0.3s', '--slideUpShift': '-0.5rem' }} className="slideUp opacity-0 translate-y-5 h-fit w-1/2 group card cursor-default text-teal-300 text-left m-auto  border-b-main-teal border-b-8 hover:-translate-y-3 duration-300">
               <div className="object-fill">
-                <img alt="wde" className="ml-1" width="50px" height="50px" src={require('./images/icons/wde.png')} />
+                <img alt="wde" className="ml-1" width="50px" height="50px" src={require('./images/icons/wde.webp')} />
               </div>
               <div className="group-hover:text-teal-300 duration-300 mt-5 mb-2 text-slate-200 text-xl">Web Development</div>
               <div className="text-slate-300 text-lg grid grid-cols-2 gap-4">

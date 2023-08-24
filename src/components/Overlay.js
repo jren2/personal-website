@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import { firebaseLink } from '../config';
 
@@ -227,10 +226,5 @@ function Overlay({ sidebar, setSidebar }) {
     </>
   );
 }
-
-Overlay.propTypes = {
-  sidebar: PropTypes.bool.isRequired,
-  setSidebar: PropTypes.func.isRequired,
-};
 
 export default Overlay;

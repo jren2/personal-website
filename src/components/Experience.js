@@ -12,7 +12,7 @@ function Experience() {
           Experience
         </div>
         <div style={{ '--delay': '0.2s', '--slideDuration': '0.2s' }} className="flex slideUp opacity-0 translate-y-5 xs:flex-col xs:items-center md:flex-row mt-12 mb-6 gap-4">
-          <img alt="css logo" width="180" className="rounded-3xl" src={require('./images/icons/upenn.png')} />
+          <img alt="css logo" width="180" className="rounded-3xl" src={require('./images/icons/upenn.webp')} />
           <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
             CIS 3200 TA
             <a href="https://www.cis.upenn.edu/" target="blank_" className="text-main-teal inline">
@@ -27,7 +27,7 @@ function Experience() {
           </div>
         </div>
         <div style={{ '--delay': '0.2s', '--slideDuration': '0.2s' }} className="flex slideUp opacity-0 translate-y-5 xs:flex-col xs:items-center md:flex-row mt-12 mb-6 gap-4">
-          <img alt="css logo" className="h-1/2 rounded-3xl" width="180" src={require('./images/icons/csslogo.png')} />
+          <img alt="css logo" className="h-1/2 rounded-3xl" width="180" src={require('./images/icons/csslogo.webp')} />
           <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
             Research Assistant
             <a href="https://css.seas.upenn.edu/" target="blank_" className="text-main-teal inline">
@@ -45,7 +45,7 @@ function Experience() {
           </div>
         </div>
         <div style={{ '--delay': '0.2s', '--slideDuration': '0.2s' }} className="flex slideUp opacity-0 translate-y-5 xs:flex-col xs:items-center md:flex-row mt-12 mb-6 gap-4">
-          <img alt="css logo" className="h-3/4 rounded-3xl" width="180" src={require('./images/icons/mathworks.png')} />
+          <img alt="css logo" className="h-3/4 rounded-3xl" width="180" src={require('./images/icons/mathworks.webp')} />
           <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
             Software Engineering Intern
             <a href="https://www.mathworks.com/products/signal-integrity.html" target="blank_" className="text-main-teal inline">
@@ -63,7 +63,7 @@ function Experience() {
           </div>
         </div>
         <div style={{ '--delay': '0.2s', '--slideDuration': '0.2s' }} className="flex slideUp opacity-0 translate-y-5 xs:flex-col xs:items-center md:flex-row mt-10 mb-6 gap-4">
-          <img alt="ren logo" className="h-1/2 rounded-3xl" width="180" src={require('./images/icons/ren.png')} />
+          <img alt="ren logo" className="h-1/2 rounded-3xl" width="180" src={require('./images/icons/ren.webp')} />
           <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
             Software Developer Intern
             <a href="https://www.ren.inc/" target="blank_" className="text-main-teal inline">
@@ -82,7 +82,7 @@ function Experience() {
           </div>
         </div>
         <div style={{ '--delay': '0.2s', '--slideDuration': '0.2s' }} className="flex slideUp opacity-0 translate-y-5 xs:flex-col xs:items-center md:flex-row mt-12 mb-6 gap-4">
-          <img alt="juni logo" className=" h-1/2 rounded-3xl" width="180" src={require('./images/icons/juni.png')} />
+          <img alt="juni logo" className=" h-1/2 rounded-3xl" width="180" src={require('./images/icons/juni.webp')} />
           <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
             Computer Science Instructor
             <a href="https://junilearning.com/" target="blank_" className="text-main-teal inline">

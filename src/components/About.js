@@ -32,10 +32,10 @@ function About() {
         &nbsp;
       <div className="flex xs:flex-col lg:flex-row h-fit xs:px-24 lg:px-40 xl:px-56 py-24 gap-16 text-main-teal">
         <div id="am-text" className="h-fit w-11/12 xs:text-center lg:text-left xs:m-auto lg:-mt-2">
-          <p className="offsetSubtitle relative text-slate-200 text-3xl items-center w-fit xs:m-auto lg:ml-16 pb-6 font-medium tracking-wide">
+          <div className="offsetSubtitle relative text-slate-200 text-3xl items-center w-fit xs:m-auto lg:ml-16 pb-6 font-medium tracking-wide">
             <div style={{ '--shift': '150px', '--duration': '0.25s', '--delay': '0.2s' }} className="typeDisappear absolute w-full h-full bg-zinc-800" />
             About Me
-          </p>
+          </div>
           <p style={{ '--delay': '0.2s', '--slideDuration': '0.3s' }} className="text-slate-300 slideUp translate-y-5 opacity-0">
             <span>
               Hi! I&#39;m Jason Ren, an undergraduate senior and first year Master's student studying CIS at the University of Pennsylvania!

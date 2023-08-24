@@ -1,6 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import PropTypes from 'prop-types';
 import GithubIcon from './GithubIcon';
 
 function PortfolioCard({
@@ -38,12 +36,5 @@ function PortfolioCard({
     </div>
   );
 }
-
-PortfolioCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  technologies: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-};
 
 export default PortfolioCard;
