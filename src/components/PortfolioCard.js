@@ -26,12 +26,12 @@ function PortfolioCard({
       </div>
       <div className="mt-4 text-xs text-slate-200/50">
         {
-        technologies.map((technology, index) => (
-          <span key={index} className="mr-2">
-            {technology}
-          </span>
-        ))
-      }
+          technologies.map((technology, index) => (
+            <span key={technology} className="mr-2">
+              {technology}
+            </span>
+          ))
+        }
       </div>
     </div>
   );
