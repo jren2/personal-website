@@ -12,7 +12,7 @@ function PortfolioCard({
         </svg>
         {
         link && (
-          <a href={link} className="w-fit h-fit z-50 ml-auto mt-2 hover:text-main-teal" aria-label="GitHub" target="_blank" rel="noreferrer" cursorshover="true">
+          <a href={link} className="w-fit h-fit z-30 ml-auto mt-2 hover:text-main-teal" aria-label="GitHub" target="_blank" rel="noreferrer" cursorshover="true">
             <GithubIcon />
           </a>
         )

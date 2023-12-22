@@ -110,6 +110,98 @@
     animation: disappear var(--duration) linear forwards var(--delay);
   }
 
+  .intro-mask {
+    animation: introFade 0.2s linear forwards 2.8s;
+  }
+
+  .intro-textAnimation {
+    animation: textAnimationSlideLeft 0.5s ease-in-out forwards 1.5s, textAnimationSlideRight 0.5s ease-in-out forwards 2.2s, introFade 0.2s linear forwards 2.8s;;
+  }
+
+  .intro-dotAnimation {
+    animation: dotAnimationShrink 0.5s ease-in-out forwards 1s, dotAnimationSlide 0.5s ease-in-out forwards 1.5s, dotAnimationSlideLeft 0.5s ease-in-out forwards 2.2s, introFade 0.2s linear forwards 2.8s;;
+  }
+
+  .intro-slashAnimation {
+    animation: slashAnimationShrink 0.5s ease-in-out forwards 1s, slashAnimationSlideLeft 0.5s ease-in-out forwards 2.2s, slashAnimationTransform 0.3s ease-in-out forwards 2.4s, introFade 0.2s linear forwards 2.8s;;
+  }
+
+  @keyframes introFade {
+    to {
+      opacity: 0;
+      filter: blur(5px);
+      visibility: hidden;
+    }
+  }
+
+  @keyframes textAnimationSlideRight {
+    to {
+      width: 3rem;
+      transform: translateX(-2vw);
+    }
+  }
+
+  @keyframes textAnimationSlideLeft {
+    to {
+      width: 260px;
+      transform: translateX(-10.5vw);
+    }
+  }
+
+  @keyframes dotAnimationShrink {
+    from {
+      margin-left: 0;
+      margin-top: 0;
+      width: 100vw;
+      height: 100vw;
+    }
+  
+    to {
+      margin-left: calc(50vw - 5px);
+      margin-top: calc(40vh - 5px);
+      width: 60px;
+      height: 100px;
+    }
+  }
+
+  @keyframes slashAnimationShrink {
+    from {
+      width: 100vw;
+      height: 100vw;
+    }
+  
+    to {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  @keyframes dotAnimationSlide {
+    to {
+      transform: translateX(8vw);
+    }
+  }
+
+  @keyframes dotAnimationSlideLeft {
+    to {
+      transform: translateX(1.5vw) translateY(-9vh);
+    }
+  }
+
+  @keyframes slashAnimationSlideLeft {
+    to {
+      transform: translateY(9vh);
+    }
+  }
+
+  @keyframes slashAnimationTransform {
+    to {
+      transform: translateY(-1vh) translateX(3vw) rotate(20deg);
+      transform-origin: top left;
+      height: 120px;
+    }
+  }
+
   .slideAnimation {
     animation: slide var(--slideDuration) ease-in-out forwards var(--delay);
   }

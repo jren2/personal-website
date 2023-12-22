@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       colors: {
         'main-teal': '#03dac6',
+        'white-background': '#fff9f5',
       },
       fontFamily: {
         sans: ['Proxima Nova', ...defaultTheme.fontFamily.sans],

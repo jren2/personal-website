@@ -75,7 +75,7 @@ function Overlay({ sidebar, setSidebar }) {
 
   return (
     <>
-      <div className="overlay-element left-0 flex duration-500 w-full flex-nowrap top-4 fixed z-50">
+      <div className="overlay-element left-0 flex duration-500 w-full flex-nowrap top-4 fixed z-40">
         <a href="#home" onClick={() => shift(true)} className="flex flex-row ml-4 h-14 w-14">
           <svg width="50" height="50" viewBox="0 0 245 273" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -121,7 +121,7 @@ function Overlay({ sidebar, setSidebar }) {
           <div id="s" className="duration-[500ms] ">{sidebar ? 'e' : 's'}</div>
         </div>
         <motion.div
-          className={`${sidebar ? 'bg-zinc-800' : 'bg-main-teal'} duration-500 shadow shadow-zinc-800 left-0 ml-6 cursor-pointer fixed w-12 h-12 rounded-full z-50 top-[40vh]`}
+          className={`${sidebar ? 'bg-zinc-800' : 'bg-main-teal'} duration-500 shadow shadow-zinc-800 left-0 ml-6 cursor-pointer fixed w-12 h-12 rounded-full z-40 top-[40vh]`}
           whileHover={{ scale: 1.1 }}
           onHoverStart={() => rotate()}
           onHoverEnd={() => unrotate()}
