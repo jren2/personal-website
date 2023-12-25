@@ -8,12 +8,21 @@ module.exports = {
   },
   theme: {
     extend: {
+      borderWidth: {
+        1: '1px',
+      },
+      borderColor: {
+        grid: '#babec3',
+        'secondary-violet': '#7256ff',
+      },
       colors: {
         'main-teal': '#03dac6',
-        'white-background': '#fff9f5',
+        'white-background': '#f0f0f0',
+        'off-black': '#2a2a2a',
+        'secondary-violet': '#7256ff',
       },
       fontFamily: {
-        sans: ['Proxima Nova', ...defaultTheme.fontFamily.sans],
+        custom: ['NeueMontreal', 'sans-serif'],
       },
       grayscale: {
         20: '20%',

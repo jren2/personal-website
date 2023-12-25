@@ -1,15 +1,17 @@
 /* eslint-disable no-trailing-spaces */
 /* eslint-disable global-require */
-import React from 'react';
+import React, { useState } from 'react';
 
 const experiences = [
   {
-    title: 'CIS 3200 TA',
+    title: 'Teaching Assistant',
     company: 'University of Pennsylvania',
     link: 'https://www.cis.upenn.edu/',
     date: 'Jan 2023 - May 2023, Aug 2023 - Present',
     description: [
-      'TA\'d the advanced algorithms and data structures class of 175+ students in topics such as graphs algorithms, flow networks and approximation algorithms.',
+      'TA for CIS 3200 Introduction to Algorithms + CIS 3500 Software Design and Engineering',
+      'Taught advanced algorithms and data structures class of 175+ students in topics such as graphs algorithms, flow networks and approximation algorithms.',
+      'Helped design and debug projects/homeworks in JavaScript, React, NodeJS',
     ],
     image: require('./images/icons/upenn.webp'),
   },
@@ -60,46 +62,83 @@ const experiences = [
 ];
 
 function Experience() {
+  const [experienceIdx, setExperienceIdx] = useState(0);
   return (
-    <div id="experience" className="bg-zinc-800">
-      &nbsp;
-      <div className="experience-padding h-fit py-16">
-        <div className="relative experienceSubtitle mb-10 text-center w-fit mx-auto text-3xl font-medium tracking-wider text-slate-200">
-          <div 
-            style={{ '--shift': '250px', '--duration': '0.4s', '--delay': '0.1s' }} 
-            className="typeDisappear absolute w-full h-full bg-zinc-800"
-          />
-          Experience
+    <div id="experience" className="bg-white-background px-32">
+      <div className="w-full h-5 border-1 border-grid" />
+      <div className="h-fit">
+        <div className="w-full h-20 flex flex-row">
+          <div className="w-32 h-20 flex-shrink-0 border-1 border-b-0 border-t-0 border-grid" />
+          <div className="w-full text-center flex items-center justify-center text-4xl font-medium mx-auto border-b-[1px] border-grid">
+            Experience
+          </div>
+          <div className="w-32 h-20 flex-shrink-0 border-1 border-b-0 border-t-0 border-grid" />
         </div>
-        {
-          experiences.map((experience) => (
-            <div 
-              style={{ '--delay': '0.2s', '--slideDuration': '0.2s' }} 
-              className="flex slideUp opacity-0 translate-y-5 xs:flex-col xs:items-center md:flex-row mt-12 mb-6 gap-4"
-            >
-              <img alt="css logo" width="180" className="rounded-3xl" src={experience.image} />
-              <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
-                {experience.title}
-                <a href={experience.link} target="blank_" className="text-main-teal inline">
-                  {' '}
-                  @ 
-                  {' '}
-                  {experience.company}
-                  {' '}
-                </a>
-                <div className="mt-1 mb-4 text-slate-200/70 text-sm">{experience.date}</div>
-                {
-                  experience.description.map((description) => (
-                    <div className="list-element my-2 text-slate-200/70 text-base font-normal tracking-wide">
-                      {' '}
-                      {description}
-                    </div>
-                  ))
-                }
-              </div>
+        <div className="flex flex-row">
+          <div className="w-32 flex-shrink-0 border-1 border-b-0 border-grid border-t-0" />
+          <div className="w-40 flex-shrink-0 border-r-1 border-grid" />
+          <div className="w-full flex flex-row">
+            <div className="w-20 h-fit">
+              {
+                experiences.map((experience, idx) => (
+                  <div onMouseEnter={() => setExperienceIdx(idx)} className="border-r-1 border-b-1 border-grid w-20 h-20">
+                    <img alt="css logo" width="180" className="" src={experience.image} />
+                  </div>
+                ))
+              }
             </div>
-          ))
-        }
+            <div className="text-xl xs:text-center md:text-left p-3 font-medium tracking-normal text-off-black">
+              {experiences[experienceIdx].title}
+              <a href={experiences[experienceIdx].link} target="blank_" className="text-[#7256ff] inline">
+                {' '}
+                @ 
+                {' '}
+                {experiences[experienceIdx].company}
+                {' '}
+              </a>
+              <div className="mt-1 mb-4 text-off-black/70 text-sm">{experiences[experienceIdx].date}</div>
+              {
+                      experiences[experienceIdx].description.map((description) => (
+                        <div className="list-element my-2 text-off-black/70 text-base font-normal tracking-wide">
+                          {' '}
+                          {description}
+                        </div>
+                      ))
+                    }
+            </div>
+          </div>
+          {/* {
+              experiences.map((experience) => (
+                <div 
+                  style={{ '--delay': '0.2s', '--slideDuration': '0.2s' }} 
+                  className="flex slideUp opacity-0 translate-y-5 xs:flex-col xs:items-center md:flex-row mt-12 mb-6 gap-4"
+                >
+                  <img alt="css logo" width="180" className="rounded-3xl" src={experience.image} />
+                  <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
+                    {experience.title}
+                    <a href={experience.link} target="blank_" className="text-main-teal inline">
+                      {' '}
+                      @ 
+                      {' '}
+                      {experience.company}
+                      {' '}
+                    </a>
+                    <div className="mt-1 mb-4 text-slate-200/70 text-sm">{experience.date}</div>
+                    {
+                      experience.description.map((description) => (
+                        <div className="list-element my-2 text-slate-200/70 text-base font-normal tracking-wide">
+                          {' '}
+                          {description}
+                        </div>
+                      ))
+                    }
+                  </div>
+                </div>
+              ))
+            } */}
+          <div className="w-36 flex-shrink-0 border-l-1 border-grid" />
+          <div className="w-32 flex-shrink-0 border-1 border-b-0 border-gray-500/40 border-t-0" />
+        </div>
       </div>
     </div>
   );

@@ -2,48 +2,63 @@ import React from 'react';
 import headshot from './images/option.webp';
 
 const paragraphs = [
-  "Hi! I'm Jason Ren, an undergraduate senior + first year Master's student studying CIS at the University of Pennsylvania! My interest in computer science was born from multiple game dev summer camps more than a decade ago which opened my mind to the world of coding!",
-  'Fast forwarding to today, I remain passionate about solving challenging problems within software and web development for seamless user experiences. I am always exploring new designs and concepts while seeking out all types of opportunities to grow a vast programming background!',
-  'Beyond programming, I enjoy playing all casual or competitive sports - including soccer, which I have been playing since I was 6 years old! I am also an avid music lover (both as a listener and as a musician) which has led me to being a violinist currently for the Penn Symphony Orchestra and previously for the Philadelphia Youth Orchestra!',
+  "Hi! I'm Jason Ren, an undergraduate senior + first year Master's student studying CIS at UPenn! My interest in computer science was born from multiple game dev summer camps more than a decade ago which opened my mind to the world of coding!",
+  "Fast forwarding to today, I'm passionate about solving challenging problems through software and web development for seamless user experiences. I am always exploring new concepts and opportunities to grow a vast problem solving background!",
+  "Beyond programming, I've been playing soccer since I was 6 years old and am also an avid music lover! My favorite artist right now is Laufey and my favorite instrument is the violin (currently playing for the Penn Symphony Orchestra)!",
 ];
 
 function About() {
   return (
-    <div id="about" className="bg-zinc-800">
-        &nbsp;
-      <div className="flex xs:flex-col lg:flex-row h-fit xs:px-24 lg:px-40 xl:px-56 py-24 gap-16 text-main-teal">
-        <div id="am-text" className="h-fit w-11/12 xs:text-center lg:text-left xs:m-auto lg:-mt-2">
-          <div className="offsetSubtitle relative text-slate-200 text-3xl items-center w-fit xs:m-auto lg:ml-16 pb-6 font-medium tracking-wide">
-            <div
-              style={{ '--shift': '150px', '--duration': '0.25s', '--delay': '0.2s' }}
-              className="typeDisappear absolute w-full h-full bg-zinc-800"
-            />
-            About Me
+    <div id="about" className="bg-white-background px-32">
+      <div className="w-full h-5 border-1 border-t-0 border-grid" />
+      <div className="w-full h-20 flex flex-row">
+        <div className="w-20 h-20 flex-shrink-0 border-1 border-t-0 border-grid" />
+        <div className="w-full flex items-center px-10 text-4xl font-medium mx-auto border-b-[1px] border-grid">
+          About Me
+        </div>
+        <div className="w-20 h-20 flex-shrink-0 border-1 border-t-0 border-grid" />
+      </div>
+      <div className="flex xs:flex-col lg:flex-row h-fit text-off-black">
+        <div className="w-20 flex-shrink-0 border-1 border-gray-500/40 border-t-0" />
+        <div className="p-10 flex flex-row gap-12 border-b-1 border-grid">
+          <div id="am-text" className="h-fit w-1/2 xs:text-center lg:text-left lg:-mt-2">
+            {/* <div className="offsetSubtitle relative text-off-black text-3xl items-center w-fit xs:m-auto lg:ml-16 pb-6 font-medium tracking-wide">
+              <div
+                style={{ '--shift': '150px', '--duration': '0.25s', '--delay': '0.2s' }}
+                className="typeDisappear absolute w-full h-full bg-white-background"
+              />
+              About Me
+            </div> */}
+            {
+                paragraphs.map((paragraph, index) => (
+                  <>
+                    <p
+                      key={paragraph}
+                      style={{ '--delay': `${0.2 + (index * 0.08)}s`, '--slideDuration': '0.3s' }}
+                      className="text-off-black slideUp translate-y-5 opacity-0"
+                    >
+                      <span>
+                        {paragraph}
+                      </span>
+                    </p>
+                    <br />
+                  </>
+                ))
+              }
           </div>
-          {
-            paragraphs.map((paragraph, index) => (
-              <>
-                <p
-                  key={paragraph}
-                  style={{ '--delay': `${0.2 + (index * 0.08)}s`, '--slideDuration': '0.3s' }}
-                  className="text-slate-300 slideUp translate-y-5 opacity-0"
-                >
-                  <span>
-                    {paragraph}
-                  </span>
-                </p>
-                <br />
-              </>
-            ))
-          }
+          <div
+            id="am-picture"
+            style={{ '--delay': '0.4s' }}
+            className="reveal group relative w-1/3 opacity-0 h-fit m-auto"
+          >
+            <img alt="headshot" src={headshot} />
+            <div className="group-hover:top-[calc(100%-80px+20px)] duration-300 ease-in-out absolute -top-5 -right-5 w-20 h-20 border-r-[1px] border-r-black" />
+            <div className="group-hover:right-[calc(100%-80px+20px)] duration-300 ease-in-out absolute -top-5 -right-5 w-20 h-20 border-t-[1px] border-t-black" />
+            <div className="group-hover:left-[calc(100%-80px+20px)] duration-300 ease-in-out absolute -bottom-5 -left-5 w-20 h-20 border-b-[1px] border-b-black" />
+            <div className="group-hover:bottom-[calc(100%-80px+20px)] duration-300 ease-in-out absolute -bottom-5 -left-5 w-20 h-20 border-l-[1px] border-l-black" />
+          </div>
         </div>
-        <div
-          id="am-picture"
-          style={{ '--delay': '0.4s' }}
-          className="reveal opacity-0 rotate-6 h-fit w-7/12 hover:rotate-0 duration-300 m-auto"
-        >
-          <img alt="headshot" className="rounded-3xl" src={headshot} />
-        </div>
+        <div className="w-20 flex-shrink-0 border-1 border-grid border-t-0" />
       </div>
     </div>
   );
