@@ -22,6 +22,7 @@ const experiences = [
     date: 'Sep 2022 - May 2023, Aug 2023 - Present',
     description: [
       'Built digital experiments to assist with high throughput on group dynamics research with JavaScript, React, Meteor and Empirica stack',
+      'Deployed weekly real time experiments with 15+ participants from MTurk to collect group dynamics data',
       'Collaborated with senior researchers and research assistants weekly to accelerate the data analysis process',
     ],
     image: require('./images/icons/csslogo.webp'),
@@ -33,6 +34,9 @@ const experiences = [
     date: 'May 2023 - Aug 2023',
     description: [
       'Worked with the MATLAB Signal Integrity team to make a better user experience for the toolbox!',
+      'Designed and implemented a new user facing introduction modal for all beginner and experienced users picking up the toolbox',
+      'Integrated an editor for Clock Domain changes to allow for an error safe and intuitive editing experience for anyone editing their circuits',
+      'Collaborated with senior developers and UX designers to ensure a smooth transition for the new features into the toolbox',
       'Catch my changes in the SI Toolbox in the 2024a release :)',
     ],
     image: require('./images/icons/mathworks.webp'),
@@ -44,6 +48,7 @@ const experiences = [
     date: 'Aug 2022 - Dec 2022',
     description: [
       'Assembled production level components with Angular, TypeScript and frameworks such as MapBoxGL for Ren’s main user facing application which led to a smoother client targeted experience',
+      'Decreased carbon emission data loading time on the user facing map by designing an aggregation pipeline for emissions/country',
       'Maintained a mature codebase and optimized workflow in 2-week sprints through version control on GitLab',
     ],
     image: require('./images/icons/ren.webp'),
@@ -63,14 +68,24 @@ const experiences = [
 
 function Experience() {
   const [experienceIdx, setExperienceIdx] = useState(0);
+
+  const changeSem = (semester) => {
+    const slider = document.getElementById('coursework-chooser');
+    slider.style.setProperty('--coursework-chooser-index', semester);
+  };
+  
   return (
     <div id="experience" className="bg-white-background px-32">
       <div className="w-full h-5 border-1 border-grid" />
       <div className="h-fit">
         <div className="w-full h-20 flex flex-row">
           <div className="w-32 h-20 flex-shrink-0 border-1 border-b-0 border-t-0 border-grid" />
-          <div className="w-full text-center flex items-center justify-center text-4xl font-medium mx-auto border-b-[1px] border-grid">
-            Experience
+          <div className="text-3xl relative w-full text-center flex items-center justify-center font-medium mx-auto border-b-[1px] border-grid">
+            <div className="group relative cursor-default w-fit overflow-hidden">
+              <div style={{ '--shift': '250px', '--duration': '0.4s', '--delay': '0.1s' }} className="typeDisappear absolute w-full h-full bg-white-background z-10" />
+              Experience
+              <div className="group-hover:left-0 bottom-[1px] duration-150 absolute w-full h-[2px] bg-off-black -left-full" />
+            </div>
           </div>
           <div className="w-32 h-20 flex-shrink-0 border-1 border-b-0 border-t-0 border-grid" />
         </div>
@@ -78,11 +93,12 @@ function Experience() {
           <div className="w-32 flex-shrink-0 border-1 border-b-0 border-grid border-t-0" />
           <div className="w-40 flex-shrink-0 border-r-1 border-grid" />
           <div className="w-full flex flex-row">
-            <div className="w-20 h-fit">
+            <div className="w-20 h-fit relative">
+              <div id="coursework-chooser" style={{ '--coursework-chooser-index': experienceIdx }} className="duration-300" />
               {
                 experiences.map((experience, idx) => (
-                  <div onMouseEnter={() => setExperienceIdx(idx)} className="border-r-1 border-b-1 border-grid w-20 h-20">
-                    <img alt="css logo" width="180" className="" src={experience.image} />
+                  <div onClick={() => { setExperienceIdx(idx); changeSem(idx); }} className="cursor-pointer border-r-1 border-b-1 border-grid w-20 h-20">
+                    <img alt="css logo" width="160" className="" src={experience.image} />
                   </div>
                 ))
               }

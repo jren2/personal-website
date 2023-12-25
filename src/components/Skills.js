@@ -97,9 +97,12 @@ function Skills() {
       <div className="w-full h-5 border-1 border-t-0 border-grid" />
       <div className="flex xs:flex-col lg:flex-row h-fit border-l-1 border-r-1 border-grid">
         <div className=" border-b-1 border-grid xs:w-full lg:w-6/12 h-fit text-center text-off-black text-3xl font-medium tracking-wide p-4">
-          <div className="text-4xl font-medium  relative w-fit mx-auto flex flex-col text-center mb-6">
-            <div style={{ '--shift': '250px', '--duration': '0.4s', '--delay': '0.1s' }} className="typeDisappear absolute w-full h-full bg-zinc-800" />
-            Coursework
+          <div className="text-3xl font-medium  relative w-fit mx-auto flex flex-col text-center mb-6">
+            <div style={{ '--shift': '250px', '--duration': '0.4s', '--delay': '0.1s' }} className="typeDisappear absolute w-full h-full bg-white-background z-10" />
+            <div className="group relative cursor-default w-fit overflow-hidden">
+              Coursework
+              <div className="group-hover:left-0 bottom-[1px] duration-150 absolute w-full h-[2px] bg-off-black -left-full" />
+            </div>
           </div>
           <div className="relative w-64 h-80 mx-auto">
             {
@@ -168,13 +171,16 @@ function Skills() {
           </div>
         </div>
         <div className="xs:w-full lg:w-6/12 h-fit border-grid border-l-1 items-center text-center text-off-black text-3xl font-medium tracking-wide p-4">
-          <div className="relative w-fit mx-auto text-center mb-4 text-4xl font-medium ">
-            <div style={{ '--shift': '150px', '--duration': '0.4s', '--delay': '0.3s' }} className="typeDisappear absolute w-full h-full bg-white-background" />
-            Skills
+          <div className="relative w-fit mx-auto text-center mb-4 text-3xl font-medium ">
+            <div style={{ '--shift': '150px', '--duration': '0.4s', '--delay': '0.3s' }} className="typeDisappear absolute w-full h-full bg-white-background z-10" />
+            <div className="group relative cursor-default w-fit overflow-hidden">
+              Skills
+              <div className="group-hover:left-0 bottom-[1px] duration-150 absolute w-full h-[2px] bg-off-black -left-full" />
+            </div>
           </div>
           <div className="flex flex-col gap-8">
             <div className="w-full cursor-default flex flex-row justify-center">
-              <div style={{ '--delay': '0.3s', '--slideDuration': '0.3s', '--slideUpShift': '-0.5rem' }} className="slideUp bg-white-background border-1 border-r-grid border-t-grid border-l-grid opacity-0 hover:scale-110 translate-y-5 h-fit w-1/2 group mr-2 duration-300 card text-left border-b-secondary-violet border-b-8">
+              <div className="bg-white-background border-1 border-r-grid border-t-grid border-l-grid  hover:scale-105 h-fit w-1/2 group mr-2 duration-300 card text-left border-b-secondary-violet border-b-8">
                 <div>
                   <img alt="sde" className="object-cover" width="70px" height="70px" src={require('./images/icons/sde.webp')} />
                 </div>
@@ -183,14 +189,14 @@ function Skills() {
                   <ul className="text-off-black/70">
                     <li className="list-element tracking-wide font-normal text-sm"> Java</li>
                     <li className="list-element tracking-wide font-normal text-sm"> Python</li>
-                    <li className="list-element tracking-wide font-normal text-sm"> C</li>
+                    <li className="list-element tracking-wide font-normal text-sm"> C++</li>
                     <li className="list-element tracking-wide font-normal text-sm"> OCaml</li>
                     <li className="list-element tracking-wide font-normal text-sm"> Git</li>
                   </ul>
                 </div>
               </div>
 
-              <div style={{ '--delay': '0.3s', '--slideDuration': '0.3s', '--slideUpShift': '-0.5rem' }} className="slideUp bg-white-background border-1 border-r-grid border-t-grid border-l-grid opacity-0 hover:scale-110 translate-y-5 h-fit w-1/2 group mr-2 duration-300 card text-left border-b-secondary-violet border-b-8">
+              <div className="bg-white-background border-1 border-r-grid border-t-grid border-l-grid  hover:scale-105 h-fit w-1/2 group mr-2 duration-300 card text-left border-b-secondary-violet border-b-8">
                 <div>
                   <img alt="ds" width="70px" height="70px" src={require('./images/icons/ds.webp')} />
                 </div>
@@ -209,7 +215,7 @@ function Skills() {
               <div />
             </div>
 
-            <div style={{ '--delay': '0.3s', '--slideDuration': '0.3s', '--slideUpShift': '-0.5rem' }} className="slideUp bg-white-background border-1 border-r-grid border-t-grid border-l-grid opacity-0 hover:scale-110 translate-y-5 h-fit w-1/2 group m-auto duration-300 card text-left border-b-secondary-violet border-b-8">
+            <div className="bg-white-background border-1 border-r-grid border-t-grid border-l-grid hover:scale-105 h-fit w-1/2 group m-auto duration-300 card text-left border-b-secondary-violet border-b-8">
               <div className="object-fill">
                 <img alt="wde" className="ml-1" width="50px" height="50px" src={require('./images/icons/wde.webp')} />
               </div>

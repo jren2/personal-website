@@ -45,12 +45,12 @@
 
   #coursework-chooser::before {
     content: "";
-    width: 2px;
-    height: 3rem;
-    background-color: rgba(0, 219, 198, 1);
-    z-index: 100;
-    top: calc(3rem * var(--coursework-chooser-index));
-    left: 0;
+    width: 3px;
+    height: 5rem;
+    background-color: rgba(114, 86, 255, 1);
+    z-index: 1;
+    top: calc(5rem * var(--coursework-chooser-index));
+    left: -2;
     position: absolute;
     border-radius: 0.5rem;
     transition: top 0.5s ease;
@@ -128,10 +128,6 @@
 
   .intro-overlay {
     animation: fade-away 0.9s linear forwards 2.7s;
-  }
-
-  .enterFade {
-    animation: enter 0.3s linear forwards calc(var(--delay) + 0.1s);
   }
 
   .typeAnimation {
@@ -229,14 +225,6 @@
       height: 120px;
     }
   }
-
-  .slideAnimation {
-    animation: slide var(--slideDuration) ease-in-out forwards var(--delay);
-  }
-
-  .slideAnimation:hover {
-    translate: 0px var(--slideUpShift);
-  }
   
   @keyframes disappear {
     to {
@@ -248,12 +236,6 @@
   @keyframes slide {
     to {
       transform: translate(0px, 0px);
-      opacity: 1;
-    }
-  }
-
-  @keyframes enter {
-    to {
       opacity: 1;
     }
   }

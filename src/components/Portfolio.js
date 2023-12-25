@@ -6,11 +6,11 @@ import PortfolioCard from './PortfolioCard';
 const featuredProjects = [
   {
     image_alt: 'pick it project',
-    image_src: require('./images/projects/pickit.png'),
+    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/pickit.png?alt=media&token=419c4d57-db8a-4a59-a7e8-1cab9b0ce623',
     title: 'Pick.It',
     description: [
-      'A medical supply delivery management system built for nurses and storeroom managers to save time, supplies, and money with an efficient setup.',
-      'Optimize and analyze your supply usage with an intuitive supply analytics dashboard. Track your supply orders and increase patient satisfaction.',
+      'A medical supply delivery management system built for nurses and storeroom managers. PickIt expedites in hospital supply delivery to save time, supplies, and money with an efficient setup.',
+      'Optimize and analyze your supply usage with an intuitive supply analytics dashboard. Track your supply orders and receive real time updates on your order status.',
     ],
     technologies: ['Jest', 'MongoDB', 'NodeJS', 'React', 'JavaScript', 'GitHub Actions'],
     position: 'right',
@@ -18,11 +18,11 @@ const featuredProjects = [
   },
   {
     image_alt: 'sky high entertainment project',
-    image_src: require('./images/projects/SkyHighEntertainment.png'),
+    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/SkyHighEntertainment.png?alt=media&token=46543158-4d4c-4ead-80ad-aa50329d5ff1',
     title: 'Sky High Entertainment',
     description: [
       'An app that fulfills humanity\'s need for thematically appropriate flight entertainment. Filter flights based on price, destination, duration, and more, while receiving movies tailored to your flight.',
-      'Explore airport information and discover movies based on production country, companies, genres, and more.',
+      'Explore airport information and discover movies based on production country, companies, genres, and more. Additionally, favorite movies and airports to get personalized recommendations.',
     ],
     technologies: ['JavaScript', 'React', 'MySQL', 'ExpressJS', 'NodeJS'],
     position: 'left',
@@ -30,10 +30,11 @@ const featuredProjects = [
   },
   {
     image_alt: 'pennbook project',
-    image_src: require('./images/projects/pennbook.png'),
+    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/pennbook.png?alt=media&token=8cdaf5ab-a47a-4f8e-868a-414574641858',
     title: 'PennBook',
     description: [
-      'A scalable social media platform built on the cloud. Users can register accounts, visualize their friend networks, join real-time chat channels and read relevant news articles powered by distributed PageRank.',
+      'A scalable social media platform built on the cloud.',
+      'Users can register accounts, visualize their friend networks, join real-time chat channels and read relevant news articles powered by distributed PageRank.',
     ],
     technologies: ['React', 'NodeJS', 'AWS EC2', 'Apache Spark', 'DynamoDB'],
     position: 'right',
@@ -41,7 +42,7 @@ const featuredProjects = [
   },
   {
     image_alt: 'plantr project',
-    image_src: require('./images/projects/plantr.png'),
+    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/plantr.png?alt=media&token=4dcc9890-3cc2-48ce-90dd-90624831ee77',
     title: 'Plantr',
     description: [
       'Winner of PennApps \'23 Best use of non-REST API Data Sources!',
@@ -53,7 +54,7 @@ const featuredProjects = [
   },
   {
     image_alt: 'penn course cart',
-    image_src: require('./images/projects/pennbook.png'),
+    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/penncoursecart.png?alt=media&token=d23cb540-7132-4427-9a90-9e7d33334fb8',
     title: 'Penn Course Cart',
     description: [
       'A platform for students to search, filter, compare, and checkout their future courses based on difficulty, work required, and amount learned.',
@@ -98,7 +99,7 @@ const portfolioProjects = [
   {
     title: 'Sorting Visualizer',
     link: 'https://github.com/jren2/sorting-visualizer',
-    description: 'Visualizes various sorts including Merge Sort, Insertion Sort and Selection Sort and compares/displays each of their number of comparisons to compare efficiency.',
+    description: 'Visualizes various sorts including Merge Sort, Insertion Sort and Selection Sort and displays each of their number of comparisons to compare efficiency.',
     technologies: ['Java', 'Java Swing'],
   },
   {
@@ -136,9 +137,13 @@ function Portfolio() {
   return (
     <div id="portfolio" className="bg-white-background px-32">
       <div className="h-fit border-l-1 border-r-1 border-t-1 border-grid">
-        <div className="w-full h-5 border-1 border-t-0 border-grid" />
-        <div className="h-20 w-full flex items-center px-10 text-4xl font-medium mx-auto border-b-1 border-grid">
-          Portfolio
+        <div className="w-full h-5  border-b-1  border-grid" />
+        <div className="relative text-3xl h-20 w-full flex items-center px-10 font-medium mx-auto border-b-1 border-grid">
+          <div className="group relative cursor-default w-fit overflow-hidden">
+            <div style={{ '--shift': '250px', '--duration': '0.4s', '--delay': '0.1s' }} className="typeDisappear absolute w-full h-full bg-white-background z-10" />
+            Portfolio
+            <div className="group-hover:left-0 bottom-[1px] duration-150 absolute w-full h-[2px] bg-off-black -left-full" />
+          </div>
         </div>
         <div className="flex flex-row p-2 border-b-1 border-grid h-fit">
           <div className="w-[62%] pr-2">
@@ -155,7 +160,7 @@ function Portfolio() {
                       <div className="text-2xl text-off-black font-medium w-fit mx-auto mb-2">
                         {project.title}
                       </div>
-                      <div className="text-off-black/70">
+                      <div className="text-base text-off-black/70">
                         {
                           project.description.map((description) => (
                             <div className="mb-2">
@@ -167,7 +172,7 @@ function Portfolio() {
                       <div className="group flex flex-row flex-wrap mt-2">
                         {
                           project.technologies.map((technology) => (
-                            <div className=" bg-[#7256ff] text-xs mr-1 my-1 rounded-3xl  py-1 px-2 text-[#f4f3f1]">
+                            <div className=" bg-[#7256ff] text-sm mr-1 my-1 rounded-3xl  py-1 px-2 text-[#f4f3f1]">
                               {technology}
                             </div>
                           ))
@@ -194,12 +199,12 @@ function Portfolio() {
                       </div>
                       <div className="text-sm text-off-black/70">
                         {
-                        project.description.map((description) => (
-                          <div className="mb-2">
-                            {description}
-                          </div>
-                        ))
-                      }
+                          project.description.map((description) => (
+                            <div className="mb-1">
+                              {description}
+                            </div>
+                          ))
+                        }
                       </div>
                       <div className="group flex flex-row flex-wrap mt-2">
                         {
@@ -218,7 +223,7 @@ function Portfolio() {
         </div>
         <div
           id="project-cards"
-          className="grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-10 w-full h-fit mx-auto text-off-black"
+          className="grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-5 w-full h-fit mx-auto text-off-black"
         >
           {
               portfolioProjects.map((project, idx) => (

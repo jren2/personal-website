@@ -16,12 +16,8 @@ function Home() {
         }
       };
 
-      const reveals = document.querySelectorAll('.reveal');
       const types = document.querySelectorAll('.typeDisappear');
-      const slides = document.querySelectorAll('.slideUp');
       processElements(types, 'typeAnimation');
-      processElements(reveals, 'enterFade');
-      processElements(slides, 'slideAnimation');
     }
 
     window.addEventListener('scroll', reveal);
@@ -31,7 +27,7 @@ function Home() {
     <div className="relative h-screen bg-zinc-900">
       <div className="flex flex-row mb-8 justify-between xs:px-32 md:px-44 xs:flex-col xs:pb-14 lg:pt-28 lg:flex-row">
         <div className="mt-24 z-10 w-1/2 xs:text-center xs:justify-center lg:justify-start lg:text-left ">
-          <div className="text-slate-200 relative tracking-wide xs:m-auto lg:m-0 overflow-hidden">
+          <div className="text-slate-200 relative tracking-wide xs:m-auto lg:m-0 overflow-hidden text-lg">
             <div
               style={{ '--shift': '250px', '--duration': '0.7s', '--delay': '0.8s' }}
               className="typeAnimation absolute w-full h-full bg-zinc-900"
@@ -47,7 +43,7 @@ function Home() {
           </div>
           <div
             style={{ '--delay': '1.4s', '--slideDuration': '0.2s' }}
-            className="text-slate-200/80 opacity-0 slideAnimation translate-y-5 relative w-auto text-base tracking-wide xs:m-auto md:w-96 lg:m-0 lg:w-96"
+            className="text-slate-200/80 slideAnimation translate-y-5 relative w-auto tracking-wide xs:m-auto md:w-96 lg:m-0 lg:w-96"
           >
             I&apos;m a CS student excited about software engineering,
             web development and data analytics!
@@ -125,8 +121,7 @@ function Home() {
         <div className="group text-slate-100 relative text-center items-center mx-auto z-10 mt-14">
           <img
             alt="profile"
-            style={{ '--delay': '1.6s' }}
-            className="enterFade opacity-0 object-cover mx-auto mlg:w-80"
+            className="object-cover mx-auto mlg:w-80"
             width="400"
             height="300"
             src={require('./images/FullSizeRender.jpeg')}

@@ -21,10 +21,10 @@ function PortfolioCard({
       <div className="font-medium text-xl tracking-wide mt-5 group-hover:text-secondary-violet">
         {title}
       </div>
-      <div className="text-off-black/70 text-sm mt-2">
+      <div className="text-off-black/70 text-base mt-2">
         {description}
       </div>
-      <div className="mt-4 text-xs text-off-black/50">
+      <div className="mt-4 text-sm text-off-black/50">
         {
           technologies.map((technology, index) => (
             <span key={technology} className="mr-2">
