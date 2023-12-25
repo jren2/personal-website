@@ -135,10 +135,14 @@ function Portfolio() {
   }, []);
 
   return (
-    <div id="portfolio" className="bg-white-background px-32">
+    <div className="bg-white-background px-32">
       <div className="h-fit border-l-1 border-r-1 border-t-1 border-grid">
+        <div id="portfolio" className="w-1 h-1" />
         <div className="w-full h-5  border-b-1  border-grid" />
         <div className="relative text-3xl h-20 w-full flex items-center px-10 font-medium mx-auto border-b-1 border-grid">
+          <div className="absolute -top-3 -right-[1px] w-3 h-3 border-r-1 border-b-1 border-off-black">
+            <div className="absolute w-3 h-3 border-off-black border-t-1 border-l-1 -bottom-3 -right-3" />
+          </div>
           <div className="group relative cursor-default w-fit overflow-hidden">
             <div style={{ '--shift': '250px', '--duration': '0.4s', '--delay': '0.1s' }} className="typeDisappear absolute w-full h-full bg-white-background z-10" />
             Portfolio
@@ -151,12 +155,13 @@ function Portfolio() {
                 featuredProjects.slice(0, 2).map((project) => (
                   <div className="relative group rounded-lg border-1 overflow-hidden border-grid mb-2">
                     <img
+                      loading="lazy"
                       alt={project.image_alt}
                       src={project.image_src}
                       style={{ '--delay': '0.5s', '--slideDuration': '0.5s' }}
                       className="rounded-lg z-40"
                     />
-                    <div className="group-hover:right-0 p-2 px-4 duration-150 bg-[#f4f3f1] top-0 ease-in-out rounded-lg -right-[45%] w-[45%] h-full z-20 absolute border-grid border-1 border-r-0">
+                    <div className="group-hover:right-0 p-2 px-4 duration-150 bg-white top-0 ease-in-out rounded-lg -right-[45%] w-[45%] h-full z-20 absolute border-grid border-1 border-r-0">
                       <div className="text-2xl text-off-black font-medium w-fit mx-auto mb-2">
                         {project.title}
                       </div>
@@ -188,12 +193,13 @@ function Portfolio() {
                 featuredProjects.slice(2, 5).map((project) => (
                   <div className="relative group rounded-lg border-1 overflow-hidden border-grid mb-2">
                     <img
+                      loading="lazy"
                       alt={project.image_alt}
                       src={project.image_src}
                       style={{ '--delay': '0.5s', '--slideDuration': '0.5s' }}
                       className="rounded-lg z-40"
                     />
-                    <div className="group-hover:right-0 p-2 px-4 duration-150 bg-[#f4f3f1] top-0 ease-in-out rounded-lg -right-[50%] w-[50%] h-full z-20 absolute border-grid border-1 border-r-0">
+                    <div className="group-hover:right-0 p-2 px-4 duration-150 bg-white top-0 ease-in-out rounded-lg -right-[50%] w-[50%] h-full z-20 absolute border-grid border-1 border-r-0">
                       <div className="text-lg text-off-black font-medium w-fit mx-auto mb-1">
                         {project.title}
                       </div>
@@ -223,8 +229,11 @@ function Portfolio() {
         </div>
         <div
           id="project-cards"
-          className="grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-5 w-full h-fit mx-auto text-off-black"
+          className="relative grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-5 w-full h-fit mx-auto text-off-black"
         >
+          <div className="absolute -top-[11px] -left-3 w-3 h-3 border-r-1 border-b-1 border-off-black">
+            <div className="absolute w-3 h-3 border-off-black border-t-1 border-l-1 -bottom-3 -right-3 z-20" />
+          </div>
           {
               portfolioProjects.map((project, idx) => (
                 <PortfolioCard

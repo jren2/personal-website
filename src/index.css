@@ -43,6 +43,7 @@
     opacity: 1;
   }
 
+
   #coursework-chooser::before {
     content: "";
     width: 3px;

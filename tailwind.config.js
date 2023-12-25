@@ -20,6 +20,7 @@ module.exports = {
         'white-background': '#f0f0f0',
         'off-black': '#2a2a2a',
         'secondary-violet': '#7256ff',
+        grid: '#babec3',
       },
       fontFamily: {
         custom: ['NeueMontreal', 'sans-serif'],

@@ -120,6 +120,7 @@ function Home() {
         </div>
         <div className="group text-slate-100 relative text-center items-center mx-auto z-10 mt-14">
           <img
+            loading="lazy"
             alt="profile"
             className="object-cover mx-auto mlg:w-80"
             width="400"

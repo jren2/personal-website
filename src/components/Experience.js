@@ -75,13 +75,17 @@ function Experience() {
   };
   
   return (
-    <div id="experience" className="bg-white-background px-32">
-      <div className="w-full h-5 border-1 border-grid" />
+    <div className="bg-white-background px-32">
+      <div className="relative w-full h-5 border-1 border-grid" />
       <div className="h-fit">
-        <div className="w-full h-20 flex flex-row">
+        <div className="w-full h-20 flex flex-row relative">
           <div className="w-32 h-20 flex-shrink-0 border-1 border-b-0 border-t-0 border-grid" />
           <div className="text-3xl relative w-full text-center flex items-center justify-center font-medium mx-auto border-b-[1px] border-grid">
+            <div className="absolute -top-3 -left-3 w-3 h-3 border-r-1 border-b-1 border-off-black">
+              <div className="absolute w-3 h-3 border-off-black border-t-1 border-l-1 -bottom-3 -right-3" />
+            </div>
             <div className="group relative cursor-default w-fit overflow-hidden">
+              <div id="experience" className="w-1 h-1" />
               <div style={{ '--shift': '250px', '--duration': '0.4s', '--delay': '0.1s' }} className="typeDisappear absolute w-full h-full bg-white-background z-10" />
               Experience
               <div className="group-hover:left-0 bottom-[1px] duration-150 absolute w-full h-[2px] bg-off-black -left-full" />
@@ -98,7 +102,7 @@ function Experience() {
               {
                 experiences.map((experience, idx) => (
                   <div onClick={() => { setExperienceIdx(idx); changeSem(idx); }} className="cursor-pointer border-r-1 border-b-1 border-grid w-20 h-20">
-                    <img alt="css logo" width="160" className="" src={experience.image} />
+                    <img loading="lazy" alt="css logo" width="160" className="" src={experience.image} />
                   </div>
                 ))
               }
