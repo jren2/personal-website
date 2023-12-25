@@ -107,35 +107,6 @@ function Experience() {
                     }
             </div>
           </div>
-          {/* {
-              experiences.map((experience) => (
-                <div 
-                  style={{ '--delay': '0.2s', '--slideDuration': '0.2s' }} 
-                  className="flex slideUp opacity-0 translate-y-5 xs:flex-col xs:items-center md:flex-row mt-12 mb-6 gap-4"
-                >
-                  <img alt="css logo" width="180" className="rounded-3xl" src={experience.image} />
-                  <div className="text-xl xs:text-center md:text-left font-medium tracking-normal text-slate-200">
-                    {experience.title}
-                    <a href={experience.link} target="blank_" className="text-main-teal inline">
-                      {' '}
-                      @ 
-                      {' '}
-                      {experience.company}
-                      {' '}
-                    </a>
-                    <div className="mt-1 mb-4 text-slate-200/70 text-sm">{experience.date}</div>
-                    {
-                      experience.description.map((description) => (
-                        <div className="list-element my-2 text-slate-200/70 text-base font-normal tracking-wide">
-                          {' '}
-                          {description}
-                        </div>
-                      ))
-                    }
-                  </div>
-                </div>
-              ))
-            } */}
           <div className="w-36 flex-shrink-0 border-l-1 border-grid" />
           <div className="w-32 flex-shrink-0 border-1 border-b-0 border-gray-500/40 border-t-0" />
         </div>

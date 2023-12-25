@@ -22,13 +22,6 @@ function About() {
         <div className="w-20 flex-shrink-0 border-1 border-gray-500/40 border-t-0" />
         <div className="p-10 flex flex-row gap-12 border-b-1 border-grid">
           <div id="am-text" className="h-fit w-1/2 xs:text-center lg:text-left lg:-mt-2">
-            {/* <div className="offsetSubtitle relative text-off-black text-3xl items-center w-fit xs:m-auto lg:ml-16 pb-6 font-medium tracking-wide">
-              <div
-                style={{ '--shift': '150px', '--duration': '0.25s', '--delay': '0.2s' }}
-                className="typeDisappear absolute w-full h-full bg-white-background"
-              />
-              About Me
-            </div> */}
             {
                 paragraphs.map((paragraph, index) => (
                   <>

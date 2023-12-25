@@ -2,9 +2,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from 'react';
 import { firebaseLink } from '../config';
-import GithubButton from './GithubButton';
-import ResumeButton from './ResumeButton';
-import LinkedinButton from './LinkedinButton';
 
 function Home() {
   useEffect(() => {
