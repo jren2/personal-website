@@ -149,8 +149,8 @@ function Portfolio() {
             <div className="group-hover:left-0 bottom-[1px] duration-150 absolute w-full h-[2px] bg-off-black -left-full" />
           </div>
         </div>
-        <div className="flex flex-row p-2 border-b-1 border-grid h-fit">
-          <div className="w-[62%] pr-2">
+        <div className="flex xs:flex-col lg:flex-row p-2 border-b-1 border-grid h-fit">
+          <div className="xs:w-full lg:w-[62%] xs:pr-0 lg:pr-2">
             {
                 featuredProjects.slice(0, 2).map((project) => (
                   <div className="relative group rounded-lg border-1 overflow-hidden border-grid mb-2">
@@ -161,11 +161,11 @@ function Portfolio() {
                       style={{ '--delay': '0.5s', '--slideDuration': '0.5s' }}
                       className="rounded-lg z-40"
                     />
-                    <div className="group-hover:right-0 p-2 px-4 duration-150 bg-white top-0 ease-in-out rounded-lg -right-[45%] w-[45%] h-full z-20 absolute border-grid border-1 border-r-0">
-                      <div className="text-2xl text-off-black font-medium w-fit mx-auto mb-2">
+                    <div className="group-hover:right-0 p-2 px-4 duration-150 bg-white top-0 ease-in-out rounded-lg xs:-right-full xs:w-full sm:-right-[80%] sm:w-[80%] md:-right-[60%] md:w-[60%] lg:-right-[65%] lg:w-[65%] xl:-right-[45%] xl:w-[45%] h-full z-20 absolute border-grid border-1 border-r-0">
+                      <div className="xs:text-base md:text-2xl lg:text-xl xl:text-2xl text-off-black font-medium w-fit mx-auto mb-2">
                         {project.title}
                       </div>
-                      <div className="text-base text-off-black/70">
+                      <div className="xs:text-sm lg:text-sm xl:text-base text-off-black/70">
                         {
                           project.description.map((description) => (
                             <div className="mb-2">
@@ -177,7 +177,7 @@ function Portfolio() {
                       <div className="group flex flex-row flex-wrap mt-2">
                         {
                           project.technologies.map((technology) => (
-                            <div className=" bg-[#7256ff] text-sm mr-1 my-1 rounded-3xl  py-1 px-2 text-[#f4f3f1]">
+                            <div className=" bg-[#7256ff] xs:text-sm lg:text-xs xl:text-sm mr-1 my-1 rounded-3xl  py-1 px-2 text-[#f4f3f1]">
                               {technology}
                             </div>
                           ))
@@ -188,7 +188,7 @@ function Portfolio() {
                 ))
                 }
           </div>
-          <div className="w-[38%]">
+          <div className="xs:w-full lg:w-[38%]">
             {
                 featuredProjects.slice(2, 5).map((project) => (
                   <div className="relative group rounded-lg border-1 overflow-hidden border-grid mb-2">
@@ -199,11 +199,11 @@ function Portfolio() {
                       style={{ '--delay': '0.5s', '--slideDuration': '0.5s' }}
                       className="rounded-lg z-40"
                     />
-                    <div className="group-hover:right-0 p-2 px-4 duration-150 bg-white top-0 ease-in-out rounded-lg -right-[50%] w-[50%] h-full z-20 absolute border-grid border-1 border-r-0">
-                      <div className="text-lg text-off-black font-medium w-fit mx-auto mb-1">
+                    <div className="group-hover:right-0 p-2 px-4 duration-150 bg-white top-0 ease-in-out rounded-lg xs:-right-full xs:w-full sm:-right-[80%] sm:w-[80%] md:-right-[60%] md:w-[60%] lg:-right-[65%] lg:w-[65%] xl:-right-[50%] xl:w-[50%] h-full z-20 absolute border-grid border-1 border-r-0">
+                      <div className="xs:text-lg md:text-lg lg:text-base xl:text-lg text-off-black font-medium w-fit mx-auto mb-1">
                         {project.title}
                       </div>
-                      <div className="text-sm text-off-black/70">
+                      <div className="xs:text-xs sm:text-sm md:text-base lg:text-xs xl:text-sm text-off-black/70">
                         {
                           project.description.map((description) => (
                             <div className="mb-1">
@@ -229,7 +229,7 @@ function Portfolio() {
         </div>
         <div
           id="project-cards"
-          className="relative grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-5 w-full h-fit mx-auto text-off-black"
+          className="relative grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-5 w-full h-fit mx-auto text-off-black"
         >
           <div className="absolute -top-[11px] -left-3 w-3 h-3 border-r-1 border-b-1 border-off-black">
             <div className="absolute w-3 h-3 border-off-black border-t-1 border-l-1 -bottom-3 -right-3 z-20" />

@@ -79,7 +79,7 @@ function Experience() {
       <div className="relative w-full h-5 border-1 border-grid" />
       <div className="h-fit">
         <div className="w-full h-20 flex flex-row relative">
-          <div className="w-32 h-20 flex-shrink-0 border-1 border-b-0 border-t-0 border-grid" />
+          <div className="xs:w-0 lg:w-24 xl:w-32 xs:border-r-1 xs:border-0 lg:border-1 lg:border-b-0 lg:border-t-0 h-20 flex-shrink-0 border-grid" />
           <div className="text-3xl relative w-full text-center flex items-center justify-center font-medium mx-auto border-b-[1px] border-grid">
             <div className="absolute -top-3 -left-3 w-3 h-3 border-r-1 border-b-1 border-off-black">
               <div className="absolute w-3 h-3 border-off-black border-t-1 border-l-1 -bottom-3 -right-3" />
@@ -91,17 +91,17 @@ function Experience() {
               <div className="group-hover:left-0 bottom-[1px] duration-150 absolute w-full h-[2px] bg-off-black -left-full" />
             </div>
           </div>
-          <div className="w-32 h-20 flex-shrink-0 border-1 border-b-0 border-t-0 border-grid" />
+          <div className="xs:w-0 lg:w-24 xl:w-32 xs:border-r-1 xs:border-0 lg:border-1 lg:border-b-0 lg:border-t-0 h-20 flex-shrink-0 border-grid" />
         </div>
         <div className="flex flex-row">
-          <div className="w-32 flex-shrink-0 border-1 border-b-0 border-grid border-t-0" />
-          <div className="w-40 flex-shrink-0 border-r-1 border-grid" />
-          <div className="w-full flex flex-row">
-            <div className="w-20 h-fit relative">
-              <div id="coursework-chooser" style={{ '--coursework-chooser-index': experienceIdx }} className="duration-300" />
+          <div className="xs:w-0 lg:w-24 xl:w-32 xs:border-0 xs:border-r-1 lg:border-1 lg:border-b-0 lg:border-t-0 flex-shrink-0  border-grid" />
+          <div className="xs:w-0 md:w-16 lg:w-24 xl:w-40 xs:border-0 md:border-r-1 flex-shrink-0 border-grid" />
+          <div className="w-full flex sm:flex-row xs:flex-col">
+            <div className="xs:w-full sm:w-20 h-fit relative flex xs:flex-row sm:flex-col">
+              <div id="coursework-chooser" style={{ '--coursework-chooser-index': experienceIdx }} className="xs:invisible sm:visible duration-300" />
               {
                 experiences.map((experience, idx) => (
-                  <div onClick={() => { setExperienceIdx(idx); changeSem(idx); }} className="cursor-pointer border-r-1 border-b-1 border-grid w-20 h-20">
+                  <div onClick={() => { setExperienceIdx(idx); changeSem(idx); }} className="cursor-pointer xs:border-r-0 sm:border-r-1 border-b-1 border-grid xs:w-1/5 sm:w-20 xs:h-fit sm:h-20">
                     <img loading="lazy" alt="css logo" width="160" className="" src={experience.image} />
                   </div>
                 ))
@@ -127,8 +127,8 @@ function Experience() {
                     }
             </div>
           </div>
-          <div className="w-36 flex-shrink-0 border-l-1 border-grid" />
-          <div className="w-32 flex-shrink-0 border-1 border-b-0 border-gray-500/40 border-t-0" />
+          <div className="xs:w-0 xs:border-0 md:border-l-1 md:w-16 lg:w-24 xl:w-36 flex-shrink-0 border-grid" />
+          <div className="xs:w-0 xs:border-r-1 xs:border-0 lg:border-1 lg:border-b-0 lg:border-t-0 lg:w-24 xl:w-32 flex-shrink-0 border-gray-500/40" />
         </div>
       </div>
     </div>

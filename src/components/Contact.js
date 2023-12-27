@@ -8,9 +8,9 @@ function Contact() {
       <div className="w-full bg-white-background m-auto">
         <div className="w-full h-5 border-1 border-r-0 border-l-0 border-grid" />
         <div className="px-32">
-          <div className="w-full border-1 border-t-0 border-b-0 border-grid p-4 text-off-black flex flex-row">
+          <div className="w-full border-1 border-t-0 border-b-0 border-grid p-4 text-off-black flex xs:flex-col sm:flex-row">
             <div id="contact" className="w-1 h-1" />
-            <div>
+            <div className="xs:mx-auto xs:mb-2 sm:mb-0 sm:mx-0">
               Jason Ren
             </div>
             <div className="text-off-black w-fit mx-auto flex flex-row">

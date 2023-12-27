@@ -82,11 +82,11 @@ const semesters = [
     ],
   },
 ];
-const outerLeftStyle = 'w-full h-[80%] top-[10%] -translate-x-[60%] z-0 blur-[2px]';
-const leftCourseStyle = 'w-full h-[80%] top-[10%] -translate-x-[60%] z-10 blur-[2px]';
+const outerLeftStyle = 'w-full h-[80%] top-[10%] sm:-translate-x-[30%] md:-translate-x-[60%] lg:-translate-x-[30%] xl:-translate-x-[55%]  z-0 blur-[2px]';
+const leftCourseStyle = 'w-full h-[80%] top-[10%] sm:-translate-x-[30%] md:-translate-x-[60%] lg:-translate-x-[30%] xl:-translate-x-[55%] z-10 blur-[2px]';
 const middleCourseStyle = 'w-full h-full top-0 delay-50 translate-x-0 z-20 blur-none shadow-md';
-const rightCourseStyle = 'w-full h-[80%] top-[10%] translate-x-[60%] z-10 blur-[2px]';
-const outerRightStyle = 'w-full h-[80%] top-[10%] translate-x-[60%] z-0 blur-[2px]';
+const rightCourseStyle = 'w-full h-[80%] top-[10%] sm:translate-x-[30%] md:translate-x-[60%] lg:translate-x-[30%] xl:translate-x-[55%] z-10 blur-[2px]';
+const outerRightStyle = 'w-full h-[80%] top-[10%] sm:translate-x-[30%] md:translate-x-[60%] lg:translate-x-[30%] xl:translate-x-[55%] z-0 blur-[2px]';
 const commonCardStyle = 'ease-in-out duration-200 absolute border-1 border-gray-300 rounded-md bg-white-background text-lg px-4 py-2';
 
 function Skills() {
@@ -96,7 +96,7 @@ function Skills() {
     <div className="bg-white-background px-32">
       <div className="w-full h-5 border-1 border-t-0 border-grid" />
       <div className="flex xs:flex-col lg:flex-row h-fit border-l-1 border-r-1 border-grid">
-        <div className=" border-b-1 border-grid xs:w-full lg:w-6/12 h-fit text-center text-off-black text-3xl font-medium tracking-wide p-4">
+        <div className=" border-b-1 border-grid xs:w-full sm:w-full lg:w-1/2 h-fit text-center text-off-black text-3xl font-medium tracking-wide p-4">
           <div className="text-3xl font-medium  relative w-fit mx-auto flex flex-col text-center mb-6">
             <div style={{ '--shift': '250px', '--duration': '0.4s', '--delay': '0.1s' }} className="typeDisappear absolute w-full h-full bg-white-background z-10" />
             <div id="skills" className="w-1 h-1" />
@@ -131,9 +131,6 @@ function Skills() {
                 if (idx >= semesterIdx - 2 && idx <= semesterIdx + 2) {
                   return (
                     <div className={`${cardStyle} ${commonCardStyle} overflow-hidden`}>
-                      {/* <div className="w-fit mx-auto">
-                        {semester.semester}
-                      </div> */}
                       <div className="text-left">
                         {
                         semester.courses.map((course, idx) => (
@@ -168,12 +165,11 @@ function Skills() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
               </svg>
             </button>
-
           </div>
         </div>
-        <div className="relative xs:w-full lg:w-6/12 h-fit border-grid border-l-1 items-center text-center text-off-black text-3xl font-medium tracking-wide p-4">
+        <div className="relative xs:w-full lg:w-6/12 h-fit border-grid xs:border-l-0 lg:border-l-1 items-center text-center text-off-black text-3xl font-medium tracking-wide p-4">
           <div className="absolute top-1/2 -left-3 w-3 h-3 border-r-1 border-b-1 border-off-black">
-            <div className="absolute w-3 h-3 border-off-black border-t-1 border-l-1 -bottom-3 -right-3" />
+            <div className="absolute w-3 h-3 border-off-black border-t-1  border-l-1 -bottom-3 -right-3" />
           </div>
           <div className="relative w-fit mx-auto text-center mb-4 text-3xl font-medium ">
             <div style={{ '--shift': '150px', '--duration': '0.4s', '--delay': '0.3s' }} className="typeDisappear absolute w-full h-full bg-white-background z-10" />
@@ -219,7 +215,7 @@ function Skills() {
               <div />
             </div>
 
-            <div className="bg-white-background border-1 border-r-grid border-t-grid border-l-grid hover:scale-105 h-fit w-1/2 group m-auto duration-300 card text-left border-b-secondary-violet border-b-8">
+            <div className="bg-white-background border-1 border-r-grid border-t-grid border-l-grid hover:scale-105 h-fit xs:w-full sm:w-3/4 md:w-1/2 lg:w-3/4 xl:w-1/2 group m-auto duration-300 card text-left border-b-secondary-violet border-b-8">
               <div className="object-fill">
                 <img loading="lazy" alt="wde" className="ml-1" width="50px" height="50px" src={require('./images/icons/wde.webp')} />
               </div>

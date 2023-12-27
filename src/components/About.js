@@ -25,10 +25,10 @@ function About() {
         </div>
         <div className="w-20 h-20 flex-shrink-0 border-1 border-t-0 border-grid" />
       </div>
-      <div className="flex xs:flex-col lg:flex-row h-fit text-off-black">
+      <div className="flex flex-row h-fit text-off-black">
         <div className="w-20 flex-shrink-0 border-1 border-gray-500/40 border-t-0" />
-        <div className="p-10 flex flex-row gap-12 border-b-1 border-grid">
-          <div id="am-text" className="h-fit w-1/2 text-base xs:text-center lg:text-left lg:-mt-2">
+        <div className="p-10 flex xs:flex-col lg:flex-row  gap-12 border-b-1 border-grid">
+          <div id="am-text" className="h-fit xs:w-full lg:w-1/2 text-base xs:text-center lg:text-left lg:-mt-2">
             {
                 paragraphs.map((paragraph, index) => (
                   <>
@@ -47,7 +47,7 @@ function About() {
           </div>
           <div
             id="am-picture"
-            className="group relative w-1/3 h-fit m-auto"
+            className="group relative xs:w-2/3 lg:w-1/3 h-fit m-auto"
           >
             <img loading="lazy" alt="headshot" src={headshot} />
             <div className="group-hover:top-[calc(100%-80px+20px)] duration-300 ease-in-out absolute -top-5 -right-5 w-20 h-20 border-r-[1px] border-r-black" />

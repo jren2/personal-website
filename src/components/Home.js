@@ -24,17 +24,17 @@ function Home() {
   }, []);
 
   return (
-    <div className="relative h-screen bg-zinc-900">
-      <div className="flex flex-row mb-8 justify-between xs:px-32 md:px-44 xs:flex-col xs:pb-14 lg:pt-28 lg:flex-row">
-        <div className="mt-24 z-10 w-1/2 xs:text-center xs:justify-center lg:justify-start lg:text-left ">
-          <div className="text-slate-200 relative tracking-wide xs:m-auto lg:m-0 overflow-hidden text-lg">
+    <div className="relative min-h-screen h-fit bg-zinc-900">
+      <div className="flex flex-row justify-between xs:px-32 lg:px-36 xl:px-44 xs:flex-col xs:pb-14 lg:pt-24 lg:flex-row">
+        <div className="mt-24 z-10 xs:w-full lg:w-1/2 xs:justify-center lg:justify-start xs:text-center md:text-left ">
+          <div className="text-slate-200 relative tracking-wide xs:mx-auto lg:m-0 overflow-hidden text-lg xs:text-center lg:text-left">
             <div
               style={{ '--shift': '250px', '--duration': '0.7s', '--delay': '0.8s' }}
               className="typeAnimation absolute w-full h-full bg-zinc-900"
             />
             Hello! My name is,
           </div>
-          <div className="overflow-hidden animate-gradient relative bg-clip-text text-transparent bg-gradient-to-r from-secondary-violet via-violet-400 to-secondary-violet text-8xl xs:my-6 xs:m-auto font-medium tracking-normal">
+          <div className="xs::mx-auto xs:w-fit lg:w-full xs:text-8xl lg:text-7xl xl:text-8xl overflow-hidden xs:m-auto xs:text-center md:text-left animate-gradient relative bg-clip-text text-transparent bg-gradient-to-r from-secondary-violet via-violet-400 to-secondary-violet xs:my-6 font-medium tracking-normal">
             <div
               style={{ '--shift': '500px', '--duration': '0.6s', '--delay': '0.9s' }}
               className="typeAnimation absolute w-full h-full bg-zinc-900"
@@ -43,12 +43,12 @@ function Home() {
           </div>
           <div
             style={{ '--delay': '1.4s', '--slideDuration': '0.2s' }}
-            className="text-slate-200/80 slideAnimation translate-y-5 relative w-auto tracking-wide xs:m-auto md:w-96 lg:m-0 lg:w-96"
+            className="text-slate-200/80 slideAnimation xs:text-center lg:text-left translate-y-5 relative w-auto tracking-wide xs:mx-auto md:w-96 lg:m-0 lg:w-96"
           >
             I&apos;m a CS student excited about software engineering,
             web development and data analytics!
           </div>
-          <div className="xs:mt-8 text-white-background flex flex-row">
+          <div className="xs:mt-10 text-white-background flex flex-row w-fit xs:mx-auto lg:mx-0">
             <div className="hover:-translate-y-1 hover:text-[#8971ff] w-6 h-6 duration-300">
               <a href={firebaseLink}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
@@ -118,13 +118,13 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="group text-slate-100 relative text-center items-center mx-auto z-10 mt-14">
+        <div className="group text-slate-100 relative text-center w-fit h-fit items-center mx-auto z-10 mt-14">
           <img
             loading="lazy"
             alt="profile"
             className="object-cover mx-auto mlg:w-80"
             width="400"
-            height="300"
+            height="400"
             src={require('./images/FullSizeRender.jpeg')}
           />
           <div className="group-hover:top-[calc(100%-80px+20px)] duration-300 ease-in-out absolute -top-5 -right-5 w-20 h-20 border-r-[1px] border-r-white-background" />
@@ -133,17 +133,6 @@ function Home() {
           <div className="group-hover:bottom-[calc(100%-80px+20px)] duration-300 ease-in-out absolute -bottom-5 -left-5 w-20 h-20 border-l-[1px] border-l-white-background" />
         </div>
       </div>
-      {/* <div className="bg-zinc-800">
-        <svg
-          className="-translate-y-2 w-full"
-          height="41"
-          viewBox="0 0 1514 41"
-          fill="#1f2937"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M0 40.5V0.5H753H1513.5V40.5C1242.5 -36.5003 1122.96 40.5 937 40.5C772 40.5 217.5 -34 0 40.5Z" fill="#18181B" />
-        </svg>
-      </div> */}
       <div className="lines">
         <div className="line" />
         <div className="line" />
