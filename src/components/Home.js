@@ -5,22 +5,30 @@ import { firebaseLink } from '../config';
 
 function Home() {
   useEffect(() => {
-    function reveal() {
-      const windowHeight = window.innerHeight;
-      const processElements = (elements, animationClass) => {
-        for (let i = 0; i < elements.length; i += 1) {
-          const elementTop = elements[i].getBoundingClientRect().top;
-          if (elementTop < windowHeight - 100) {
-            elements[i].classList.add(animationClass);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('typeAnimation');
+            observer.unobserve(entry.target);
           }
-        }
-      };
+        });
+      },
+      {
+        threshold: 0.1,
+      },
+    );
 
-      const types = document.querySelectorAll('.typeDisappear');
-      processElements(types, 'typeAnimation');
-    }
+    const types = document.querySelectorAll('.typeDisappear');
+    types.forEach((type) => {
+      observer.observe(type);
+    });
 
-    window.addEventListener('scroll', reveal);
+    return () => {
+      types.forEach((type) => {
+        observer.unobserve(type);
+      });
+    };
   }, []);
 
   return (
@@ -45,18 +53,18 @@ function Home() {
             style={{ '--delay': '1.4s', '--slideDuration': '0.2s' }}
             className="text-slate-200/80 slideAnimation xs:text-center lg:text-left translate-y-5 relative w-auto tracking-wide xs:mx-auto md:w-96 lg:m-0 lg:w-96"
           >
-            I&apos;m a CS student excited about software engineering,
-            web development and data analytics!
+            I&apos;m a CS student excited about solving challenging
+            problems and building through software engineering!
           </div>
           <div className="xs:mt-10 text-white-background flex flex-row w-fit xs:mx-auto lg:mx-0">
-            <div className="hover:-translate-y-1 hover:text-[#8971ff] w-6 h-6 duration-300">
+            <div className="hover:scale-110 hover:text-[#8971ff] w-6 h-6 duration-300">
               <a href={firebaseLink}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
                 </svg>
               </a>
             </div>
-            <div className="hover:-translate-y-1 hover:text-[#8971ff] mx-3 justify-center duration-300 w-6 h-6">
+            <div className="hover:scale-110 hover:text-[#8971ff] mx-3 justify-center duration-300 w-6 h-6">
               <a href="https://github.com/jren2" aria-label="GitHub" target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +84,7 @@ function Home() {
                 </svg>
               </a>
             </div>
-            <div className="mr-3 hover:-translate-y-1 hover:text-[#8971ff] duration-300 w-6 h-6">
+            <div className="mr-3 hover:scale-110 hover:text-[#8971ff] duration-300 w-6 h-6">
               <a href="https://www.instagram.com/_jren2/" aria-label="Instagram" target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +104,7 @@ function Home() {
                 </svg>
               </a>
             </div>
-            <div className="hover:-translate-y-1 hover:text-[#8971ff] duration-300 w-6 h-6">
+            <div className="hover:scale-110 hover:text-[#8971ff] duration-300 w-6 h-6">
               <a href="https://www.linkedin.com/in/jasonrendev" aria-label="Linkedin" target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +133,7 @@ function Home() {
             className="object-cover mx-auto mlg:w-80"
             width="400"
             height="400"
-            src={require('./images/FullSizeRender.jpeg')}
+            src={require('./images/portrait.webp')}
           />
           <div className="group-hover:top-[calc(100%-80px+20px)] duration-300 ease-in-out absolute -top-5 -right-5 w-20 h-20 border-r-[1px] border-r-white-background" />
           <div className="group-hover:right-[calc(100%-80px+20px)] duration-300 ease-in-out absolute -top-5 -right-5 w-20 h-20 border-t-[1px] border-t-white-background" />

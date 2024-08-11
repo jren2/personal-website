@@ -1,10 +1,10 @@
 import React from 'react';
-import headshot from './images/option.webp';
+import headshot from './images/violin.webp';
 
 const paragraphs = [
-  "Hi! I'm Jason Ren, an undergraduate senior + first year Master's student studying CIS at UPenn. My passion for computer science was born from multiple game dev summer camps more than a decade ago which opened my mind to the world of coding!",
-  "Fast forwarding to today, I'm excited about solving challenging problems through software and web development for seamless user experiences. I am always exploring new concepts and opportunities to grow a vast problem solving background!",
-  "Beyond programming, I've been playing soccer since I was 6 years old and am also an avid music lover! My favorite artist right now is Laufey and my favorite instrument is the violin (currently playing for the Penn Symphony Orchestra)!",
+  "👋 Hi, I'm Jason! I recently graduated magna cum laude from Penn and am now a first year Master's student studying CIS. My passion for computer science started more than a decade ago with multiple game dev summer camps in Unity!",
+  "💻 Now, I'm especially interested in distributed and low latency systems and excited about solving challenging problems through software. I'm always exploring new concepts and opportunities to grow a vast problem solving background!",
+  "⚽ Beyond programming, I've been playing soccer since I was 6 years old and am also an avid music lover! My favorite artist right now is Laufey and my favorite instrument is the violin (currently playing for the Penn Symphony Orchestra)!",
 ];
 
 function About() {

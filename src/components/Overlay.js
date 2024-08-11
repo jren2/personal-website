@@ -53,19 +53,18 @@ function Overlay({ sidebar, setSidebar }) {
       </div>
       <div id="sidebar-button">
         <div className={`z-40 left-0 fixed duration-150 ${sidebar ? 'text-zinc-800' : 'text-[#8971ff]'} top-[40vh] ml-6 rotate-[75deg] flex flex-row`}>
-          <div id="v" className="ml-2 mt-3 duration-150">{sidebar ? 'C' : 'V'}</div>
-          <div id="i" className="duration-200 ">{sidebar ? 'l' : 'i'}</div>
-          <div id="e" className="duration-[300ms] ">{sidebar ? 'o' : 'e'}</div>
-          <div id="w" className="duration-[400ms] ">{sidebar ? 's' : 'w'}</div>
-          <div id="s" className="duration-[500ms] ">{sidebar ? 'e' : 's'}</div>
+          <div id="v" className="xs:invisible lg:visible ml-2 mt-3 duration-150">{sidebar ? 'C' : 'V'}</div>
+          <div id="i" className="xs:invisible lg:visible duration-200 ">{sidebar ? 'l' : 'i'}</div>
+          <div id="e" className="xs:invisible lg:visible duration-[300ms] ">{sidebar ? 'o' : 'e'}</div>
+          <div id="w" className="xs:invisible lg:visible duration-[400ms] ">{sidebar ? 's' : 'w'}</div>
+          <div id="s" className="xs:invisible lg:visible duration-[500ms] ">{sidebar ? 'e' : 's'}</div>
         </div>
         <motion.div
-          className={`${sidebar ? 'bg-zinc-800' : 'bg-secondary-violet'} duration-500 shadow shadow-zinc-800 left-0 ml-6 cursor-pointer fixed w-12 h-12 rounded-full z-40 top-[40vh]`}
+          className={`${sidebar ? 'bg-zinc-800' : 'bg-secondary-violet'} xs:invisible lg:visible duration-500 shadow shadow-zinc-800 left-0 ml-6 cursor-pointer fixed w-12 h-12 rounded-full z-40 top-[40vh]`}
           whileHover={{ scale: 1.1 }}
           onHoverStart={() => rotate()}
           onHoverEnd={() => unrotate()}
           onClick={() => setSidebar(!sidebar)}
-          // transition={{ type: 'spring', stiffness: 400, damping: 10 }}
         >
           <button
             type="button"
@@ -95,7 +94,7 @@ function Overlay({ sidebar, setSidebar }) {
       </div>
       <div className={`${sidebar ? 'left-[26vw]' : 'left-0'} flex flex-nowrap duration-500 fixed ml-4 left-0 top-[76vh] text-gray-500 text-3xl z-40`}>
         <div className="relative">
-          <div className="ml-6 hover:-translate-y-1 hover:text-[#8971ff] duration-300 w-6 h-6">
+          <div className="ml-6 hover:scale-110 hover:text-[#8971ff] duration-300 w-6 h-6">
             <a href="https://github.com/jren2" aria-label="GitHub" target="_blank" rel="noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +114,7 @@ function Overlay({ sidebar, setSidebar }) {
               </svg>
             </a>
           </div>
-          <div className="ml-6 hover:-translate-y-1 hover:text-[#8971ff] duration-300 my-4 w-6 h-6">
+          <div className="ml-6 hover:scale-110 hover:text-[#8971ff] duration-300 my-4 w-6 h-6">
             <a href="https://www.instagram.com/_jren2/" aria-label="Instagram" target="_blank" rel="noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +135,7 @@ function Overlay({ sidebar, setSidebar }) {
               </svg>
             </a>
           </div>
-          <div className="ml-6 hover:-translate-y-1 hover:text-[#8971ff] duration-300 w-6 h-6">
+          <div className="ml-6 hover:scale-110 hover:text-[#8971ff] duration-300 w-6 h-6">
             <a href="https://www.linkedin.com/in/jasonrendev" aria-label="Linkedin" target="_blank" rel="noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

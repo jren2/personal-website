@@ -4,14 +4,30 @@ import React, { useState } from 'react';
 
 const experiences = [
   {
+    title: 'Software Engineering Intern',
+    company: 'J.P. Morgan Chase',
+    link: 'https://www.jpmorganchase.com/',
+    date: 'June 2024 - Aug 2024',
+    description: [
+      'Worked on the Operating Systems Build Factory team to enhance the pipeline of creating customized AWS EC2 images for all 80+ lines of businesses',
+      'Utilized AWS CloudFormation, SNS, Lambda and SSM with the boto3 Python library to capture and expose 1,000+ EC2 image package lists weekly to streamline vulnerability detection',
+      'Developed a schema with Python to segment package lists of on average 24KB into multiple 4KB standard parameters in AWS SSM in order to be captured by AWS Config',
+      "Deployed the team's first API Gateway secured in a VPC offering 4 endpoints for HTTP based access to package lists with a private REST API",
+      'Won 2nd place in the Jersey City intern scavenger hunt :)',
+    ],
+    image: require('./images/icons/jpmc.webp'),
+  },
+  {
     title: 'Teaching Assistant',
     company: 'University of Pennsylvania',
     link: 'https://www.cis.upenn.edu/',
     date: 'Jan 2023 - May 2023, Aug 2023 - Present',
     description: [
-      'TA for CIS 3200 Introduction to Algorithms + CIS 3500 Software Design and Engineering',
+      'CIS 3200 Introduction to Algorithms (Jan 2023 - May 2024)',
+      'CIS 3500 Software Design and Engineering (Jan 2024 - May 2024)',
+      'CIS 5550 Internet and Web Systems (Aug 2024 - Dec 2024)',
       'Taught advanced algorithms and data structures class of 175+ students in topics such as graphs algorithms, flow networks and approximation algorithms.',
-      'Helped design and debug projects/homeworks in JavaScript, React, NodeJS',
+      'Acted as a product manager to help guide student built projects in JavaScript, React, and NodeJS',
     ],
     image: require('./images/icons/upenn.webp'),
   },
@@ -23,6 +39,8 @@ const experiences = [
     description: [
       'Built digital experiments to assist with high throughput on group dynamics research with JavaScript, React, Meteor and Empirica stack',
       'Deployed weekly real time experiments with 15+ participants from MTurk to collect group dynamics data',
+      'Containerized and deployed a web app with Docker on AWS Elastic Beanstalk to study altruistic behavior',
+      "Created a Python script to automate cookie collection and aid with research on YouTube's recommendation algorithm",
       'Collaborated with senior researchers and research assistants weekly to accelerate the data analysis process',
     ],
     image: require('./images/icons/csslogo.webp'),
@@ -101,7 +119,7 @@ function Experience() {
               <div id="coursework-chooser" style={{ '--coursework-chooser-index': experienceIdx }} className="xs:invisible sm:visible duration-300" />
               {
                 experiences.map((experience, idx) => (
-                  <div onClick={() => { setExperienceIdx(idx); changeSem(idx); }} className="cursor-pointer xs:border-r-0 sm:border-r-1 border-b-1 border-grid xs:w-1/5 sm:w-20 xs:h-fit sm:h-20">
+                  <div onClick={() => { setExperienceIdx(idx); changeSem(idx); }} className="cursor-pointer xs:border-r-0 sm:border-r-1 last:border-b-0 border-b-1 border-grid xs:w-1/5 sm:w-20 xs:h-fit sm:h-20">
                     <img loading="lazy" alt="css logo" width="160" className="" src={experience.image} />
                   </div>
                 ))

@@ -74,11 +74,19 @@ const semesters = [
   {
     semester: 'Spring 2024',
     courses: [
-      { code: 'CIS 5050', name: 'Software Systems' },
-      { code: 'CIS 4510', name: 'Computer and Network Security' },
-      { code: 'CIS 4710', name: 'Computer Organization and Design' },
-      { code: 'CIS 5800', name: 'Machine Perception' },
       { code: 'CIS 4010', name: 'Senior Project II' },
+      { code: 'CIS 5550', name: 'Internet and Web Systems' },
+      { code: 'CIS 5710', name: 'Computer Organization and Design' },
+      { code: 'CIS 1901', name: 'C++ Programming' },
+      { code: 'BEPP 2330', name: 'Economies in Developing Countries' },
+    ],
+  },
+  {
+    semester: 'Fall 2024',
+    courses: [
+      { code: 'CIS 5050', name: 'Software Systems' },
+      { code: 'CIS 5520', name: 'Advanced Programming' },
+      { code: 'CIS 6250', name: 'Theory of Machine Learning' },
     ],
   },
 ];

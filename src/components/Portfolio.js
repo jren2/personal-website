@@ -6,7 +6,7 @@ import PortfolioCard from './PortfolioCard';
 const featuredProjects = [
   {
     image_alt: 'pick it project',
-    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/pickit.png?alt=media&token=419c4d57-db8a-4a59-a7e8-1cab9b0ce623',
+    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/pickit.webp?alt=media&token=0edf58e1-3f90-4368-8a61-a96b53599079',
     title: 'Pick.It',
     description: [
       'A medical supply delivery management system built for nurses and storeroom managers. PickIt expedites in hospital supply delivery to save time, supplies, and money with an efficient setup.',
@@ -18,7 +18,7 @@ const featuredProjects = [
   },
   {
     image_alt: 'sky high entertainment project',
-    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/SkyHighEntertainment.png?alt=media&token=46543158-4d4c-4ead-80ad-aa50329d5ff1',
+    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/SkyHighEntertainment.webp?alt=media&token=e00b20a8-d6ab-4b4c-9b42-7eb89cc7bbe3',
     title: 'Sky High Entertainment',
     description: [
       'An app that fulfills humanity\'s need for thematically appropriate flight entertainment. Filter flights based on price, destination, duration, and more, while receiving movies tailored to your flight.',
@@ -30,7 +30,7 @@ const featuredProjects = [
   },
   {
     image_alt: 'pennbook project',
-    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/pennbook.png?alt=media&token=8cdaf5ab-a47a-4f8e-868a-414574641858',
+    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/pennbook.webp?alt=media&token=5fc86fba-f528-458b-850d-b3954ae6da14',
     title: 'PennBook',
     description: [
       'A scalable social media platform built on the cloud.',
@@ -42,7 +42,7 @@ const featuredProjects = [
   },
   {
     image_alt: 'plantr project',
-    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/plantr.png?alt=media&token=4dcc9890-3cc2-48ce-90dd-90624831ee77',
+    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/plantr.webp?alt=media&token=0fe00bb6-d4f7-4f2f-b16e-01a70b809a1b',
     title: 'Plantr',
     description: [
       'Winner of PennApps \'23 Best use of non-REST API Data Sources!',
@@ -54,7 +54,7 @@ const featuredProjects = [
   },
   {
     image_alt: 'penn course cart',
-    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/penncoursecart.png?alt=media&token=d23cb540-7132-4427-9a90-9e7d33334fb8',
+    image_src: 'https://firebasestorage.googleapis.com/v0/b/jason-ren.appspot.com/o/penncoursecart.webp?alt=media&token=9f4fdce8-e742-45bb-be02-7ad27083ebdd',
     title: 'Penn Course Cart',
     description: [
       'A platform for students to search, filter, compare, and checkout their future courses based on difficulty, work required, and amount learned.',
@@ -85,10 +85,10 @@ const portfolioProjects = [
     technologies: ['Python', 'TensorFlow', 'PyTorch'],
   },
   {
-    title: 'Stock Trading Simulator',
-    link: 'https://github.com/jren2/stock-trader',
-    description: 'Simulate the stock trading experience without risking your own money! Register an account to buy and sell real time paper stocks and update your portfolio.',
-    technologies: ['React', 'ExpressJS', 'MongoDB', 'Bootstrap'],
+    title: 'NovaFusion',
+    link: '',
+    description: 'A web search engine build from scratch with a distributed key value store, analytics platform and distributed jobs including indexing, pagerank and web crawling.',
+    technologies: ['Java', 'Go', 'gRPC'],
   },
   {
     title: 'Cassava Leaf Classifier',
