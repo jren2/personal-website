@@ -40,7 +40,7 @@ function Home() {
               style={{ '--shift': '250px', '--duration': '0.7s', '--delay': '0.8s' }}
               className="typeAnimation absolute w-full h-full bg-zinc-900"
             />
-            Hello! My name is,
+            Hi! My name is
           </div>
           <div className="xs::mx-auto xs:w-fit lg:w-full xs:text-8xl lg:text-7xl xl:text-8xl overflow-hidden xs:m-auto xs:text-center md:text-left animate-gradient relative bg-clip-text text-transparent bg-gradient-to-r from-secondary-violet via-violet-400 to-secondary-violet xs:my-6 font-medium tracking-normal">
             <div
@@ -53,8 +53,8 @@ function Home() {
             style={{ '--delay': '1.4s', '--slideDuration': '0.2s' }}
             className="text-slate-200/80 slideAnimation xs:text-center lg:text-left translate-y-5 relative w-auto tracking-wide xs:mx-auto md:w-96 lg:m-0 lg:w-96"
           >
-            I&apos;m a CS student excited about solving challenging
-            problems and building through software engineering!
+            I&apos;m a penn grad & swe in nyc excited about solving challenging
+            problems and building with software!
           </div>
           <div className="xs:mt-10 text-white-background flex flex-row w-fit xs:mx-auto lg:mx-0">
             <div className="hover:scale-110 hover:text-[#8971ff] w-6 h-6 duration-300">

@@ -21,7 +21,7 @@ const experiences = [
     title: 'Teaching Assistant',
     company: 'University of Pennsylvania',
     link: 'https://www.cis.upenn.edu/',
-    date: 'Jan 2023 - May 2023, Aug 2023 - Present',
+    date: 'Jan 2023 - May 2023, Aug 2023 - Dec 2024',
     description: [
       'CIS 3200 Introduction to Algorithms (Jan 2023 - May 2024)',
       'CIS 3500 Software Design and Engineering (Jan 2024 - May 2024)',
@@ -35,7 +35,7 @@ const experiences = [
     title: 'Research Assistant',
     company: 'Computational Social Science Lab',
     link: 'https://css.seas.upenn.edu/',
-    date: 'Sep 2022 - May 2023, Aug 2023 - Present',
+    date: 'Sep 2022 - May 2023, Aug 2023 - May 2024',
     description: [
       'Built digital experiments to assist with high throughput on group dynamics research with JavaScript, React, Meteor and Empirica stack',
       'Deployed weekly real time experiments with 15+ participants from MTurk to collect group dynamics data',

@@ -85,7 +85,7 @@ const semesters = [
     semester: 'Fall 2024',
     courses: [
       { code: 'CIS 5050', name: 'Software Systems' },
-      { code: 'CIS 5520', name: 'Advanced Programming' },
+      { code: 'CIS 5600', name: 'Introduction to Computer Graphics' },
       { code: 'CIS 6250', name: 'Theory of Machine Learning' },
     ],
   },
@@ -198,8 +198,8 @@ function Skills() {
                     <li className="list-element tracking-wide font-normal text-sm"> Java</li>
                     <li className="list-element tracking-wide font-normal text-sm"> Python</li>
                     <li className="list-element tracking-wide font-normal text-sm"> C++</li>
+                    <li className="list-element tracking-wide font-normal text-sm"> Go</li>
                     <li className="list-element tracking-wide font-normal text-sm"> OCaml</li>
-                    <li className="list-element tracking-wide font-normal text-sm"> Git</li>
                   </ul>
                 </div>
               </div>
@@ -215,7 +215,7 @@ function Skills() {
                     <li className="ml-4 list-element tracking-wide font-normal text-xs"> Pandas</li>
                     <li className="ml-4 list-element tracking-wide font-normal text-xs"> TensorFlow</li>
                     <li className="ml-4 list-element tracking-wide font-normal text-xs"> PyTorch</li>
-                    <li className="list-element tracking-wide font-normal text-sm"> R</li>
+                    <li className="list-element tracking-wide font-normal text-sm"> PySpark</li>
                     <li className="list-element tracking-wide font-normal text-sm"> MATLAB</li>
                   </ul>
                 </div>
@@ -232,7 +232,7 @@ function Skills() {
                 <div>
                   Frontend
                   <ul className="text-off-black/70">
-                    <li className="truncate list-element tracking-wide font-normal text-sm"> JavaScript</li>
+                    <li className="truncate list-element tracking-wide font-normal text-sm"> TypeScript</li>
                     <li className="truncate list-element tracking-wide font-normal text-sm"> React</li>
                     <li className="truncate list-element tracking-wide font-normal text-sm"> Redux</li>
                     <li className="truncate list-element tracking-wide font-normal text-sm"> Angular</li>

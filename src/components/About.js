@@ -2,8 +2,8 @@ import React from 'react';
 import headshot from './images/violin.webp';
 
 const paragraphs = [
-  "👋 Hi, I'm Jason! I recently graduated magna cum laude from Penn and am now a first year Master's student studying CIS. My passion for computer science started more than a decade ago with multiple game dev summer camps in Unity!",
-  "💻 Now, I'm especially interested in distributed and low latency systems and excited about solving challenging problems through software. I'm always exploring new concepts and opportunities to grow a vast problem solving background!",
+  "👋 Hi, I'm Jason! I recently graduated with Bachelor's and Master's degrees in CIS from Penn and currently work as a software engineer in NYC.",
+  "💻 I'm especially interested in distributed and low latency systems and excited about solving challenging problems through software. I'm always exploring new concepts and opportunities to grow a vast problem solving background!",
   "⚽ Beyond programming, I've been playing soccer since I was 6 years old and am also an avid music lover! My favorite artist right now is Laufey and my favorite instrument is the violin (currently playing for the Penn Symphony Orchestra)!",
 ];
 
