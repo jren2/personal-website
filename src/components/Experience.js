@@ -4,6 +4,21 @@ import React, { useState } from 'react';
 
 const experiences = [
   {
+    title: 'Forward Deployed Software Engineer',
+    company: 'Palantir',
+    link: 'https://www.palantir.com/',
+    date: 'Jan 2025 - Sep 2025',
+    description: [
+      'Worked as a client-facing software engineer on Palantir x Lumen to advance their telecom network!',
+      'Built and optimized PySpark pipelines with partioning and broadcast joins to process >10M rows per day identifying millions in annual savings',
+      'Owned, designed, and built full stack client facing applications with TypeScript and Python to make network analysis more efficient and accurate - many of which applications became the primary source of truth for business wide executive decisions',
+      'Spent a large amount of time 1:1 with clients decomposing the full product lifecycle from a customer problem to a software feature',
+      'Joined the team when it was ~10 engineers and contributed to lasting engineering standards even as it grows to >50 engineers',
+      'Reach out to hear more about what I worked on :)',
+    ],
+    image: require('./images/icons/palantir.webp'),
+  },
+  {
     title: 'Software Engineering Intern',
     company: 'J.P. Morgan Chase',
     link: 'https://www.jpmorganchase.com/',

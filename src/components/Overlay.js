@@ -161,7 +161,7 @@ function Overlay({ sidebar, setSidebar }) {
       </div>
 
       <div className="flex flex-col z-40 overlay-text fixed right-6 text-gray-500 text-sm tracking-widest">
-        <div className="overlay-text rotate-90 fixed mt-10 w-8 h-28">jren2@seas.upenn.edu</div>
+        <div className="overlay-text rotate-90 fixed w-8 h-28">jasoncren22@gmail.com</div>
         <div className="overlay-bar fixed mt-10 right-8 w-2 h-1/6" />
       </div>
     </>

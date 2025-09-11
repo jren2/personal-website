@@ -98,7 +98,7 @@ const outerRightStyle = 'w-full h-[80%] top-[10%] sm:translate-x-[30%] md:transl
 const commonCardStyle = 'ease-in-out duration-200 absolute border-1 border-gray-300 rounded-md bg-white-background text-lg px-4 py-2';
 
 function Skills() {
-  const [semesterIdx, setSemesterIdx] = useState(6);
+  const [semesterIdx, setSemesterIdx] = useState(8);
 
   return (
     <div className="bg-white-background px-32">
